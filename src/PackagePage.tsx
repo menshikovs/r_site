@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import './package-page.css'
 
 type CranPackageDetails = {
@@ -39,6 +39,45 @@ function PackageBrand() {
     <img src="/Rlogo.svg" alt="" width="48" height="38" />
     <span><strong>CRAN</strong><small>The R Archive Network</small></span>
   </a>
+}
+
+function renderLinkedText(text: string): ReactNode {
+  const nodes: ReactNode[] = []
+  let cursor = 0
+  let linkIndex = 0
+
+  while (cursor < text.length) {
+    const httpIndex = text.indexOf('http://', cursor)
+    const httpsIndex = text.indexOf('https://', cursor)
+    const start = httpIndex === -1 ? httpsIndex : httpsIndex === -1 ? httpIndex : Math.min(httpIndex, httpsIndex)
+    if (start === -1) {
+      nodes.push(text.slice(cursor))
+      break
+    }
+
+    let end = start
+    while (end < text.length) {
+      const character = text[end]
+      if (character.trim() === '' || ['<', '>', '"', "'"].includes(character)) break
+      end += 1
+    }
+
+    const matchedUrl = text.slice(start, end)
+    let urlEnd = matchedUrl.length
+    while (urlEnd > 0 && '),.;!?}]'.includes(matchedUrl[urlEnd - 1])) urlEnd -= 1
+    const url = matchedUrl.slice(0, urlEnd)
+
+    nodes.push(text.slice(cursor, start))
+    if (url) {
+      nodes.push(<a key={`description-link-${linkIndex++}`} href={url} target="_blank" rel="noreferrer">{url}</a>)
+      nodes.push(matchedUrl.slice(url.length))
+    } else {
+      nodes.push(matchedUrl)
+    }
+    cursor = end
+  }
+
+  return nodes
 }
 
 export default function PackagePage({ packageName }: { packageName: string }) {
@@ -102,11 +141,11 @@ export default function PackagePage({ packageName }: { packageName: string }) {
         </section>
         <section className="package-description-panel" aria-labelledby="package-description-heading">
           <div className="package-panel-heading"><div><span className="package-section-number">01 / FROM THE PACKAGE RECORD</span><h2 id="package-description-heading">Description</h2></div><span className="package-description-source">CRAN DESCRIPTION</span></div>
-          <p className="package-original-description">{details.Description || 'No description is available for this package.'}</p>
+          <p className="package-original-description">{renderLinkedText(details.Description || 'No description is available for this package.')}</p>
         </section>
         {metadata.length > 0 && <section className="package-metadata-panel" aria-labelledby="package-metadata-heading">
           <div className="package-panel-heading"><div><span className="package-section-number">02 / PACKAGE INFORMATION</span><h2 id="package-metadata-heading">Details</h2></div></div>
-          <dl className="package-metadata-grid">{metadata.map(([label, value]) => <div className="package-metadata-row" key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+          <dl className="package-metadata-grid">{metadata.map(([label, value]) => <div className="package-metadata-row" key={label}><dt>{label}</dt><dd>{renderLinkedText(value)}</dd></div>)}</dl>
         </section>}
         <section className="package-resource-panel"><div><span className="package-section-number">CONTINUE EXPLORING</span><h2>Go deeper with {details.Package}.</h2><p>Visit the official package record for its reference manual, vignettes, source files, and release history.</p></div><div className="package-resource-links"><a className="package-primary-link" href={cranIndex} target="_blank" rel="noreferrer">Open package on CRAN <span aria-hidden="true">↗</span></a><a href={`${cranWeb}/${encodeURIComponent(packageName)}/vignettes/`} target="_blank" rel="noreferrer">Browse vignettes <span aria-hidden="true">↗</span></a></div></section>
       </>}
