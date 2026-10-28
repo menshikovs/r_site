@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
@@ -9,7 +9,6 @@ import {
   escapeHtml,
   linkifyText,
   packagePath,
-  buildSearchMetaShards,
   buildSearchNameShards,
   buildSearchShards,
   cleanOfficialHtml,
@@ -21,7 +20,7 @@ import {
   validatePackages,
   validateOfficialPage,
 } from '../src/cran-data.mjs'
-import { renderCatalog, renderCatalogLetter, renderPackage, renderPackageSourceIndex } from '../src/templates.mjs'
+import { renderCatalog, renderCatalogLetter, renderOfficialPage, renderPackage, renderPackageSourceIndex } from '../src/templates.mjs'
 
 const fixtureDcf = `Package: termr
 Version: 0.1.0
@@ -63,12 +62,12 @@ test('search shards find package names, titles, and descriptions lazily by token
   const records = parseDcf(fixtureDcf)
   assert.deepEqual(searchTokens('TERM UI, package!'), ['term', 'ui', 'package'])
   const shards = buildSearchShards(records)
-  const metadata = buildSearchMetaShards(records)
   const names = buildSearchNameShards(records)
   assert.deepEqual(shards.get('t').termr, [['termr', 8]])
-  assert.equal(metadata.get('t').termr, 'A terminal UI framework')
-  assert.deepEqual(names.get('t').termr, ['termr', 'A terminal UI framework'])
-  assert.deepEqual(names.get('s').safepkg, ['safePkg', ''])
+  assert.deepEqual(names.get('t').termr.slice(0, 2), ['termr', 'A terminal UI framework'])
+  assert.ok(names.get('t').termr[2].length <= 81)
+  assert.ok(names.get('t').termr[2].endsWith('…'))
+  assert.deepEqual(names.get('s').safepkg, ['safePkg', '', 'Text with <script>alert(1)</script> and & characters.'])
   assert.ok(shards.get('t').terminal.some(([name, score]) => name === 'termr' && score === 4))
   assert.ok(shards.get('i').interfaces.some(([name, score]) => name === 'termr' && score === 1))
 })
@@ -88,6 +87,38 @@ test('official page converter removes active content and rewrites migrated CRAN 
   const namedAnchor = cleanOfficialHtml('<body><a id="section-anchor">¶</a><script>bad()</script></body>', 'https://cran.r-project.org/faqs.html')
   assert.match(namedAnchor, /<span id="section-anchor">¶<\/span>/)
   assert.doesNotMatch(namedAnchor, /<script/)
+  const navigation = cleanOfficialHtml('<body><a class="copiable-link" href="#section-anchor">¶</a><p class="nav-panel"><span class="nav-button"><a href="#next" rel="next">Next</a></span><span class="nav-button">&nbsp;</span></p></body>', 'https://cran.r-project.org/manuals.html')
+  assert.match(navigation, /aria-label="Section permalink"/)
+  assert.match(navigation, /href="#next" rel="next"/)
+  assert.doesNotMatch(navigation, /class="nav-button">&nbsp;/)
+  const decoratedNavigation = cleanOfficialHtml('<body><p class="nav-panel"><span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#next" rel="next">Next</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#up" rel="up">(dir)</a></span></span> [ <a href="#contents">Contents</a> ]</p></body>', 'https://cran.r-project.org/manuals.html')
+  assert.doesNotMatch(decoratedNavigation, /,\s*<span class="nav-button"/)
+  assert.doesNotMatch(decoratedNavigation, /\[\s*<a/)
+  assert.match(decoratedNavigation, /href="#contents">Contents<\/a>/)
+})
+
+test('official document rendering keeps one title and one copy of revision metadata while preserving navigation', () => {
+  const policyBody = cleanOfficialHtml('<html><body><h1 class="title">CRAN Repository Policy</h1><h3 class="subtitle">Version 1.2</h3><strong class="author">CRAN Repository Maintainers</strong><br><hr><div class="center">Version 1.2</div><div class="center"><b>CRAN Repository Maintainers</b></div><span class="node-id" id="Top"></span><p class="nav-panel"><span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Preamble" rel="next">Preamble</a></span></span></p><h2 class="node">Top<a class="copiable-link" href="#Top"> ¶</a></h2><div id="Preamble"><h2 class="unnumbered" id="Preamble-1"><span>Preamble<a class="copiable-link" href="#Preamble-1"> ¶</a></span></h2><p>Policy text remains here.</p></div></body></html>', 'https://cran.r-project.org/web/packages/policies.html')
+  const policy = renderOfficialPage({ title: 'CRAN Repository Policy', description: 'Repository policy.', canonical: '/web/packages/policies.html', content: policyBody })
+  const article = /<article class="official-page">([\s\S]*?)<\/article>/.exec(policy)?.[1] || ''
+  assert.match(article, /<h1 class="title">CRAN Repository Policy<\/h1>/)
+  assert.equal((article.match(/Version 1\.2/g) || []).length, 1)
+  assert.equal((article.match(/CRAN Repository Maintainers/g) || []).length, 1)
+  assert.match(article, /id="Top"/)
+  assert.match(article, /href="#Preamble" rel="next"/)
+  assert.match(article, /id="Preamble-1"/)
+  assert.match(article, /aria-label="Section permalink"/)
+  assert.match(article, /class="node">Top/)
+
+  const manual = renderOfficialPage({ title: 'An Introduction to R (release)', description: 'R manual.', canonical: '/doc/manuals/r-release/R-intro.html', content: cleanOfficialHtml('<body><p class="nav-panel"><span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Preface" rel="next">Preface</a></span></span></p><h1 class="top"><span id="Top">An Introduction to R<a class="copiable-link" href="#Top"> ¶</a></span></h1><p>Manual text.</p></body>', 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html') })
+  assert.match(manual, /<h1 class="top"><span id="Top">An Introduction to R/)
+  assert.match(manual, /href="#Preface" rel="next"/)
+  assert.equal((manual.match(/<h1/g) || []).length, 1)
+  assert.match(manual, /<body id="top">/)
+
+  const faq = renderOfficialPage({ title: 'R FAQs', description: 'FAQs.', canonical: '/faqs.html', content: '<h2>FAQ and HOWTO Documents</h2><p>FAQ links remain.</p>' })
+  assert.match(faq, /<h1>R FAQs<\/h1>/)
+  assert.match(faq, /<h2>FAQ and HOWTO Documents<\/h2>/)
 })
 
 test('official page validation accepts ordinary wrapper changes and rejects incomplete upstream pages', () => {
@@ -134,6 +165,7 @@ test('static build emits canonical routes and only opts search pages into JavaSc
       windows_base: '<html><body><a href="R-4.6.1-win.exe">Download R-4.6.1 for Windows</a></body></html>',
       macos: '<html><body><a href="sonoma-arm64/base/R-4.6.1-arm64.pkg">R-4.6.1-arm64.pkg</a><a href="big-sur-x86_64/base/R-4.6.1-x86_64.pkg">R-4.6.1-x86_64.pkg</a></body></html>',
       manuals: '<html><body><h1>Official Manuals</h1><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">Introduction</a></body></html>',
+      'manual_r-release_R-admin': '<html><body><h1>R Installation and Administration</h1><p>Installation guidance.</p></body></html>',
       'manual_r-release_R-intro': '<html><body><h1>Manual body</h1><p>Preserved source text.</p></body></html>',
       source_base: '<html><body><h1>Index of /src/base</h1><a href="R-latest.tar.gz">R-latest.tar.gz</a></body></html>',
     }
@@ -150,6 +182,7 @@ test('static build emits canonical routes and only opts search pages into JavaSc
       'web/packages/termr/index.html',
       'mirrors.html',
       'manuals.html',
+      'doc/manuals/r-release/R-admin.html',
       'doc/manuals/r-release/R-intro.html',
       'src/index.html',
       'src/base/index.html',
@@ -173,9 +206,19 @@ test('static build emits canonical routes and only opts search pages into JavaSc
     assert.match(home, /<svg viewBox="0 0 32 32"/)
     assert.doesNotMatch(home, /&amp;gt;_/)
     assert.match(home, /type="search"/)
+    assert.match(home, /id="why-r"/)
+    assert.match(home, /id="getting-started"/)
+    assert.match(home, /2 packages/)
+    assert.match(home, /10 mirrors/)
+    assert.match(home, /href="\/doc\/manuals\/r-release\/R-intro\.html"/)
+    assert.match(home, /<noscript>/)
+    assert.match(home, /An IDE is optional; R includes a console\./)
+    assert.match(home, /href="\/doc\/manuals\/r-release\/R-intro\.html#Using-R-interactively-1"/)
+    assert.match(home, /href="https:\/\/posit\.co\/downloads\/"/)
+    assert.match(home, /href="https:\/\/positron\.posit\.co\/download\.html"/)
     assert.match(readFileSync(join(outDir, 'assets/search/t.json'), 'utf8'), /termr/)
-    assert.match(readFileSync(join(outDir, 'assets/search-meta/t.json'), 'utf8'), /terminal UI framework/)
-    assert.match(readFileSync(join(outDir, 'assets/search-names/t.json'), 'utf8'), /termr/)
+    assert.match(readFileSync(join(outDir, 'assets/search-names/t.json'), 'utf8'), /termr.*terminal UI framework.*Build interfaces/)
+    assert.equal(existsSync(join(outDir, 'assets/search-meta')), false)
     assert.match(readFileSync(join(outDir, '_headers'), 'utf8'), /Cache-Control/)
     assert.match(readFileSync(join(outDir, 'bin/windows/index.html'), 'utf8'), /R-4\.6\.1-win\.exe/)
     assert.match(readFileSync(join(outDir, 'bin/macosx/index.html'), 'utf8'), /R-4\.6\.1-x86_64\.pkg/)

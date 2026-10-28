@@ -15,7 +15,7 @@ The script reports request counts, response bytes after HTTP decompression, medi
 
 On the build host, `HTTP_PROXY`, `HTTPS_PROXY`, and `ALL_PROXY` point to `http://127.0.0.1:9`, where no proxy service is available. R 4.5.2 libcurl cannot connect through that proxy; with the proxy variables cleared, its direct TLS connection also fails in this environment. Windows `curl.exe` fails through the configured proxy. Node's built-in `fetch` can reach CRAN directly. The official `cloud.r-project.org` 0-Cloud mirror served the complete package RDS and R decoded it into 25,554 records; at that moment the canonical CRAN source had 25,556 records, so the mirror was two packages behind. The official `cran.csiro.au` mirror returned HTTP 200 to HEAD, but its full package RDS GET timed out here. Both mirrors are listed by CRAN. The build now uses Node fetch with retries and fallback to HTTPS mirrors parsed from the official directory; R only decodes the downloaded local RDS. Package-count, mirror-count, installer, and source-page validation remain enabled.
 
-The refreshed build completed on 2026-10-28 with 25,556 packages and 81 mirrors. The generated output has 25,720 files, including 25,628 HTML pages. A fetch failure still stops the build before it stages or replaces `dist`.
+The refreshed build completed on 2026-10-28 with 25,576 packages and 81 mirrors. The generated output has 25,714 files, including 25,648 HTML routes. A fetch failure still stops the build before it stages or replaces `dist`.
 
 ## WSL Nginx browser measurements
 
@@ -33,7 +33,7 @@ Measurements below were made on Ubuntu WSL Nginx at `http://127.0.0.1:8080`, wit
 
 The initial home-page navigation measured First Contentful Paint at 140 ms. It downloads no search JSON before a query. HTML, CSS, SVG, JavaScript, and search JSON responses had `Content-Encoding: gzip`. HTML and search data used `Cache-Control: public, max-age=300, must-revalidate`.
 
-### Search before and after exact-name index
+### Historical search benchmark before the final visual refinement
 
 The same Chrome/Nginx environment and queries were measured before and after adding the small exact-name shards. Package data refreshed between runs, so the two-result-set sizes differ slightly.
 
@@ -46,12 +46,27 @@ For exact `termr`, the uncompressed response body fell from 1,589,817 B to the 9
 
 The dependency-free benchmark measured the current `reactive terminal` response at 3,331,776 B before compression; the prior snapshot measured 3,331,226 B. The 550 B difference reflects the two newly indexed packages in the refreshed CRAN data.
 
+### Final visual refinement measurements
+
+The final 2026-10-28 build includes 25,576 package pages. Search metadata now stores an 80-character description excerpt alongside each package name and title. The exact `termr` query loads one metadata shard (71,830 compressed response bytes). The `reactive terminal` query returns the same 20 results with 12 requests and 1,592,182 compressed response bytes; the earlier title-only search used 13 requests and 1,168,425 bytes. The transfer grows because each result now includes a short description.
+
+The combined compressed search index changed from 8,430,754 B to 8,453,620 B (+0.27%). This includes 36 full-text shards and 26 package metadata shards; the 80-character excerpts keep the additional index size small.
+
+Homepage assets, measured with gzip level 9, changed as follows:
+
+| Asset | Before: raw / gzip | Final: raw / gzip |
+| --- | ---: | ---: |
+| Homepage HTML | 9,781 / 3,287 B | 10,212 / 3,440 B |
+| Site CSS | 23,964 / 5,125 B | 27,130 / 5,639 B |
+
+The package category and badge labels are 11 px after refinement and have 5.35:1 and 5.62:1 contrast against the page background. Browser checks found no horizontal overflow at 320, 390, 768, or 1440 px. Keyboard focus is visible on search results. With JavaScript disabled, all 26 alphabet links and the 1,125 static links on the A catalog page remain available; no search scripts or index shards are requested.
+
 For no-JavaScript verification, create a fresh browser context with JavaScript disabled and check `/` and `/web/packages/`. The home page must retain its catalog link and no-script guidance; the catalog must expose package pages and the 26 alphabet links.
 
 ## Automated checks
 
-- `npm test`: 12 offline parser, validation, fallback, and render tests.
-- `npm run check:site`: all 25,628 generated HTML routes and internal local `href`/`src` paths.
+- `npm test`: 13 offline parser, validation, fallback, and render tests.
+- `npm run check:site`: all 25,648 generated HTML routes and internal local `href`/`src` paths.
 - `python scripts/check_html.py dist`: representative templates and routes.
 - `Rscript tests/export-cran-data.R`: local official-RDS exporter fixture.
 - Lighthouse scores are not included. Run Lighthouse on both the demo and original CRAN from a machine with Lighthouse/Chrome available, using the same version and throttling profile; keep the raw reports with the demo record.

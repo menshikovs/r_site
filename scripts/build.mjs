@@ -8,7 +8,6 @@ import {
   PACKAGES_URL,
   CRAN_BASE,
   buildSearchNameShards,
-  buildSearchMetaShards,
   buildSearchShards,
   cleanOfficialHtml,
   parseDcf,
@@ -104,7 +103,7 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
     cpSync(join(projectRoot, 'public', 'Rlogo.svg'), join(staging, 'Rlogo.svg'))
     writeFileSync(join(staging, '_headers'), '/*\n  Cache-Control: public, max-age=300, must-revalidate\n/assets/*\n  Cache-Control: public, max-age=3600, must-revalidate\n', 'utf8')
 
-    writePage(staging, 'index.html', renderHome())
+    writePage(staging, 'index.html', renderHome({ packageCount: records.length, mirrorCount: mirrors.length }))
     const windowsInstaller = pages.windows_base ? parseWindowsInstaller(pages.windows_base) : null
     const macInstallers = pages.macos ? parseMacInstallers(pages.macos) : []
     writePage(staging, 'bin/windows/index.html', renderPlatform('windows', { windowsInstaller }))
@@ -172,8 +171,6 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
     }
     const searchShards = buildSearchShards(records)
     for (const [letter, shard] of searchShards) writePage(staging, `assets/search/${letter}.json`, JSON.stringify(shard))
-    const searchMetaShards = buildSearchMetaShards(records)
-    for (const [letter, shard] of searchMetaShards) writePage(staging, `assets/search-meta/${letter}.json`, JSON.stringify(shard))
     const searchNameShards = buildSearchNameShards(records)
     for (const [letter, shard] of searchNameShards) writePage(staging, `assets/search-names/${letter}.json`, JSON.stringify(shard))
     for (const record of records) writePage(staging, `web/packages/${record.Package}/index.html`, renderPackage(record))
@@ -187,7 +184,7 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
       throw error
     }
     rmSync(backup, { recursive: true, force: true })
-    return { packages: records.length, mirrors: mirrors.length, searchShards: searchShards.size, searchMetaShards: searchMetaShards.size, searchNameShards: searchNameShards.size, output: destination }
+    return { packages: records.length, mirrors: mirrors.length, searchShards: searchShards.size, searchNameShards: searchNameShards.size, output: destination }
   } catch (error) {
     rmSync(staging, { recursive: true, force: true })
     throw error
@@ -199,7 +196,7 @@ async function main() {
   const data = await fetchCranData()
   console.log(`Generating static HTML and search index for ${data.records.length} packages and ${data.mirrors.length} mirrors...`)
   const result = buildSite(data)
-  console.log(`Built ${result.packages} package pages, ${result.searchShards} full-text shards, ${result.searchMetaShards} result-title shards and ${result.searchNameShards} exact-name shards in ${result.output}`)
+  console.log(`Built ${result.packages} package pages, ${result.searchShards} full-text shards and ${result.searchNameShards} package metadata shards in ${result.output}`)
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

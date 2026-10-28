@@ -1,5 +1,4 @@
 const shardCache = new Map()
-const metaCache = new Map()
 const nameCache = new Map()
 const tokens = value => [...new Set((value.normalize('NFKD').toLocaleLowerCase('en-US').match(/[\p{L}\p{N}]+/gu) || []).filter(token => token.length > 1))]
 
@@ -13,16 +12,6 @@ async function loadShard(firstCharacter) {
   return shardCache.get(firstCharacter)
 }
 
-async function loadMeta(firstCharacter) {
-  if (!metaCache.has(firstCharacter)) {
-    metaCache.set(firstCharacter, fetch(`/assets/search-meta/${firstCharacter}.json`, { credentials: 'same-origin' }).then(response => {
-      if (!response.ok) throw new Error(`Package titles unavailable (${response.status}).`)
-      return response.json()
-    }))
-  }
-  return metaCache.get(firstCharacter)
-}
-
 async function loadNameShard(firstCharacter) {
   if (!nameCache.has(firstCharacter)) {
     nameCache.set(firstCharacter, fetch(`/assets/search-names/${firstCharacter}.json`, { credentials: 'same-origin' }).then(response => {
@@ -31,6 +20,31 @@ async function loadNameShard(firstCharacter) {
     }))
   }
   return nameCache.get(firstCharacter)
+}
+
+function searchResult(name, title = '', description = '') {
+  const item = document.createElement('li')
+  const link = document.createElement('a')
+  link.className = 'search-result'
+  link.href = `/web/packages/${encodeURIComponent(name)}/index.html`
+  const packageName = document.createElement('strong')
+  packageName.className = 'search-result-name'
+  packageName.textContent = name
+  link.append(packageName)
+  if (title) {
+    const packageTitle = document.createElement('span')
+    packageTitle.className = 'search-result-title'
+    packageTitle.textContent = title
+    link.append(packageTitle)
+  }
+  if (description) {
+    const packageDescription = document.createElement('p')
+    packageDescription.className = 'search-result-description'
+    packageDescription.textContent = description
+    link.append(packageDescription)
+  }
+  item.append(link)
+  return item
 }
 
 for (const form of document.querySelectorAll('.package-search')) {
@@ -57,17 +71,7 @@ for (const form of document.querySelectorAll('.package-search')) {
             const summary = document.createElement('p')
             summary.textContent = `Exact package match for “${query}”`
             const list = document.createElement('ol')
-            const item = document.createElement('li')
-            const link = document.createElement('a')
-            link.href = `/web/packages/${encodeURIComponent(exact[0])}/index.html`
-            link.textContent = exact[0]
-            item.append(link)
-            if (exact[1]) {
-              const title = document.createElement('span')
-              title.textContent = exact[1]
-              item.append(title)
-            }
-            list.append(item)
+            list.append(searchResult(exact[0], exact[1], exact[2]))
             output.replaceChildren(summary, list)
             return
           }
@@ -92,8 +96,8 @@ for (const form of document.querySelectorAll('.package-search')) {
         .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
         .slice(0, 20)
       const initials = [...new Set(matches.map(result => result.name[0].toLowerCase().replace(/[^a-z0-9]/g, '_')))]
-      const metadata = await Promise.all(initials.map(loadMeta))
-      const titleFor = name => metadata[initials.indexOf(name[0].toLowerCase().replace(/[^a-z0-9]/g, '_'))][name] || ''
+      const metadata = await Promise.all(initials.map(loadNameShard))
+      const metadataFor = name => metadata[initials.indexOf(name[0].toLowerCase().replace(/[^a-z0-9]/g, '_'))][name.toLocaleLowerCase('en-US')] || []
       output.replaceChildren()
       if (!matches.length) {
         output.textContent = `No CRAN packages found for “${query}”. Try another term or browse by letter.`
@@ -103,18 +107,8 @@ for (const form of document.querySelectorAll('.package-search')) {
       summary.textContent = `Top ${matches.length} result${matches.length === 1 ? '' : 's'} for “${query}”`
       const list = document.createElement('ol')
       for (const result of matches) {
-        const item = document.createElement('li')
-        const link = document.createElement('a')
-        link.href = `/web/packages/${encodeURIComponent(result.name)}/index.html`
-        link.textContent = result.name
-        item.append(link)
-        const title = titleFor(result.name)
-        if (title) {
-          const summary = document.createElement('span')
-          summary.textContent = title
-          item.append(summary)
-        }
-        list.append(item)
+        const [packageName, title, description] = metadataFor(result.name)
+        list.append(searchResult(packageName || result.name, title, description))
       }
       output.append(summary, list)
     } catch (error) {

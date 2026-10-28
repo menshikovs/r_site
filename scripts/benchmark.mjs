@@ -84,7 +84,7 @@ async function searchTrial(origin, term) {
     const namesResponse = await sample(new URL(`/assets/search-names/${normalized[0]}.json`, origin))
     const nameData = JSON.parse(namesResponse.text)
     const exact = nameData[normalized]
-    if (exact) return { query: term, requestCount: 1, responseBodyBytes: namesResponse.bytes, indexRequests: 0, indexBytes: 0, nameIndexBytes: namesResponse.bytes, titleRequests: 0, titleBytes: 0, matchingMs: 0, totalMs: namesResponse.totalMs, resultCount: 1, resultNames: [exact[0]] }
+    if (exact) return { query: term, requestCount: 1, responseBodyBytes: namesResponse.bytes, indexRequests: 0, indexBytes: 0, nameIndexBytes: namesResponse.bytes, metadataRequests: 0, metadataBytes: 0, matchingMs: 0, totalMs: namesResponse.totalMs, resultCount: 1, resultNames: [exact[0]] }
   }
   const letters = [...new Set(tokens.map(token => token[0]))]
   const indexStarted = performance.now()
@@ -103,8 +103,8 @@ async function searchTrial(origin, term) {
   const hits = [...results.values()].map(result => ({ ...result, score: result.score + (result.terms === tokens.length ? 10 : 0) })).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name)).slice(0, 20)
   const matchingMs = performance.now() - start
   const initials = [...new Set(hits.map(hit => hit.name[0].toLowerCase()))]
-  const metas = await Promise.all(initials.map(letter => sample(new URL(`/assets/search-meta/${letter}.json`, origin))))
-  return { query: term, requestCount: indexes.length + metas.length, responseBodyBytes: indexes.reduce((n, item) => n + item.bytes, 0) + metas.reduce((n, item) => n + item.bytes, 0), indexRequests: indexes.length, indexBytes: indexes.reduce((n, item) => n + item.bytes, 0), nameIndexBytes: 0, titleRequests: metas.length, titleBytes: metas.reduce((n, item) => n + item.bytes, 0), matchingMs, totalMs: performance.now() - indexStarted, resultCount: hits.length, resultNames: hits.map(hit => hit.name) }
+  const metadata = await Promise.all(initials.map(letter => sample(new URL(`/assets/search-names/${letter}.json`, origin))))
+  return { query: term, requestCount: indexes.length + metadata.length, responseBodyBytes: indexes.reduce((n, item) => n + item.bytes, 0) + metadata.reduce((n, item) => n + item.bytes, 0), indexRequests: indexes.length, indexBytes: indexes.reduce((n, item) => n + item.bytes, 0), nameIndexBytes: 0, metadataRequests: metadata.length, metadataBytes: metadata.reduce((n, item) => n + item.bytes, 0), matchingMs, totalMs: performance.now() - indexStarted, resultCount: hits.length, resultNames: hits.map(hit => hit.name) }
 }
 
 const report = { generatedAt: new Date().toISOString(), note: 'Response body bytes are measured after fetch decompression. This transport script does not measure browser paint; use the documented browser and Lighthouse procedure for rendering metrics.', origins: {} }

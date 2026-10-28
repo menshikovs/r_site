@@ -140,23 +140,18 @@ export function buildSearchShards(records) {
   ]))
 }
 
-export function buildSearchMetaShards(records) {
-  const shards = new Map()
-  for (const record of records) {
-    const initial = record.Package[0].toLowerCase().replace(/[^a-z0-9]/g, '_')
-    if (!shards.has(initial)) shards.set(initial, Object.create(null))
-    shards.get(initial)[record.Package] = record.Title || ''
-  }
-  return shards
-}
-
 export function buildSearchNameShards(records) {
   const shards = new Map()
   for (const record of records) {
     const normalized = record.Package.toLocaleLowerCase('en-US')
     const initial = normalized[0].replace(/[^a-z0-9]/g, '_')
     if (!shards.has(initial)) shards.set(initial, Object.create(null))
-    shards.get(initial)[normalized] = [record.Package, record.Title || '']
+    const description = String(record.Description || '').replace(/\s+/g, ' ').trim()
+    const descriptionEnd = description.length > 80
+      ? description.lastIndexOf(' ', 80) > 58 ? description.lastIndexOf(' ', 80) : 80
+      : description.length
+    const snippet = description.length > 80 ? description.slice(0, descriptionEnd).trimEnd() + '…' : description
+    shards.get(initial)[normalized] = [record.Package, record.Title || '', snippet]
   }
   return shards
 }
@@ -203,7 +198,11 @@ export function cleanOfficialHtml(source, sourceUrl, localRoutes = {}) {
     if (/^<\//.test(tag)) return anchorStack.pop() ? '</a>' : '</span>'
     const hasHref = /\bhref\s*=/i.test(tag)
     anchorStack.push(hasHref)
-    if (hasHref) return tag
+    if (hasHref) {
+      const isPermalink = /\bclass\s*=\s*(["'])[^"']*\bcopiable-link\b[^"']*\1/i.test(tag)
+      if (isPermalink && !/\baria-label\s*=/i.test(tag)) return tag.replace(/>$/, ' aria-label="Section permalink">')
+      return tag
+    }
     const id = /\b(?:id|name)\s*=\s*(["'])(.*?)\1/i.exec(tag)?.[2]
     const className = /\bclass\s*=\s*(["'])(.*?)\1/i.exec(tag)?.[2]
     return `<span${id ? ` id="${escapeHtml(id)}"` : ''}${className ? ` class="${escapeHtml(className)}"` : ''}>`
@@ -216,6 +215,14 @@ export function cleanOfficialHtml(source, sourceUrl, localRoutes = {}) {
     if (!source) return `<span class="official-image-alt">${escapeHtml(decodeHtml(alt))}</span>`
     return `<img src="${escapeHtml(source)}" alt="${escapeHtml(decodeHtml(alt))}"${accessibleAlt} loading="lazy" decoding="async">`
   })
+  html = html.replace(/<p\b([^>]*)>([\s\S]*?)<\/p\s*>/gi, (match, attributes, content) => {
+    if (!/\bclass\s*=\s*(["'])[^"']*\bnav-panel\b[^"']*\1/i.test(attributes)) return match
+    const navigation = content
+      .replace(/,\s*(?=<span\b[^>]*\bclass\s*=\s*(["'])[^"']*\bnav-button\b)/gi, ' ')
+      .replace(/\[\s*(<a\b[^>]*>[\s\S]*?<\/a\s*>)\s*\]/gi, '$1')
+    return `<p${attributes}>${navigation}</p>`
+  })
+  html = html.replace(/<span\b(?=[^>]*\bclass=["'][^"']*\bnav-button\b[^"']*["'])[^>]*>(?:\s|&nbsp;|&#160;)*<\/span>/gi, '')
   return html
 }
 

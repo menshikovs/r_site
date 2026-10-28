@@ -14,7 +14,7 @@ function documentPage({ title, description, canonical, body, styles = true, sear
   ${styles ? '<link rel="stylesheet" href="/assets/site.css">' : ''}
   <title>${escapeHtml(title)}</title>
 </head>
-<body>
+<body id="top">
 ${body}
 ${search ? '<script defer src="/assets/search.js"></script>' : ''}
 </body>
@@ -58,25 +58,42 @@ function searchForm(id = 'cran-search') {
   return `<form class="package-search" id="${id}" action="/web/packages/" method="get"><label for="${id}-query">Search CRAN packages</label><div><input id="${id}-query" name="q" type="search" placeholder="Package name or what it does" autocomplete="off"><button type="submit">Search packages ${arrow()}</button></div><p class="search-help">Search package names and descriptions. You can also browse the alphabet without JavaScript.</p><p class="search-results" aria-live="polite" aria-atomic="true"></p><noscript><p>JavaScript is disabled. Browse the complete alphabetical package catalog.</p></noscript></form>`
 }
 
-export function renderHome() {
+export function renderHome({ packageCount = null, mirrorCount = null } = {}) {
   const platforms = [
     { id: 'windows', name: 'Windows', note: 'Base R for Windows' },
     { id: 'macosx', name: 'macOS', note: 'Apple silicon & Intel' },
     { id: 'linux', name: 'Linux', note: 'Debian, Ubuntu, Fedora & more' },
   ]
+  const buildFacts = Number.isInteger(packageCount) && Number.isInteger(mirrorCount)
+    ? `<p class="build-facts"><span>CRAN BUILD</span> ${packageCount.toLocaleString('en-US')} packages <span aria-hidden="true">·</span> ${mirrorCount} mirrors</p>`
+    : ''
   const content = `<header class="topbar"><span>The R Archive Network</span><a href="/mirrors.html">Choose a mirror ${arrow()}</a></header>
 <section id="download" class="hero">
   <p class="eyebrow">THE COMPREHENSIVE R ARCHIVE NETWORK</p>
   <h1>Your next discovery<br>starts with <span>R.</span></h1>
-  <p class="hero-copy">Download R, explore packages, and find the tools to turn your data into understanding.</p>
+  <p class="hero-copy">R is a free software environment for statistical computing and graphics. Analyze data, fit models, and create reproducible reports with an open language.</p>
   <div class="section-intro"><div><h2>Download and install R</h2><p>Choose your operating system to get started.</p></div><span class="availability">FREE &amp; OPEN SOURCE</span></div>
   <div class="download-grid">${platforms.map(platform => `<a class="download-card" href="/bin/${platform.id}/"><span class="card-mark" aria-hidden="true">${platformIcon(platform.id)}</span><span class="card-category">R FOR ${escapeHtml(platform.name.toUpperCase())}</span>${arrow()}<h3>${escapeHtml(platform.name)}</h3><p>${escapeHtml(platform.note)}</p><span class="card-action">Download R</span></a>`).join('')}</div>
   <div class="source-strip"><div><strong>Prefer to build from source?</strong><span>Source code, development snapshots, and previous releases.</span></div><a href="/src/">Get the source ${arrow()}</a></div>
 </section>
-<section id="packages" class="content-section"><div class="section-heading"><div><p class="eyebrow">02 / EXTEND WHAT’S POSSIBLE</p><h2>Find your next<br>R package.</h2></div><p>Search by package name or description, or browse the complete catalog alphabetically.</p></div>${searchForm('home-search')}<a class="text-link catalog-link" href="/web/packages/">Browse packages by letter ${arrow()}</a><p class="install-note">Install a package in R with <code>install.packages("packageName")</code>.</p></section>
-<section id="documentation" class="content-section"><div class="section-heading"><div><p class="eyebrow">03 / DOCUMENTATION</p><h2>Learn R at<br>your own pace.</h2></div><a class="text-link" href="https://www.r-project.org/">About the R Project ${arrow()}</a></div><div class="resource-grid"><a href="/manuals.html"><span>01 — LEARN</span><h3>The manuals</h3><p>Official guides to the language, installation, administration, and package development.</p><b>Read the documentation ${arrow()}</b></a><a href="/faqs.html"><span>02 — UNDERSTAND</span><h3>Frequently asked questions</h3><p>Answers about R across platforms, with platform-specific installation help.</p><b>Find an answer ${arrow()}</b></a><a href="https://www.r-project.org/help.html"><span>03 — CONNECT</span><h3>Help from the community</h3><p>Find support, ask a good question, and connect with people who work with R.</p><b>Get help with R ${arrow()}</b></a></div></section>
-<section id="contribute" class="contribute"><div><p class="eyebrow">04 / CONTRIBUTE</p><h2>Help CRAN<br>grow with R.</h2><p>Learn how package submissions are reviewed and maintained.</p><a class="primary-link" href="/web/packages/policies.html">Read the repository policy ${arrow()}</a></div><div class="contribute-links"><a href="https://xmpalantir.wu.ac.at/cransubmit/"><span>01</span><div><h3>Submit a package</h3><p>Share your work with the R community.</p></div>${arrow()}</a><a href="/mirrors.html"><span>02</span><div><h3>Find a CRAN mirror</h3><p>Access the archive from a server near you.</p></div>${arrow()}</a><a href="/CRAN_team.htm"><span>03</span><div><h3>Meet the CRAN team</h3><p>See team roles and contact details.</p></div>${arrow()}</a></div></section>`
-  return documentPage({ title: 'CRAN — The Comprehensive R Archive Network', description: 'Download R, search CRAN packages, and find documentation and resources for the R community.', canonical: '/', body: shell(content), search: true })
+<section id="why-r" class="home-section"><div class="section-heading"><div><p class="eyebrow">02 / WHY R</p><h2>One language for data,<br>statistics, and graphics.</h2></div><p>Use R to move from raw data to analysis and clear results in one open, extensible environment.</p></div>
+<ul class="why-grid">
+  <li><h3>Statistics &amp; modeling</h3><p>Explore data, fit models, and examine uncertainty.</p></li>
+  <li><h3>Data visualization</h3><p>Create and refine graphics directly from your analysis.</p></li>
+  <li><h3>Open package ecosystem</h3><p>Extend R with packages shared through CRAN.</p></li>
+  <li><h3>Reproducible workflows</h3><p>Keep analysis steps and results together in code.</p></li>
+</ul>${buildFacts}</section>
+<section id="getting-started" class="home-section"><div class="section-heading"><div><p class="eyebrow">03 / GETTING STARTED</p><h2>From installation<br>to a first project.</h2></div><p>R runs in the console. An editor or IDE is optional; use the environment that suits your work.</p></div>
+<ol class="starter-path">
+  <li><span class="starter-index">01</span><div><a class="step-link" href="#download">Install R</a><p>Choose the download for your operating system above.</p></div></li>
+  <li><span class="starter-index">02</span><div class="environment-step"><h3 class="step-link">Choose your environment</h3><p class="environment-intro">An IDE is optional; R includes a console.</p><ul class="environment-options"><li><a href="/doc/manuals/r-release/R-intro.html#Using-R-interactively-1">R console</a><span>Included with R; use it interactively.</span></li><li><a href="https://posit.co/downloads/">RStudio</a><span>Desktop IDE with editor, plots, and help.</span></li><li><a href="https://positron.posit.co/download.html">Positron</a><span>Desktop IDE for R and other languages.</span></li></ul></div></li>
+  <li><span class="starter-index">03</span><div><a class="step-link" href="#packages">Explore packages</a><p>Find tools by package name or by what they do.</p></div></li>
+  <li><span class="starter-index">04</span><div><a class="step-link" href="/doc/manuals/r-release/R-intro.html">Start with the language</a><p>Follow the introduction and try its examples.</p></div></li>
+</ol></section>
+<section id="packages" class="content-section"><div class="section-heading"><div><p class="eyebrow">04 / OPEN PACKAGES</p><h2>Find your next<br>R package.</h2></div><p>Search by package name or description, or browse the complete catalog alphabetically.</p></div>${searchForm('home-search')}<a class="text-link catalog-link" href="/web/packages/">Browse packages by letter ${arrow()}</a><p class="install-note">Install a package in R with <code>install.packages("packageName")</code>.</p></section>
+<section id="documentation" class="content-section"><div class="section-heading"><div><p class="eyebrow">05 / DOCUMENTATION</p><h2>Learn R at<br>your own pace.</h2></div><a class="text-link" href="https://www.r-project.org/">About the R Project ${arrow()}</a></div><div class="resource-grid"><a href="/manuals.html"><span>01 — LEARN</span><h3>The manuals</h3><p>Official guides to the language, installation, administration, and package development.</p><b>Read the documentation ${arrow()}</b></a><a href="/faqs.html"><span>02 — UNDERSTAND</span><h3>Frequently asked questions</h3><p>Answers about R across platforms, with platform-specific installation help.</p><b>Find an answer ${arrow()}</b></a><a href="https://www.r-project.org/help.html"><span>03 — CONNECT</span><h3>Help from the community</h3><p>Find support, ask a good question, and connect with people who work with R.</p><b>Get help with R ${arrow()}</b></a></div></section>
+<section id="contribute" class="contribute"><div><p class="eyebrow">06 / CONTRIBUTE</p><h2>Help CRAN<br>grow with R.</h2><p>Learn how package submissions are reviewed and maintained.</p><a class="primary-link" href="/web/packages/policies.html">Read the repository policy ${arrow()}</a></div><div class="contribute-links"><a href="https://xmpalantir.wu.ac.at/cransubmit/"><span>01</span><div><h3>Submit a package</h3><p>Share your work with the R community.</p></div>${arrow()}</a><a href="/mirrors.html"><span>02</span><div><h3>Find a CRAN mirror</h3><p>Access the archive from a server near you.</p></div>${arrow()}</a><a href="/CRAN_team.htm"><span>03</span><div><h3>Meet the CRAN team</h3><p>See team roles and contact details.</p></div>${arrow()}</a></div></section>`
+  return documentPage({ title: 'CRAN — The Comprehensive R Archive Network', description: 'Learn what R is, download R for your operating system, explore CRAN packages, and find official manuals and community resources.', canonical: '/', body: shell(content), search: true })
 }
 
 export function renderPlatform(platform, { windowsInstaller = null, macInstallers = [] } = {}) {
@@ -198,9 +215,37 @@ export function renderMirrors(mirrors) {
 }
 
 export function renderOfficialPage({ title, description, canonical, content, current = 'documentation' }) {
-  const bodyContent = content.replace(/<h1\b[^>]*>[\s\S]*?<\/h1\s*>/i, '')
-  const body = shell(`<header class="topbar"><a href="/">← CRAN home</a><span>CRAN / ${escapeHtml(title)}</span></header><article class="official-page"><p class="eyebrow">CRAN / ${escapeHtml(title)}</p><h1>${escapeHtml(title)}</h1><div class="official-content">${bodyContent}</div></article>`, { current })
-  return documentPage({ title: `${title} — CRAN`, description, canonical, body })
+  const headings = [...content.matchAll(/<h2\b([^>]*)>([\s\S]*?)<\/h2\s*>/gi)]
+  const sourceTitle = headings.find(match => {
+    const classValue = /\bclass\s*=\s*(["'])(.*?)\1/i.exec(match[1])?.[2] || ''
+    return classValue.split(/\s+/).some(name => name === 'title' || name === 'top')
+  })
+  let bodyContent = content.replace(/<h1\b[^>]*>[\s\S]*?<\/h1\s*>/i, '')
+  const pageHeading = sourceTitle
+    ? sourceTitle[0].replace(/^<h2\b/i, '<h1').replace(/<\/h2\s*>$/i, '</h1>')
+    : '<h1>' + escapeHtml(title) + '</h1>'
+  if (sourceTitle) bodyContent = bodyContent.replace(sourceTitle[0], '')
+
+  const plainText = value => value
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&(?:nbsp|#160);/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  const repeatedMetadata = new Set()
+  for (const pattern of [
+    /<h3\b[^>]*class=["'][^"']*\bsubtitle\b[^"']*["'][^>]*>([\s\S]*?)<\/h3\s*>/i,
+    /<strong\b[^>]*class=["'][^"']*\bauthor\b[^"']*["'][^>]*>([\s\S]*?)<\/strong\s*>/i,
+  ]) {
+    const match = pattern.exec(bodyContent)
+    const value = match && plainText(match[1])
+    if (value) repeatedMetadata.add(value)
+  }
+  if (repeatedMetadata.size) {
+    bodyContent = bodyContent.replace(/(?:<br\s*\/?>\s*<hr\b[^>]*>\s*)?<div\b(?=[^>]*class=["'][^"']*\bcenter\b[^"']*["'])[^>]*>([\s\S]*?)<\/div\s*>/gi, (match, inner) => repeatedMetadata.has(plainText(inner)) ? '' : match)
+  }
+
+  const body = shell('<header class="topbar"><a href="/">← CRAN home</a><span>CRAN / ' + escapeHtml(title) + '</span></header><article class="official-page">' + pageHeading + '<div class="official-content">' + bodyContent + '</div></article>', { current })
+  return documentPage({ title: title + ' — CRAN', description, canonical, body })
 }
 
 export function renderSourceLanding({ baseIndex }) {
