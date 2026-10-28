@@ -23,7 +23,7 @@ python -m http.server 8000 --directory dist
 
 Open `http://localhost:8000/`. Node's built-in `fetch` downloads current package metadata, release listings, selected HTML resources, and mirror data from CRAN, with fallback to HTTPS mirrors listed in CRAN's official mirror directory. R reads the local official package RDS and exports its metadata; Node validates and generates the static site. The build writes a new `dist` only after all inputs are available. No npm install or additional package is required.
 
-Search is progressively enhanced: the home page and package catalog include search forms. Exact package-name queries use one small name shard; broader queries load only the needed token shards after submission. With JavaScript disabled, the full alphabetical index and all package pages still work.
+Search is progressively enhanced: the home page and package catalog search package names only, ignoring case. Exact matches rank first, followed by prefixes and other partial matches. Results show the package name and title when available; titles are display-only. One compact index is fetched after submission. With JavaScript disabled, the full alphabetical index and all package pages still work.
 
 ## Generated canonical routes
 

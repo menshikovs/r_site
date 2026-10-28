@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Dependency-free transport benchmark. It fetches a route and the same-origin
-// CSS/scripts/images referenced by that HTML, then measures search shard cost.
+// CSS/scripts/images referenced by that HTML, then measures the package-name index and matching cost.
 import { performance } from 'node:perf_hooks'
+import { createPackageSearchIndex, findPackageMatches } from '../public/search.js'
 
 const args = Object.fromEntries(process.argv.slice(2).map((arg, i, all) => arg.startsWith('--') ? [arg.slice(2), all[i + 1]] : null).filter(Boolean))
 const baseline = args.baseline || 'https://cran.r-project.org'
-const candidate = args.candidate || 'http://localhost:4173'
+const candidate = args.candidate || 'http://127.0.0.1:8080'
 const packageName = args.package || 'termr'
 const runs = Math.max(1, Number(args.runs || 3))
 const paths = ['/', '/web/packages/', `/web/packages/${encodeURIComponent(packageName)}/`, '/bin/windows/', '/manuals.html']
@@ -78,33 +79,22 @@ async function medianPage(origin, path) {
 }
 
 async function searchTrial(origin, term) {
-  const tokens = [...new Set(term.toLowerCase().match(/[a-z0-9]+/g) || [])]
-  const normalized = term.trim().normalize('NFKD').toLowerCase()
-  if (/^[a-z][a-z0-9.]+$/.test(normalized)) {
-    const namesResponse = await sample(new URL(`/assets/search-names/${normalized[0]}.json`, origin))
-    const nameData = JSON.parse(namesResponse.text)
-    const exact = nameData[normalized]
-    if (exact) return { query: term, requestCount: 1, responseBodyBytes: namesResponse.bytes, indexRequests: 0, indexBytes: 0, nameIndexBytes: namesResponse.bytes, metadataRequests: 0, metadataBytes: 0, matchingMs: 0, totalMs: namesResponse.totalMs, resultCount: 1, resultNames: [exact[0]] }
+  const started = performance.now()
+  const response = await sample(new URL('/assets/package-search.json', origin))
+  const index = createPackageSearchIndex(JSON.parse(response.text))
+  const matchingStarted = performance.now()
+  const matches = findPackageMatches(index, term)
+  const matchingMs = performance.now() - matchingStarted
+  return {
+    query: term,
+    requestCount: 1,
+    responseBodyBytes: response.bytes,
+    matchingMs,
+    totalMs: performance.now() - started,
+    resultCount: matches.length,
+    resultNames: matches.map(entry => entry.name),
+    resultTitles: matches.map(entry => entry.title),
   }
-  const letters = [...new Set(tokens.map(token => token[0]))]
-  const indexStarted = performance.now()
-  const indexes = await Promise.all(letters.map(letter => sample(new URL(`/assets/search/${letter}.json`, origin))))
-  const start = performance.now()
-  const shards = Object.fromEntries(letters.map((letter, i) => [letter, JSON.parse(indexes[i].text)]))
-  const results = new Map()
-  for (const token of tokens) {
-    for (const [name, weight] of shards[token[0]]?.[token] || []) {
-      const result = results.get(name) || { name, score: 0, terms: 0 }
-      result.score += weight
-      result.terms += 1
-      results.set(name, result)
-    }
-  }
-  const hits = [...results.values()].map(result => ({ ...result, score: result.score + (result.terms === tokens.length ? 10 : 0) })).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name)).slice(0, 20)
-  const matchingMs = performance.now() - start
-  const initials = [...new Set(hits.map(hit => hit.name[0].toLowerCase()))]
-  const metadata = await Promise.all(initials.map(letter => sample(new URL(`/assets/search-names/${letter}.json`, origin))))
-  return { query: term, requestCount: indexes.length + metadata.length, responseBodyBytes: indexes.reduce((n, item) => n + item.bytes, 0) + metadata.reduce((n, item) => n + item.bytes, 0), indexRequests: indexes.length, indexBytes: indexes.reduce((n, item) => n + item.bytes, 0), nameIndexBytes: 0, metadataRequests: metadata.length, metadataBytes: metadata.reduce((n, item) => n + item.bytes, 0), matchingMs, totalMs: performance.now() - indexStarted, resultCount: hits.length, resultNames: hits.map(hit => hit.name) }
 }
 
 const report = { generatedAt: new Date().toISOString(), note: 'Response body bytes are measured after fetch decompression. This transport script does not measure browser paint; use the documented browser and Lighthouse procedure for rendering metrics.', origins: {} }
@@ -116,7 +106,7 @@ for (const [label, origin] of [['baseline', baseline], ['candidate', candidate]]
   }
   if (label === 'candidate') {
     report.origins[label].search = []
-    for (const query of [args.name || 'termr', args.description || 'reactive terminal']) {
+    for (const query of [args.name || 'termr', args.prefix || 'ggplot2', args.substring || 'plot', args.case || 'GGPLOT2']) {
       try { report.origins[label].search.push(await searchTrial(origin, query)) }
       catch (error) { report.origins[label].search.push({ query, error: error.message }) }
     }

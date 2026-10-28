@@ -2,24 +2,24 @@
 
 ## Reproduce measurements
 
-Build the site and serve `dist/` with a static web server. The HTTP benchmark uses Node's built-in `fetch` and needs no extra package:
+Build the site and serve `dist/` with a static web server. The dependency-free benchmark uses Node's built-in `fetch` and the same package matching functions as the browser:
 
 ```powershell
 npm run build
 node scripts/benchmark.mjs --baseline https://cran.r-project.org --candidate http://127.0.0.1:8080 --runs 5
 ```
 
-The script reports request counts, response bytes after HTTP decompression, median TTFB/response time, and candidate search index costs. For browser rendering, disable cache in Chrome DevTools and record request count, transferred bytes, DOM Content Loaded, First Contentful Paint, and load event. Run the same routes and queries with the same viewport and network profile; report medians. Lighthouse is optional and is not a project dependency.
+The script reports request counts, response bytes after HTTP decompression, median TTFB/response time, and package-name matching cost. Browser timing below measures the interval from submitting the query to results appearing. Use the same viewport and disable cache when reproducing it. Lighthouse is optional and is not a project dependency.
 
-## CRAN data-source diagnosis
+## CRAN data source and current build
 
-On the build host, `HTTP_PROXY`, `HTTPS_PROXY`, and `ALL_PROXY` point to `http://127.0.0.1:9`, where no proxy service is available. R 4.5.2 libcurl cannot connect through that proxy; with the proxy variables cleared, its direct TLS connection also fails in this environment. Windows `curl.exe` fails through the configured proxy. Node's built-in `fetch` can reach CRAN directly. The official `cloud.r-project.org` 0-Cloud mirror served the complete package RDS and R decoded it into 25,554 records; at that moment the canonical CRAN source had 25,556 records, so the mirror was two packages behind. The official `cran.csiro.au` mirror returned HTTP 200 to HEAD, but its full package RDS GET timed out here. Both mirrors are listed by CRAN. The build now uses Node fetch with retries and fallback to HTTPS mirrors parsed from the official directory; R only decodes the downloaded local RDS. Package-count, mirror-count, installer, and source-page validation remain enabled.
+The earlier R download failure was caused by `HTTP_PROXY`, `HTTPS_PROXY`, and `ALL_PROXY` pointing to `http://127.0.0.1:9`, where no proxy service was listening. R 4.5.2 libcurl also could not connect directly in that environment. Node's built-in `fetch` reached the canonical CRAN host and official HTTPS mirrors. The build retains retries, official mirror fallback, and package-count, mirror-count, installer, and source-page validation.
 
-The refreshed build completed on 2026-10-28 with 25,576 packages and 81 mirrors. The generated output has 25,714 files, including 25,648 HTML routes. A fetch failure still stops the build before it stages or replaces `dist`.
+The build completed on 2026-10-28 from the canonical CRAN package RDS: **25,579 packages** and **81 mirrors**. `dist/` contains **25,656 files**, including **25,651 HTML pages**. A failed fetch still stops the build before it stages or replaces `dist`.
 
-## WSL Nginx browser measurements
+## WSL Nginx page measurements
 
-Measurements below were made on Ubuntu WSL Nginx at `http://127.0.0.1:8080`, with Chrome at 390 × 844, browser cache disabled, and five cold page loads. Transfer sizes include response headers. Times are local-loopback measurements, not public-host latency.
+Measurements used Ubuntu WSL Nginx at `http://127.0.0.1:8080`, a 390 × 844 Chrome viewport, disabled browser cache, and five cold page loads. Transfer sizes include response headers. These are local-loopback measurements, not public-host latency.
 
 | Route | HTTP | Requests | Transferred bytes | Median load |
 | --- | ---: | ---: | ---: | ---: |
@@ -31,42 +31,35 @@ Measurements below were made on Ubuntu WSL Nginx at `http://127.0.0.1:8080`, wit
 | `/web/packages/termr/index.html` | 200 | 3 | 8,904 | 61 ms |
 | `/manuals.html` | 200 | 3 | 9,877 | 51 ms |
 
-The initial home-page navigation measured First Contentful Paint at 140 ms. It downloads no search JSON before a query. HTML, CSS, SVG, JavaScript, and search JSON responses had `Content-Encoding: gzip`. HTML and search data used `Cache-Control: public, max-age=300, must-revalidate`.
+The search index is requested only after a query is submitted. Search JSON is served with gzip and a short cache lifetime. Initial home-page First Contentful Paint measured 140 ms in the earlier browser run.
 
-### Historical search benchmark before the final visual refinement
+## Package-name search: before and after
 
-The same Chrome/Nginx environment and queries were measured before and after adding the small exact-name shards. Package data refreshed between runs, so the two-result-set sizes differ slightly.
+Both search runs used the same Chrome/Nginx setup at 390 × 844, with cache disabled and three cold runs per query. Timings start on Enter and stop when the result list appears. The byte column is the compressed response body from browser Resource Timing; it excludes HTTP headers.
 
-| Query | Before: requests / compressed body / median | After: requests / compressed body / median | Results |
-| --- | --- | --- | ---: |
-| `termr` | 2 / 543,238 B / 116 ms | 1 / 34,931 B / 80 ms | 1 |
-| `reactive terminal` | 13 / 1,168,236 B / 189 ms | 13 / 1,168,425 B / 281 ms | 20 |
+Before this change, the generated search data had **36 full-text token shards** and **26 package metadata shards**: 24,867,179 raw bytes total and 8,453,982 bytes with gzip level 9. The `plot` query loaded nine requests; exact package-name queries used one metadata shard.
 
-For exact `termr`, the uncompressed response body fell from 1,589,817 B to the 98,119 B name shard, about a 94% reduction. The compressed body fell by about 94%, and one request was removed. The description query still returns the same 20 package results; it continues to request two term shards plus title shards for the result initials. Its transfer volume did not materially change. Its timing varied between runs and did not improve in this sample, so description-search performance remains an optimization opportunity.
+The current build has one `assets/package-search.json` with 25,579 `[name, title]` entries and no full-text index or shards. It is 1,675,850 bytes raw and 566,096 bytes with gzip level 9 (about 93.3% smaller than the previous complete search data). Nginx transferred 580,596 compressed body bytes for the index. It is fetched once on the first search and reused for subsequent queries on that page.
 
-The dependency-free benchmark measured the current `reactive terminal` response at 3,331,776 B before compression; the prior snapshot measured 3,331,226 B. The 550 B difference reflects the two newly indexed packages in the refreshed CRAN data.
+| Query | Before: requests / bytes / median | After: requests / bytes / median | Results after |
+| --- | ---: | ---: | ---: |
+| `termr` | 1 / 71,830 B / 35 ms | 1 / 580,596 B / 105.9 ms | 1 |
+| `ggplot2` | 1 / 80,057 B / 43.6 ms | 1 / 580,596 B / 107.5 ms | 4 |
+| `plot` | 9 / 1,231,457 B / 206.3 ms | 1 / 580,596 B / 105.7 ms | 20 |
+| `GGPLOT2` | 1 / 80,057 B / 32.6 ms | 1 / 580,596 B / 103.8 ms | 4 |
 
-### Final visual refinement measurements
+The compact single index cuts the `plot` query from nine requests and 1.23 MB to one request and 581 KB, and exact, prefix, and substring results now share the same deterministic ranking. Exact lookups transfer more bytes than before because they now fetch the whole name-and-title index; the larger first-query cost is the tradeoff for removing dozens of shards and the old full-text search path. No index bytes are sent until the user searches.
 
-The final 2026-10-28 build includes 25,576 package pages. Search metadata now stores an 80-character description excerpt alongside each package name and title. The exact `termr` query loads one metadata shard (71,830 compressed response bytes). The `reactive terminal` query returns the same 20 results with 12 requests and 1,592,182 compressed response bytes; the earlier title-only search used 13 requests and 1,168,425 bytes. The transfer grows because each result now includes a short description.
+The browser verified that `termr` and `ggplot2` rank first for their exact and case-insensitive queries. For `plot`, prefix results precede any interior substring matches. The result cards show package names and titles; the test suite verifies that searching a title word alone returns no result.
 
-The combined compressed search index changed from 8,430,754 B to 8,453,620 B (+0.27%). This includes 36 full-text shards and 26 package metadata shards; the 80-character excerpts keep the additional index size small.
+## No-JavaScript catalog
 
-Homepage assets, measured with gzip level 9, changed as follows:
-
-| Asset | Before: raw / gzip | Final: raw / gzip |
-| --- | ---: | ---: |
-| Homepage HTML | 9,781 / 3,287 B | 10,212 / 3,440 B |
-| Site CSS | 23,964 / 5,125 B | 27,130 / 5,639 B |
-
-The package category and badge labels are 11 px after refinement and have 5.35:1 and 5.62:1 contrast against the page background. Browser checks found no horizontal overflow at 320, 390, 768, or 1440 px. Keyboard focus is visible on search results. With JavaScript disabled, all 26 alphabet links and the 1,125 static links on the A catalog page remain available; no search scripts or index shards are requested.
-
-For no-JavaScript verification, create a fresh browser context with JavaScript disabled and check `/` and `/web/packages/`. The home page must retain its catalog link and no-script guidance; the catalog must expose package pages and the 26 alphabet links.
+The alphabetic package catalog remains regular generated HTML. With JavaScript disabled, users can follow the 26 letter links and open package pages; only the optional search enhancement is unavailable. The search form and no-script hint make this explicit.
 
 ## Automated checks
 
-- `npm test`: 13 offline parser, validation, fallback, and render tests.
-- `npm run check:site`: all 25,648 generated HTML routes and internal local `href`/`src` paths.
-- `python scripts/check_html.py dist`: representative templates and routes.
-- `Rscript tests/export-cran-data.R`: local official-RDS exporter fixture.
-- Lighthouse scores are not included. Run Lighthouse on both the demo and original CRAN from a machine with Lighthouse/Chrome available, using the same version and throttling profile; keep the raw reports with the demo record.
+- `npm test`: 14 offline parser, index, ranking, validation, fallback, and rendering tests.
+- `npm run check:site`: all 25,651 generated HTML pages and internal local `href`/`src` paths; verifies the compact index has one name/title pair per package and no old shard directories.
+- `python scripts/check_html.py dist`: 54 representative pages across templates and catalog letters.
+- `node --check public/search.js` and `node --check scripts/benchmark.mjs`: JavaScript syntax checks.
+- Lighthouse scores are not included. For a public demo, compare this build and original CRAN using the same Lighthouse version and throttling profile.

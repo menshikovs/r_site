@@ -7,8 +7,7 @@ import {
   MIRRORS_URL,
   PACKAGES_URL,
   CRAN_BASE,
-  buildSearchNameShards,
-  buildSearchShards,
+  buildPackageSearchIndex,
   cleanOfficialHtml,
   parseDcf,
   parseMirrorsHtml,
@@ -101,7 +100,7 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
     cpSync(join(projectRoot, 'src', 'site.css'), join(staging, 'assets', 'site.css'))
     cpSync(join(projectRoot, 'public', 'search.js'), join(staging, 'assets', 'search.js'))
     cpSync(join(projectRoot, 'public', 'Rlogo.svg'), join(staging, 'Rlogo.svg'))
-    writeFileSync(join(staging, '_headers'), '/*\n  Cache-Control: public, max-age=300, must-revalidate\n/assets/*\n  Cache-Control: public, max-age=3600, must-revalidate\n', 'utf8')
+    writeFileSync(join(staging, '_headers'), '/*\n  Cache-Control: public, max-age=300, must-revalidate\n/assets/package-search.json\n  Cache-Control: public, max-age=300, must-revalidate\n/assets/*\n  Cache-Control: public, max-age=3600, must-revalidate\n', 'utf8')
 
     writePage(staging, 'index.html', renderHome({ packageCount: records.length, mirrorCount: mirrors.length }))
     const windowsInstaller = pages.windows_base ? parseWindowsInstaller(pages.windows_base) : null
@@ -169,10 +168,8 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
       else if (route.endsWith('/')) writePage(staging, `${route.slice(1)}index.html`, pageHtml)
       else writePage(staging, route.slice(1), pageHtml)
     }
-    const searchShards = buildSearchShards(records)
-    for (const [letter, shard] of searchShards) writePage(staging, `assets/search/${letter}.json`, JSON.stringify(shard))
-    const searchNameShards = buildSearchNameShards(records)
-    for (const [letter, shard] of searchNameShards) writePage(staging, `assets/search-names/${letter}.json`, JSON.stringify(shard))
+    const packageSearchIndex = buildPackageSearchIndex(records)
+    writePage(staging, 'assets/package-search.json', JSON.stringify(packageSearchIndex))
     for (const record of records) writePage(staging, `web/packages/${record.Package}/index.html`, renderPackage(record))
 
     rmSync(backup, { recursive: true, force: true })
@@ -184,7 +181,7 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
       throw error
     }
     rmSync(backup, { recursive: true, force: true })
-    return { packages: records.length, mirrors: mirrors.length, searchShards: searchShards.size, searchNameShards: searchNameShards.size, output: destination }
+    return { packages: records.length, mirrors: mirrors.length, searchEntries: packageSearchIndex.length, output: destination }
   } catch (error) {
     rmSync(staging, { recursive: true, force: true })
     throw error
@@ -196,7 +193,7 @@ async function main() {
   const data = await fetchCranData()
   console.log(`Generating static HTML and search index for ${data.records.length} packages and ${data.mirrors.length} mirrors...`)
   const result = buildSite(data)
-  console.log(`Built ${result.packages} package pages, ${result.searchShards} full-text shards and ${result.searchNameShards} package metadata shards in ${result.output}`)
+  console.log(`Built ${result.packages} package pages and one name-and-title search index with ${result.searchEntries} entries in ${result.output}`)
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

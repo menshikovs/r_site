@@ -7,9 +7,9 @@ For an isolated Nginx demo:
 1. Run `npm run build` to download current CRAN inputs and generate `dist/`.
 2. Copy the complete `dist/` directory to the host as one release. Keep the prior directory until the new one is in place, then switch a symlink or deployment pointer atomically.
 3. Adapt `nginx.conf` to the host name, certificate paths, and absolute document root, validate it with `nginx -t`, and reload Nginx. Obtain the TLS certificate through the host's normal certificate process.
-4. Check `/`, `/bin/windows/`, `/bin/macosx/`, `/bin/linux/`, `/web/packages/`, `/web/packages/termr/index.html`, `/manuals.html`, `/assets/site.css`, and one file under `/assets/search-names/` over HTTPS.
+4. Check `/`, `/bin/windows/`, `/bin/macosx/`, `/bin/linux/`, `/web/packages/`, `/web/packages/termr/index.html`, `/manuals.html`, `/assets/site.css`, and `/assets/package-search.json` over HTTPS.
 
-Nginx compresses HTML by default and the configuration enables gzip for CSS, JavaScript, JSON, and SVG. HTML and all search index shards use `Cache-Control: public, max-age=300, must-revalidate` so a new package build appears promptly. Other static assets use a one-hour cache. Unknown paths return 404; there is no SPA fallback.
+Nginx compresses HTML by default and the configuration enables gzip for CSS, JavaScript, JSON, and SVG. HTML and the package-name index use `Cache-Control: public, max-age=300, must-revalidate` so a new package build appears promptly. Other static assets use a one-hour cache. Unknown paths return 404; there is no SPA fallback.
 
 To verify the no-JavaScript fallback after publishing, disable JavaScript in the browser's developer tools and reload `/`. Follow the package catalog link to `/web/packages/`; confirm all 26 alphabet links and package links are available. The homepage and catalog must not request `search.js` or any JSON index while JavaScript is disabled.
 

@@ -106,55 +106,7 @@ export function packagePath(name) {
   return `/web/packages/${name}/index.html`
 }
 
-const SEARCH_TOKEN = /[\p{L}\p{N}]+/gu
-
-export function searchTokens(value = '') {
-  return String(value).normalize('NFKD').toLocaleLowerCase('en-US').match(SEARCH_TOKEN) || []
-}
-
-export function buildSearchShards(records) {
-  const shards = new Map()
-  for (const record of records) {
-    const weights = new Map()
-    const add = (value, weight) => {
-      for (const token of new Set(searchTokens(value))) {
-        if (token.length < 2) continue
-        weights.set(token, Math.max(weights.get(token) || 0, weight))
-      }
-    }
-    add(record.Package, 8)
-    add(record.Title, 4)
-    add(record.Description, 1)
-    add(record.Keywords, 2)
-    for (const [token, weight] of weights) {
-      const shardName = token[0].replace(/[^a-z0-9]/g, '_')
-      if (!shards.has(shardName)) shards.set(shardName, new Map())
-      const shard = shards.get(shardName)
-      if (!shard.has(token)) shard.set(token, [])
-      shard.get(token).push([record.Package, weight])
-    }
-  }
-  return new Map([...shards].map(([letter, terms]) => [
-    letter,
-    Object.fromEntries([...terms].sort(([a], [b]) => a.localeCompare(b))),
-  ]))
-}
-
-export function buildSearchNameShards(records) {
-  const shards = new Map()
-  for (const record of records) {
-    const normalized = record.Package.toLocaleLowerCase('en-US')
-    const initial = normalized[0].replace(/[^a-z0-9]/g, '_')
-    if (!shards.has(initial)) shards.set(initial, Object.create(null))
-    const description = String(record.Description || '').replace(/\s+/g, ' ').trim()
-    const descriptionEnd = description.length > 80
-      ? description.lastIndexOf(' ', 80) > 58 ? description.lastIndexOf(' ', 80) : 80
-      : description.length
-    const snippet = description.length > 80 ? description.slice(0, descriptionEnd).trimEnd() + '…' : description
-    shards.get(initial)[normalized] = [record.Package, record.Title || '', snippet]
-  }
-  return shards
-}
+export function buildPackageSearchIndex(records) { return records.map(record => [record.Package, String(record.Title || '')]) }
 
 export function extractBodyHtml(source) {
   const match = /<body\b[^>]*>([\s\S]*?)<\/body\s*>/i.exec(source)

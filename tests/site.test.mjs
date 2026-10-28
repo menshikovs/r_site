@@ -3,20 +3,19 @@ import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'no
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
+import { createPackageSearchIndex, findPackageMatches } from '../public/search.js'
 import { buildSite } from '../scripts/build.mjs'
 import { fetchFromMirrors } from '../scripts/fetch-cran-data.mjs'
 import {
   escapeHtml,
   linkifyText,
   packagePath,
-  buildSearchNameShards,
-  buildSearchShards,
+  buildPackageSearchIndex,
   cleanOfficialHtml,
   parseDcf,
   parseMacInstallers,
   parseMirrorsHtml,
   parseWindowsInstaller,
-  searchTokens,
   validatePackages,
   validateOfficialPage,
 } from '../src/cran-data.mjs'
@@ -58,18 +57,27 @@ test('CRAN package names are validated before becoming output paths', () => {
   assert.throws(() => validatePackages([{ Package: 'termr', Version: '1' }, { Package: 'termr', Version: '2' }], { minimum: 1 }), /duplicate/)
 })
 
-test('search shards find package names, titles, and descriptions lazily by token initial', () => {
+test('package search index stores only package names and display titles', () => {
   const records = parseDcf(fixtureDcf)
-  assert.deepEqual(searchTokens('TERM UI, package!'), ['term', 'ui', 'package'])
-  const shards = buildSearchShards(records)
-  const names = buildSearchNameShards(records)
-  assert.deepEqual(shards.get('t').termr, [['termr', 8]])
-  assert.deepEqual(names.get('t').termr.slice(0, 2), ['termr', 'A terminal UI framework'])
-  assert.ok(names.get('t').termr[2].length <= 81)
-  assert.ok(names.get('t').termr[2].endsWith('…'))
-  assert.deepEqual(names.get('s').safepkg, ['safePkg', '', 'Text with <script>alert(1)</script> and & characters.'])
-  assert.ok(shards.get('t').terminal.some(([name, score]) => name === 'termr' && score === 4))
-  assert.ok(shards.get('i').interfaces.some(([name, score]) => name === 'termr' && score === 1))
+  const index = buildPackageSearchIndex(records)
+  assert.deepEqual(index, [['termr', 'A terminal UI framework'], ['safePkg', '']])
+  assert.doesNotMatch(JSON.stringify(index), /Build interfaces|reference manual|script/)
+})
+
+test('package-name search ranks exact, prefix, and partial matches case-insensitively', () => {
+  const index = createPackageSearchIndex([
+    ['myplot', 'A title containing plot'],
+    ['plotTools', 'Plot tools'],
+    ['plot', 'Package whose title must not affect search'],
+    ['ggplot2', 'Grammar of graphics'],
+    ['termr', 'Terminal interfaces'],
+  ])
+
+  assert.deepEqual(findPackageMatches(index, 'plot').map(({ name }) => name), ['plot', 'plotTools', 'ggplot2', 'myplot'])
+  assert.deepEqual(findPackageMatches(index, 'GGPLOT2').map(({ name }) => name), ['ggplot2'])
+  assert.deepEqual(findPackageMatches(index, 'TERM').map(({ name }) => name), ['termr'])
+  assert.deepEqual(findPackageMatches(index, 'erm').map(({ name }) => name), ['termr'])
+  assert.deepEqual(findPackageMatches(index, 'terminal'), [])
 })
 
 test('current stable Windows and separate Mac installers are extracted without fixed versions', () => {
@@ -191,7 +199,7 @@ test('static build emits canonical routes and only opts search pages into JavaSc
     for (const route of routes) {
       const html = readFileSync(join(outDir, route), 'utf8')
       assert.match(html, /<!doctype html>/i, route)
-      if (['index.html', 'web/packages/index.html'].includes(route)) assert.match(html, /<script defer src="\/assets\/search\.js"><\/script>/, route)
+      if (['index.html', 'web/packages/index.html'].includes(route)) assert.match(html, /<script type="module" src="\/assets\/search\.js"><\/script>/, route)
       else assert.doesNotMatch(html, /<script\b/i, route)
       assert.match(html, /<html lang="en">/i, route)
     }
@@ -216,9 +224,10 @@ test('static build emits canonical routes and only opts search pages into JavaSc
     assert.match(home, /href="\/doc\/manuals\/r-release\/R-intro\.html#Using-R-interactively-1"/)
     assert.match(home, /href="https:\/\/posit\.co\/downloads\/"/)
     assert.match(home, /href="https:\/\/positron\.posit\.co\/download\.html"/)
-    assert.match(readFileSync(join(outDir, 'assets/search/t.json'), 'utf8'), /termr/)
-    assert.match(readFileSync(join(outDir, 'assets/search-names/t.json'), 'utf8'), /termr.*terminal UI framework.*Build interfaces/)
-    assert.equal(existsSync(join(outDir, 'assets/search-meta')), false)
+    const searchIndex = JSON.parse(readFileSync(join(outDir, 'assets/package-search.json'), 'utf8'))
+    assert.deepEqual(searchIndex.find(([name]) => name.toLowerCase() === 'termr'), ['termr', 'A terminal UI framework'])
+    assert.equal(existsSync(join(outDir, 'assets/search')), false)
+    assert.equal(existsSync(join(outDir, 'assets/search-names')), false)
     assert.match(readFileSync(join(outDir, '_headers'), 'utf8'), /Cache-Control/)
     assert.match(readFileSync(join(outDir, 'bin/windows/index.html'), 'utf8'), /R-4\.6\.1-win\.exe/)
     assert.match(readFileSync(join(outDir, 'bin/macosx/index.html'), 'utf8'), /R-4\.6\.1-x86_64\.pkg/)

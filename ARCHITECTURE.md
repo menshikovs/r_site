@@ -22,14 +22,14 @@ Every route is a generated HTML document with a shared local stylesheet. The hom
 1. Node fetches the official package RDS, mirror directory, release listings, selected reference pages, source indexes, and HTML manuals. If a canonical CRAN request fails, it can use HTTPS mirrors parsed from the official CRAN mirror directory.
 2. R imports the downloaded local RDS, keeps one current record per package, and exports DCF. Node validates package names, versions, record counts, mirror counts, and release installer links.
 3. Selected official HTML documents are converted with a reproducible sanitizer: active scripts, inline styles, and external stylesheets are removed; links to migrated routes are rewritten locally; document text and accessible alt text remain.
-4. Node generates package pages and a token search index split by token initial. Exact package-name lookup is split into small shards by package initial. Search index files are not loaded when a page first opens.
+4. Node generates package pages and one compact package-name/title index. The optional browser script loads it only after a search is submitted.
 5. The complete output is written into a staging directory and replaces `dist` only after validation and generation succeed.
 
 Selected manual HTML pages preserve the source text and anchors for released, patched, and development R versions. PDF and EPUB files remain direct official CRAN resources. Large package manuals and individual package vignettes remain CRAN-owned.
 
 ## Search
 
-An exact package-name query first downloads one small package-name shard with canonical package names and titles. Other queries load only token shards for their search terms, then title metadata for the top matching packages. Search covers package names, titles, descriptions, and keywords where CRAN provides them. Results link to existing package detail routes. With JavaScript disabled, alphabet navigation and package pages remain available.
+Search matches package names only, without regard to case. Exact names rank first, followed by prefixes and then other substring matches. Titles appear in results for display and do not affect matching. The single compact JSON index contains only package names and titles and is fetched after submission. With JavaScript disabled, alphabet navigation and package pages remain available.
 
 ## Serving
 
