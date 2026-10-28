@@ -16,7 +16,7 @@ npm run build
 npm run preview
 ```
 
-Platform downloads, the complete package index, manuals, mirrors, and contribution links lead to the official CRAN and R Project services.
+Platform download cards open redesigned Windows, macOS, and Linux guide pages with links to official CRAN installers and distribution-specific instructions. The complete package index, manuals, mirrors, and contribution links also lead to the official CRAN and R Project services.
 
 The package search queries the public CRAN search API hosted by R-universe, which indexes CRAN packages. Selecting a result opens a package page in this redesign with the package title, full CRAN description, and available metadata. Each page links to the official CRAN package record and related documentation. If the search API is unavailable, the complete official CRAN package index remains linked from the page.
 

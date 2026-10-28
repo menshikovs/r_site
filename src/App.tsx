@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import PackagePage from './PackagePage'
+import PlatformPage from './PlatformPage'
 
 const base = 'https://cran.r-project.org'
 const nav = [
@@ -134,7 +135,7 @@ function HomePage() {
         <div className="hero-orbit" aria-hidden="true"><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="orbit orbit-three"/><span className="orbit-dot d1"/><span className="orbit-dot d2"/><span className="orbit-dot d3"/><div className="orbit-core"><img src="/Rlogo.svg" alt=""/></div><span className="orbit-label l1">STATISTICS</span><span className="orbit-label l2">GRAPHICS</span><span className="orbit-label l3">DISCOVERY</span></div>
         <div className="download-heading"><div><h2>Download and install R</h2><p>Choose your operating system to get started.</p></div><span className="availability"><i/> FREE & OPEN SOURCE</span></div>
         <div className="download-grid">
-          {[{name:'Windows',type:'windows',url:'windows',note:'Base R for Windows'},{name:'macOS',type:'mac',url:'macosx',note:'Apple silicon & Intel'},{name:'Linux',type:'linux',url:'linux',note:'Debian, Ubuntu, Fedora & more'}].map(os=><a className="download-card" href={`${base}/bin/${os.url}/`} key={os.name}><div className="download-card-top"><div className="os-icon"><Icon type={os.type}/></div><span className="download-card-category">R FOR {os.name.toUpperCase()}</span><Arrow diagonal/></div><h3>{os.name}</h3><p>{os.note}</p><span className="download-card-action">Download R</span></a>)}
+          {[{name:'Windows',type:'windows',url:'windows',note:'Base R for Windows'},{name:'macOS',type:'mac',url:'macosx',note:'Apple silicon & Intel'},{name:'Linux',type:'linux',url:'linux',note:'Debian, Ubuntu, Fedora & more'}].map(os=><a className="download-card" href={`/downloads/${os.type}`} key={os.name}><div className="download-card-top"><div className="os-icon"><Icon type={os.type}/></div><span className="download-card-category">R FOR {os.name.toUpperCase()}</span><Arrow diagonal/></div><h3>{os.name}</h3><p>{os.note}</p><span className="download-card-action">Download R</span></a>)}
         </div>
         <div className="source-strip"><span className="source-icon" aria-hidden="true">&lt;/&gt;</span><div><strong>Prefer to build from source?</strong><span>Source code, development snapshots, and previous releases.</span></div><a href={`${base}/sources.html`}>Get the source <Arrow diagonal/></a></div>
       </section>
@@ -167,6 +168,14 @@ function HomePage() {
   </div>
 }
 function App() {
+  const downloadPrefix = '/downloads/'
+  if (window.location.pathname.startsWith(downloadPrefix)) {
+    const platform = window.location.pathname.slice(downloadPrefix.length).split('/')[0]
+    if (platform === 'windows' || platform === 'mac' || platform === 'linux') {
+      return <PlatformPage platform={platform} />
+    }
+  }
+
   const packagePrefix = '/package/'
   if (!window.location.pathname.startsWith(packagePrefix)) return <HomePage />
 
