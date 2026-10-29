@@ -1,0 +1,152 @@
+[
+  {
+    "path": "filesystem.txt",
+    "bytes": 123,
+    "sha256": "0e701a08354105394422f5164d44e63c619fa9536dd48d7fc277d21a613809dd"
+  },
+  {
+    "path": "final-node-version.txt",
+    "bytes": 13,
+    "sha256": "7b4f91dd2732958a7668316692238e3ac33731a1e6d9697b64c28642f826bd42"
+  },
+  {
+    "path": "final-verification.json",
+    "bytes": 1145,
+    "sha256": "fa330a9354168fdc61cbbbb99e0a83436fd3364fcc2c1e75591adc850ffb6971"
+  },
+  {
+    "path": "fixtures.json",
+    "bytes": 3445,
+    "sha256": "4593852546a0fd4fcf84dbf508747776f4c465ce0775cec4e90de85ec263bc8f"
+  },
+  {
+    "path": "full-check.txt",
+    "bytes": 244,
+    "sha256": "ab7126aec2b6bdd34a5cb01a2cb34236e9712971448885a1b6b1ca89b84bd092"
+  },
+  {
+    "path": "full-manifest.json",
+    "bytes": 5734010,
+    "sha256": "0d6d6617f2a75eaeb5fde4728631c151eb01d54ba4fa7b223a6a780280f1f79c"
+  },
+  {
+    "path": "interrupted.txt",
+    "bytes": 245,
+    "sha256": "954b9238d83bb09263ea42c4fd205321f95f3f152f7fe345fb0740827ba849cb"
+  },
+  {
+    "path": "link-audit.json",
+    "bytes": 3835,
+    "sha256": "6a635347f62c5c0921ede4ad7032a17fccb853269463420dae964ec403c156c5"
+  },
+  {
+    "path": "listeners-after-stop.txt",
+    "bytes": 423,
+    "sha256": "af6ff53fbd78748957994b507cd71b3477d1f8f9344a7f55a65448ee41203143"
+  },
+  {
+    "path": "mirror-8101-nojs.png",
+    "bytes": 154467,
+    "sha256": "0a821e82aa707990a4551c1f9bb27188e1b89edc3b6a1d72500b54cfaa134df8"
+  },
+  {
+    "path": "mirror-8102-nojs.png",
+    "bytes": 154467,
+    "sha256": "0a821e82aa707990a4551c1f9bb27188e1b89edc3b6a1d72500b54cfaa134df8"
+  },
+  {
+    "path": "mirror-8103-nojs.png",
+    "bytes": 154467,
+    "sha256": "0a821e82aa707990a4551c1f9bb27188e1b89edc3b6a1d72500b54cfaa134df8"
+  },
+  {
+    "path": "nginx.conf",
+    "bytes": 3702,
+    "sha256": "b58347f7afc23768240c3f6d10cf9c484d49ae9286a979e88c5b77f7b5f63cee"
+  },
+  {
+    "path": "node-tests.txt",
+    "bytes": 4614,
+    "sha256": "69d9db9e57eeed313445609f51fe4d417934a819298689ec8c231bb9cc66dc9b"
+  },
+  {
+    "path": "normal-a.txt",
+    "bytes": 1073,
+    "sha256": "b370bbf8198e95b4f38fbee9b2c0a799c9ce25134be1a2a71cc1d2ccc0963a1a"
+  },
+  {
+    "path": "normal-b.txt",
+    "bytes": 1073,
+    "sha256": "3513bd94ca857489faf17bd82dbc71f2bd15fecb2484aebc15c6570f9d027eea"
+  },
+  {
+    "path": "quick-check-mismatch.json",
+    "bytes": 251,
+    "sha256": "618b717e5f1b77fd96ebc2a89373cce629da2c5fe1f4fbadfe63ffb047df50b3"
+  },
+  {
+    "path": "r-client-nested.txt",
+    "bytes": 60,
+    "sha256": "bb51478856b4e87bd1d941804174b39b026d766a2be257a4f6f6f9835686b0c2"
+  },
+  {
+    "path": "r-client-prefix.txt",
+    "bytes": 60,
+    "sha256": "bb51478856b4e87bd1d941804174b39b026d766a2be257a4f6f6f9835686b0c2"
+  },
+  {
+    "path": "r-client-root.txt",
+    "bytes": 60,
+    "sha256": "bb51478856b4e87bd1d941804174b39b026d766a2be257a4f6f6f9835686b0c2"
+  },
+  {
+    "path": "results.json",
+    "bytes": 27506,
+    "sha256": "229770b37ea0c74846308032065e3dc5334e4162c79168bba46c055bfa2cce47"
+  },
+  {
+    "path": "rsync-a-24.txt",
+    "bytes": 528,
+    "sha256": "53ac2a9a3d0919bf0910120b5922ceacaa4708bf697c652caaf01d02833a8ec7"
+  },
+  {
+    "path": "rsync-a-28.txt",
+    "bytes": 1073,
+    "sha256": "b370bbf8198e95b4f38fbee9b2c0a799c9ce25134be1a2a71cc1d2ccc0963a1a"
+  },
+  {
+    "path": "rsync-a-30.txt",
+    "bytes": 528,
+    "sha256": "53ac2a9a3d0919bf0910120b5922ceacaa4708bf697c652caaf01d02833a8ec7"
+  },
+  {
+    "path": "rsync-a-34.txt",
+    "bytes": 1073,
+    "sha256": "b370bbf8198e95b4f38fbee9b2c0a799c9ce25134be1a2a71cc1d2ccc0963a1a"
+  },
+  {
+    "path": "rsync-b-26.txt",
+    "bytes": 1063,
+    "sha256": "3b7bf391beec29fbd9787e84aadfba7f0a2a7eee93428aa625265e9b9dd4511c"
+  },
+  {
+    "path": "rsync-b-32.txt",
+    "bytes": 1063,
+    "sha256": "3b7bf391beec29fbd9787e84aadfba7f0a2a7eee93428aa625265e9b9dd4511c"
+  },
+  {
+    "path": "sync-metrics.json",
+    "bytes": 5258,
+    "sha256": "f2313609743c637242a874d69d21e8fe13e466479fd124777b971f89d7060046"
+  },
+  {
+    "path": "unsafe-overlay-negative.txt",
+    "bytes": 3430,
+    "sha256": "e25a1064b28bd4d7575bd0afa8863390628dc217f6ad23ae52bfad330790cc0f"
+  },
+  {
+    "path": "url-tests.txt",
+    "bytes": 708,
+    "sha256": "2586fa32f0ff471691c9947a76dd01842db4f610945f1f2facc98bcd8669201c"
+  }
+]

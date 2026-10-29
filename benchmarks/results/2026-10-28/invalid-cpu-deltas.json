@@ -1,0 +1,12 @@
+[
+  {
+    "site": "original",
+    "page": "manuals",
+    "profile": "mobile",
+    "cache": "warm",
+    "run": 6,
+    "counter": "RecalcStyleDurationMs",
+    "value": -0.13699999999999996,
+    "reason": "Negative instrumentation delta omitted from this counter only; raw observation retained."
+  }
+]

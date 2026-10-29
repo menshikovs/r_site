@@ -1,0 +1,553 @@
+[
+  {
+    "name": "ggplot2",
+    "width": 320,
+    "counts": {
+      "depends": 480,
+      "imports": 5398,
+      "linking-to": 0,
+      "suggests": 2355,
+      "enhances": 8
+    },
+    "mainNodeCount": 181,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 320,
+      "scrollWidth": 320,
+      "scripts": 0,
+      "canonical": "/web/packages/ggplot2/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "data.table",
+    "width": 320,
+    "counts": {
+      "depends": 74,
+      "imports": 1939,
+      "linking-to": 0,
+      "suggests": 301,
+      "enhances": 6
+    },
+    "mainNodeCount": 146,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/data.table/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 320,
+      "scrollWidth": 320,
+      "scripts": 0,
+      "canonical": "/web/packages/data.table/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "Rcpp",
+    "width": 320,
+    "counts": {
+      "depends": 172,
+      "imports": 3445,
+      "linking-to": 3674,
+      "suggests": 56,
+      "enhances": 0
+    },
+    "mainNodeCount": 143,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/Rcpp/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 320,
+      "scrollWidth": 320,
+      "scripts": 0,
+      "canonical": "/web/packages/Rcpp/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "termr",
+    "width": 320,
+    "counts": {
+      "depends": 0,
+      "imports": 0,
+      "linking-to": 0,
+      "suggests": 0,
+      "enhances": 0
+    },
+    "mainNodeCount": 137,
+    "noSeparatePage": true
+  },
+  {
+    "name": "MASS",
+    "width": 320,
+    "counts": {
+      "depends": 325,
+      "imports": 2022,
+      "linking-to": 0,
+      "suggests": 843,
+      "enhances": 2
+    },
+    "mainNodeCount": 138,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/MASS/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 320,
+      "scrollWidth": 320,
+      "scripts": 0,
+      "canonical": "/web/packages/MASS/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "testthat",
+    "width": 320,
+    "counts": {
+      "depends": 13,
+      "imports": 98,
+      "linking-to": 42,
+      "suggests": 14275,
+      "enhances": 1
+    },
+    "mainNodeCount": 162,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/testthat/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 320,
+      "scrollWidth": 320,
+      "scripts": 0,
+      "canonical": "/web/packages/testthat/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "ggplot2",
+    "width": 390,
+    "counts": {
+      "depends": 480,
+      "imports": 5398,
+      "linking-to": 0,
+      "suggests": 2355,
+      "enhances": 8
+    },
+    "mainNodeCount": 181,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 390,
+      "scrollWidth": 390,
+      "scripts": 0,
+      "canonical": "/web/packages/ggplot2/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "data.table",
+    "width": 390,
+    "counts": {
+      "depends": 74,
+      "imports": 1939,
+      "linking-to": 0,
+      "suggests": 301,
+      "enhances": 6
+    },
+    "mainNodeCount": 146,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/data.table/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 390,
+      "scrollWidth": 390,
+      "scripts": 0,
+      "canonical": "/web/packages/data.table/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "Rcpp",
+    "width": 390,
+    "counts": {
+      "depends": 172,
+      "imports": 3445,
+      "linking-to": 3674,
+      "suggests": 56,
+      "enhances": 0
+    },
+    "mainNodeCount": 143,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/Rcpp/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 390,
+      "scrollWidth": 390,
+      "scripts": 0,
+      "canonical": "/web/packages/Rcpp/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "termr",
+    "width": 390,
+    "counts": {
+      "depends": 0,
+      "imports": 0,
+      "linking-to": 0,
+      "suggests": 0,
+      "enhances": 0
+    },
+    "mainNodeCount": 137,
+    "noSeparatePage": true
+  },
+  {
+    "name": "MASS",
+    "width": 390,
+    "counts": {
+      "depends": 325,
+      "imports": 2022,
+      "linking-to": 0,
+      "suggests": 843,
+      "enhances": 2
+    },
+    "mainNodeCount": 138,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/MASS/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 390,
+      "scrollWidth": 390,
+      "scripts": 0,
+      "canonical": "/web/packages/MASS/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "testthat",
+    "width": 390,
+    "counts": {
+      "depends": 13,
+      "imports": 98,
+      "linking-to": 42,
+      "suggests": 14275,
+      "enhances": 1
+    },
+    "mainNodeCount": 162,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/testthat/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 390,
+      "scrollWidth": 390,
+      "scripts": 0,
+      "canonical": "/web/packages/testthat/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "ggplot2",
+    "width": 768,
+    "counts": {
+      "depends": 480,
+      "imports": 5398,
+      "linking-to": 0,
+      "suggests": 2355,
+      "enhances": 8
+    },
+    "mainNodeCount": 181,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 768,
+      "scrollWidth": 768,
+      "scripts": 0,
+      "canonical": "/web/packages/ggplot2/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "data.table",
+    "width": 768,
+    "counts": {
+      "depends": 74,
+      "imports": 1939,
+      "linking-to": 0,
+      "suggests": 301,
+      "enhances": 6
+    },
+    "mainNodeCount": 146,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/data.table/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 768,
+      "scrollWidth": 768,
+      "scripts": 0,
+      "canonical": "/web/packages/data.table/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "Rcpp",
+    "width": 768,
+    "counts": {
+      "depends": 172,
+      "imports": 3445,
+      "linking-to": 3674,
+      "suggests": 56,
+      "enhances": 0
+    },
+    "mainNodeCount": 143,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/Rcpp/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 768,
+      "scrollWidth": 768,
+      "scripts": 0,
+      "canonical": "/web/packages/Rcpp/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "termr",
+    "width": 768,
+    "counts": {
+      "depends": 0,
+      "imports": 0,
+      "linking-to": 0,
+      "suggests": 0,
+      "enhances": 0
+    },
+    "mainNodeCount": 137,
+    "noSeparatePage": true
+  },
+  {
+    "name": "MASS",
+    "width": 768,
+    "counts": {
+      "depends": 325,
+      "imports": 2022,
+      "linking-to": 0,
+      "suggests": 843,
+      "enhances": 2
+    },
+    "mainNodeCount": 138,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/MASS/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 768,
+      "scrollWidth": 768,
+      "scripts": 0,
+      "canonical": "/web/packages/MASS/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "testthat",
+    "width": 768,
+    "counts": {
+      "depends": 13,
+      "imports": 98,
+      "linking-to": 42,
+      "suggests": 14275,
+      "enhances": 1
+    },
+    "mainNodeCount": 162,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/testthat/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 768,
+      "scrollWidth": 768,
+      "scripts": 0,
+      "canonical": "/web/packages/testthat/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "ggplot2",
+    "width": 1440,
+    "counts": {
+      "depends": 480,
+      "imports": 5398,
+      "linking-to": 0,
+      "suggests": 2355,
+      "enhances": 8
+    },
+    "mainNodeCount": 181,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scripts": 0,
+      "canonical": "/web/packages/ggplot2/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "data.table",
+    "width": 1440,
+    "counts": {
+      "depends": 74,
+      "imports": 1939,
+      "linking-to": 0,
+      "suggests": 301,
+      "enhances": 6
+    },
+    "mainNodeCount": 146,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/data.table/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scripts": 0,
+      "canonical": "/web/packages/data.table/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "Rcpp",
+    "width": 1440,
+    "counts": {
+      "depends": 172,
+      "imports": 3445,
+      "linking-to": 3674,
+      "suggests": 56,
+      "enhances": 0
+    },
+    "mainNodeCount": 143,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/Rcpp/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scripts": 0,
+      "canonical": "/web/packages/Rcpp/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "termr",
+    "width": 1440,
+    "counts": {
+      "depends": 0,
+      "imports": 0,
+      "linking-to": 0,
+      "suggests": 0,
+      "enhances": 0
+    },
+    "mainNodeCount": 137,
+    "noSeparatePage": true
+  },
+  {
+    "name": "MASS",
+    "width": 1440,
+    "counts": {
+      "depends": 325,
+      "imports": 2022,
+      "linking-to": 0,
+      "suggests": 843,
+      "enhances": 2
+    },
+    "mainNodeCount": 138,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/MASS/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scripts": 0,
+      "canonical": "/web/packages/MASS/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  },
+  {
+    "name": "testthat",
+    "width": 1440,
+    "counts": {
+      "depends": 13,
+      "imports": 98,
+      "linking-to": 42,
+      "suggests": 14275,
+      "enhances": 1
+    },
+    "mainNodeCount": 162,
+    "mainRequests": [
+      "http://127.0.0.1:59183/web/packages/testthat/index.html",
+      "http://127.0.0.1:59183/assets/site.css",
+      "http://127.0.0.1:59183/Rlogo.svg",
+      "http://127.0.0.1:59183/Rlogo.svg"
+    ],
+    "full": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scripts": 0,
+      "canonical": "/web/packages/testthat/reverse-dependencies.html"
+    },
+    "focus": "solid"
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "records": 25584,
+  "validatedMs": 493.73280000000005,
+  "generationMs": 69.17169999999999,
+  "rows": [
+    {
+      "name": "ggplot2",
+      "counts": {
+        "depends": 480,
+        "imports": 5398,
+        "linking-to": 0,
+        "suggests": 2354,
+        "enhances": 8
+      },
+      "beforeBytes": 8859,
+      "mainBytes": 9709,
+      "mainGzip": 2609,
+      "reverseBytes": 531154,
+      "reverseGzip": 73647,
+      "mainLinks": 68,
+      "reverseLinks": 7199,
+      "externalNames": 1052
+    },
+    {
+      "name": "data.table",
+      "counts": {
+        "depends": 74,
+        "imports": 1940,
+        "linking-to": 0,
+        "suggests": 301,
+        "enhances": 6
+      },
+      "beforeBytes": 8809,
+      "mainBytes": 9669,
+      "mainGzip": 3185,
+      "reverseBytes": 151158,
+      "reverseGzip": 22508,
+      "mainLinks": 36,
+      "reverseLinks": 1964,
+      "externalNames": 368
+    },
+    {
+      "name": "Rcpp",
+      "counts": {
+        "depends": 172,
+        "imports": 3445,
+        "linking-to": 3674,
+        "suggests": 56,
+        "enhances": 0
+      },
+      "beforeBytes": 7524,
+      "mainBytes": 8365,
+      "mainGzip": 2397,
+      "reverseBytes": 470750,
+      "reverseGzip": 64531,
+      "mainLinks": 33,
+      "reverseLinks": 6803,
+      "externalNames": 555
+    },
+    {
+      "name": "termr",
+      "counts": {
+        "depends": 0,
+        "imports": 0,
+        "linking-to": 0,
+        "suggests": 0,
+        "enhances": 0
+      },
+      "beforeBytes": 6206,
+      "mainBytes": 6819,
+      "mainGzip": 2100,
+      "reverseBytes": 0,
+      "reverseGzip": 0,
+      "mainLinks": 26,
+      "reverseLinks": 0,
+      "externalNames": 0
+    },
+    {
+      "name": "MASS",
+      "counts": {
+        "depends": 325,
+        "imports": 2023,
+        "linking-to": 0,
+        "suggests": 843,
+        "enhances": 2
+      },
+      "beforeBytes": 5237,
+      "mainBytes": 6074,
+      "mainGzip": 1925,
+      "reverseBytes": 205367,
+      "reverseGzip": 29315,
+      "mainLinks": 25,
+      "reverseLinks": 2995,
+      "externalNames": 209
+    }
+  ],
+  "top": [
+    {
+      "name": "testthat",
+      "edges": 14426
+    },
+    {
+      "name": "knitr",
+      "edges": 14297
+    },
+    {
+      "name": "rmarkdown",
+      "edges": 13384
+    },
+    {
+      "name": "ggplot2",
+      "edges": 8240
+    },
+    {
+      "name": "Rcpp",
+      "edges": 7347
+    }
+  ],
+  "officialListsMatch": true
+}

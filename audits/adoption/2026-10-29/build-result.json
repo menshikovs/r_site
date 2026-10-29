@@ -1,0 +1,28 @@
+{
+  "result": {
+    "packages": 25585,
+    "mirrors": 81,
+    "searchEntries": 25585,
+    "reversePages": 7949,
+    "reverseEdges": 243451,
+    "reverseExternalEdges": 25680,
+    "reverseBytes": 37963916,
+    "reverseSummaryBytes": 16171556,
+    "output": "C:\\Users\\User001\\r_site\\audits\\adoption\\.cache\\generated"
+  },
+  "wallMs": 238361.9325,
+  "acquisitionAndExportMs": 194857.7331,
+  "generationAndPublishMs": 43504.20909999998,
+  "nodeCpu": {
+    "user": 6532000,
+    "system": 32610000
+  },
+  "nodeMemory": {
+    "rss": 478031872,
+    "heapTotal": 310648832,
+    "heapUsed": 237986704,
+    "external": 51245811,
+    "arrayBuffers": 144075
+  },
+  "scope": "Existing full build functions; separate outDir; production dist is never replaced."
+}

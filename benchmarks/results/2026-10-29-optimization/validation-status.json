@@ -1,0 +1,22 @@
+﻿[
+    {
+        "command":  "optimization-lighthouse",
+        "exitCode":  0
+    },
+    {
+        "command":  "optimization-qa",
+        "exitCode":  0
+    },
+    {
+        "command":  "npm test",
+        "exitCode":  0
+    },
+    {
+        "command":  "npm run build",
+        "exitCode":  0
+    },
+    {
+        "command":  "npm run check:site",
+        "exitCode":  0
+    }
+]

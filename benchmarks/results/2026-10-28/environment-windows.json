@@ -1,0 +1,14 @@
+﻿{
+    "revision":  "b0042bc7050c618393b23bf794624a002c2065e1",
+    "system":  {
+                   "Manufacturer":  "LENOVO",
+                   "Model":  "83JE",
+                   "NumberOfLogicalProcessors":  20,
+                   "TotalPhysicalMemory":  25463480320
+               },
+    "processor":  {
+                      "Name":  "13th Gen Intel(R) Core(TM) i7-13650HX",
+                      "NumberOfCores":  14,
+                      "NumberOfLogicalProcessors":  20
+                  }
+}

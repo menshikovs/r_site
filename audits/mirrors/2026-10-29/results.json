@@ -1,0 +1,988 @@
+{
+  "scope": "Loopback Nginx, native ext4, limited official corpus, full real generated output and explicitly synthetic releases",
+  "results": [
+    {
+      "name": "Baseline",
+      "prefix": "/",
+      "failed": [],
+      "searchIndexRequests": [
+        "http://127.0.0.1:8111/assets/package-search.json"
+      ],
+      "finalUrl": "http://127.0.0.1:8111/",
+      "searchText": "Top 1 package-name match for \"termr\".\n\ntermr\nModern Reactive Terminal Applications with Data Workflows"
+    },
+    {
+      "name": "HTTP routes and optional resolver",
+      "prefix": "/",
+      "routes": 21,
+      "canonicalCases": 3,
+      "unknown404": 4,
+      "shortWithoutRules404": true
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/",
+      "width": 390,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8101/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8101/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8101/assets/package-search.json",
+        "http://127.0.0.1:8101/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8101/assets/package-search.json",
+        "http://127.0.0.1:8101/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/",
+      "width": 390,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8101/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8101/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/",
+      "width": 1440,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8101/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8101/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8101/assets/package-search.json",
+        "http://127.0.0.1:8101/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8101/assets/package-search.json",
+        "http://127.0.0.1:8101/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/",
+      "width": 1440,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8101/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8101/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Baseline",
+      "prefix": "/CRAN/",
+      "failed": [
+        {
+          "url": "http://127.0.0.1:8112/assets/site.css",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8112/Rlogo.svg",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8112/assets/search.js",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8112/Rlogo.svg",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8112/web/packages/?q=termr",
+          "status": 404
+        }
+      ],
+      "searchIndexRequests": [],
+      "finalUrl": "http://127.0.0.1:8112/web/packages/?q=termr",
+      "searchText": null
+    },
+    {
+      "name": "HTTP routes and optional resolver",
+      "prefix": "/CRAN/",
+      "routes": 21,
+      "canonicalCases": 3,
+      "unknown404": 4,
+      "shortWithoutRules404": true
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/CRAN/",
+      "width": 390,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8102/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8102/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/CRAN/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/CRAN/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/CRAN/",
+      "width": 390,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8102/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8102/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/CRAN/",
+      "width": 1440,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8102/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8102/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/CRAN/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/CRAN/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8102/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/CRAN/",
+      "width": 1440,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8102/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8102/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Baseline",
+      "prefix": "/pub/CRAN/",
+      "failed": [
+        {
+          "url": "http://127.0.0.1:8113/assets/site.css",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8113/Rlogo.svg",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8113/assets/search.js",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8113/Rlogo.svg",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:8113/web/packages/?q=termr",
+          "status": 404
+        }
+      ],
+      "searchIndexRequests": [],
+      "finalUrl": "http://127.0.0.1:8113/web/packages/?q=termr",
+      "searchText": null
+    },
+    {
+      "name": "HTTP routes and optional resolver",
+      "prefix": "/pub/CRAN/",
+      "routes": 21,
+      "canonicalCases": 3,
+      "unknown404": 4,
+      "shortWithoutRules404": true
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/pub/CRAN/",
+      "width": 390,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8103/pub/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8103/pub/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/pub/CRAN/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/pub/CRAN/",
+      "width": 390,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/pub/CRAN/",
+      "width": 390,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8103/pub/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8103/pub/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/pub/CRAN/",
+      "width": 1440,
+      "javaScript": false,
+      "css": "http://127.0.0.1:8103/pub/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8103/pub/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Search",
+      "prefix": "/pub/CRAN/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Catalog search",
+      "prefix": "/pub/CRAN/",
+      "width": 1440,
+      "queries": [
+        {
+          "query": "termr",
+          "names": [
+            "termr"
+          ]
+        },
+        {
+          "query": "ggplot2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        },
+        {
+          "query": "plot",
+          "names": [
+            "plot.matrix",
+            "plot3D",
+            "plot3Drgl",
+            "plot3logit",
+            "plot4fun",
+            "plotannotate",
+            "plotbb",
+            "PlotBivInvGaus",
+            "plotcli",
+            "PlotContour",
+            "plotdap",
+            "PlotFTIR",
+            "plotfunctions",
+            "plotGMM",
+            "plotHMM",
+            "plotlsirm",
+            "plotly",
+            "plotlyGeoAssets",
+            "plotMCMC",
+            "plotMElm"
+          ]
+        },
+        {
+          "query": "GGPLOT2",
+          "names": [
+            "ggplot2",
+            "ggplot2.utils",
+            "ggplot2movies",
+            "RcmdrPlugin.KMggplot2"
+          ]
+        }
+      ],
+      "indexRequests": [
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json",
+        "http://127.0.0.1:8103/pub/CRAN/assets/package-search.json"
+      ]
+    },
+    {
+      "name": "Browser navigation",
+      "prefix": "/pub/CRAN/",
+      "width": 1440,
+      "javaScript": true,
+      "css": "http://127.0.0.1:8103/pub/CRAN/assets/site.css",
+      "canonical": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+      "networkErrors": [],
+      "resource": "http://127.0.0.1:8103/pub/CRAN/web/packages/ggplot2/ggplot2.pdf",
+      "alphabet": 26
+    },
+    {
+      "name": "Initial fixture sync",
+      "wallMs": 116.83550000000105,
+      "stdout": "sending incremental file list\n\nNumber of files: 79 (reg: 49, dir: 30)\nNumber of created files: 0\nNumber of deleted files: 0\nNumber of regular files transferred: 0\nTotal file size: 11,082,890 bytes\nTotal transferred file size: 0 bytes\nLiteral data: 0 bytes\nMatched data: 0 bytes\nFile list size: 0\nFile list generation time: 0.001 seconds\nFile list transfer time: 0.000 seconds\nTotal bytes sent: 2,106\nTotal bytes received: 48\n\nsent 2,106 bytes  received 48 bytes  4,308.00 bytes/sec\ntotal size is 11,082,890  speedup is 5,145.26\n",
+      "exitCode": 0
+    },
+    {
+      "name": "Interrupted sync mixed release",
+      "wallMs": 177.76080000000002,
+      "exitCode": 23,
+      "stderr": "rsync: [sender] link_stat \"/var/tmp/cran-mirrors-20261029/releases/b/INTENTIONALLY_MISSING\" failed: No such file or directory (2)\nrsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1356) [sender=3.4.1]\n",
+      "mixedHtmlAndReverse": true,
+      "note": "Deterministic partial transfer followed by unavailable source, not a network fault injection"
+    },
+    {
+      "name": "Repair to B",
+      "wallMs": 136.97300000000178,
+      "stdout": "sending incremental file list\n*deleting   web/packages/RetiredAuditPackage/index.html\n*deleting   web/packages/RetiredAuditPackage/\n*deleting   web/packages/by-name/r.html\n>f.st...... assets/package-search.json\n>f..t...... web/packages/index.html\ncd+++++++++ web/packages/AddedAuditPackage/\n>f+++++++++ web/packages/AddedAuditPackage/index.html\n>f+++++++++ web/packages/by-name/a.html\n>f.st...... web/packages/by-name/g.html\n.d..t...... web/packages/ggplot2/\n>f.st...... web/packages/ggplot2/reverse-dependencies.html\n\nNumber of files: 79 (reg: 49, dir: 30)\nNumber of created files: 3 (reg: 2, dir: 1)\nNumber of deleted files: 3 (reg: 2, dir: 1)\nNumber of regular files transferred: 6\nTotal file size: 11,082,928 bytes\nTotal transferred file size: 15,819 bytes\nLiteral data: 15,819 bytes\nMatched data: 0 bytes\nFile list size: 0\nFile list generation time: 0.001 seconds\nFile list transfer time: 0.000 seconds\nTotal bytes sent: 5,551\nTotal bytes received: 287\n\nsent 5,551 bytes  received 287 bytes  11,676.00 bytes/sec\ntotal size is 11,082,928  speedup is 1,898.41\n",
+      "exitCode": 0
+    },
+    {
+      "name": "B add delete metadata reverse search",
+      "added200": true,
+      "removed404": true,
+      "protectedFiles": 13,
+      "protectedHashesMatch": true
+    },
+    {
+      "name": "Rollback to A",
+      "wallMs": 135.1146000000008,
+      "stdout": "sending incremental file list\n*deleting   web/packages/AddedAuditPackage/index.html\n*deleting   web/packages/AddedAuditPackage/\n*deleting   web/packages/by-name/a.html\n>f.st...... assets/package-search.json\n>f..t...... web/packages/index.html\ncd+++++++++ web/packages/RetiredAuditPackage/\n>f+++++++++ web/packages/RetiredAuditPackage/index.html\n>f.st...... web/packages/by-name/g.html\n>f+++++++++ web/packages/by-name/r.html\n>f.st...... web/packages/ggplot2/index.html\n>f.st...... web/packages/ggplot2/reverse-dependencies.html\n\nNumber of files: 79 (reg: 49, dir: 30)\nNumber of created files: 3 (reg: 2, dir: 1)\nNumber of deleted files: 3 (reg: 2, dir: 1)\nNumber of regular files transferred: 7\nTotal file size: 11,082,890 bytes\nTotal transferred file size: 19,222 bytes\nLiteral data: 19,222 bytes\nMatched data: 0 bytes\nFile list size: 0\nFile list generation time: 0.001 seconds\nFile list transfer time: 0.000 seconds\nTotal bytes sent: 5,708\nTotal bytes received: 299\n\nsent 5,708 bytes  received 299 bytes  12,014.00 bytes/sec\ntotal size is 11,082,890  speedup is 1,844.00\n",
+      "exitCode": 0
+    },
+    {
+      "name": "Rollback verified",
+      "protectedFiles": 13,
+      "retiredRestored": true,
+      "addedRemoved": true
+    }
+  ]
+}

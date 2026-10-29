@@ -1,0 +1,96 @@
+{
+  "scope": "Local whole-file rsync with CRAN HOWTO flags, not remote wire benchmark",
+  "aFiles": 49,
+  "bFiles": 49,
+  "added": [
+    {
+      "path": "web/packages/AddedAuditPackage/index.html",
+      "bytes": 3528,
+      "sha256": "ed3707a4fd746a532821b2c9a5ce6f08a0badbbb20bb5e62f4b105fef8094c55",
+      "mtimeMs": 1790899200000
+    },
+    {
+      "path": "web/packages/by-name/a.html",
+      "bytes": 2649,
+      "sha256": "e85e5b3d8442c901cc808552862afd2f2de48e485c43c66ab6ac3c0804dce0f4",
+      "mtimeMs": 1790899200000
+    }
+  ],
+  "removed": [
+    {
+      "path": "web/packages/RetiredAuditPackage/index.html",
+      "bytes": 3552,
+      "sha256": "df255f6291511440879864ed800600d0cbab8c70dc7ed1ff03b722a10b2ff87d",
+      "mtimeMs": 1790812800000
+    },
+    {
+      "path": "web/packages/by-name/r.html",
+      "bytes": 2655,
+      "sha256": "9d8c38e39adfbbc2ec38b3f5e88aad000b03fde4acd6fbd59cb91dcd908fb1f7",
+      "mtimeMs": 1790812800000
+    }
+  ],
+  "changed": [
+    {
+      "path": "assets/package-search.json",
+      "bytes": 144,
+      "sha256": "e9332fab26b8f13a361a8571783269a7866aef03032e0d9c5e144d28077e3ea4",
+      "mtimeMs": 1790899200000
+    },
+    {
+      "path": "web/packages/by-name/g.html",
+      "bytes": 2638,
+      "sha256": "b74014267b9c0a62cb8085b3bb90021c5fde6dfde660d17a23dd585d491a5f4b",
+      "mtimeMs": 1790899200000
+    },
+    {
+      "path": "web/packages/ggplot2/index.html",
+      "bytes": 3441,
+      "sha256": "c479a9f62917834ffd20c064bcaa3fb60f95307e75ccf34f1b9f46b1a405c4cd",
+      "mtimeMs": 1790899200000
+    },
+    {
+      "path": "web/packages/ggplot2/reverse-dependencies.html",
+      "bytes": 2965,
+      "sha256": "117d30167490fed23cc48af62ee7a3c29e369c0c28735722a591ca41ea2e4040",
+      "mtimeMs": 1790899200000
+    },
+    {
+      "path": "web/packages/index.html",
+      "bytes": 3895,
+      "sha256": "fe941606d6b4bf31d93b99e09aa646c1f298fb06af506b5e5e371e8d8c245901",
+      "mtimeMs": 1790899200000
+    }
+  ],
+  "mtimeOnly": [],
+  "normalUpdate": {
+    "wallMs": 55.993551000000025,
+    "stdout": "sending incremental file list\n*deleting   web/packages/RetiredAuditPackage/index.html\n*deleting   web/packages/RetiredAuditPackage/\n*deleting   web/packages/by-name/r.html\n>f.st...... assets/package-search.json\n>f..t...... web/packages/index.html\ncd+++++++++ web/packages/AddedAuditPackage/\n>f+++++++++ web/packages/AddedAuditPackage/index.html\n>f+++++++++ web/packages/by-name/a.html\n>f.st...... web/packages/by-name/g.html\n>f.st...... web/packages/ggplot2/index.html\n>f.st...... web/packages/ggplot2/reverse-dependencies.html\n\nNumber of files: 79 (reg: 49, dir: 30)\nNumber of created files: 3 (reg: 2, dir: 1)\nNumber of deleted files: 3 (reg: 2, dir: 1)\nNumber of regular files transferred: 7\nTotal file size: 11,082,928 bytes\nTotal transferred file size: 19,260 bytes\nLiteral data: 19,260 bytes\nMatched data: 0 bytes\nFile list size: 0\nFile list generation time: 0.001 seconds\nFile list transfer time: 0.000 seconds\nTotal bytes sent: 5,726\nTotal bytes received: 303\n\nsent 5,726 bytes  received 303 bytes  12,058.00 bytes/sec\ntotal size is 11,082,928  speedup is 1,838.27\n"
+  },
+  "rollback": {
+    "wallMs": 53.09656100000001,
+    "stdout": "sending incremental file list\n*deleting   web/packages/AddedAuditPackage/index.html\n*deleting   web/packages/AddedAuditPackage/\n*deleting   web/packages/by-name/a.html\n>f.st...... assets/package-search.json\n>f..t...... web/packages/index.html\ncd+++++++++ web/packages/RetiredAuditPackage/\n>f+++++++++ web/packages/RetiredAuditPackage/index.html\n>f.st...... web/packages/by-name/g.html\n>f+++++++++ web/packages/by-name/r.html\n>f.st...... web/packages/ggplot2/index.html\n>f.st...... web/packages/ggplot2/reverse-dependencies.html\n\nNumber of files: 79 (reg: 49, dir: 30)\nNumber of created files: 3 (reg: 2, dir: 1)\nNumber of deleted files: 3 (reg: 2, dir: 1)\nNumber of regular files transferred: 7\nTotal file size: 11,082,890 bytes\nTotal transferred file size: 19,222 bytes\nLiteral data: 19,222 bytes\nMatched data: 0 bytes\nFile list size: 0\nFile list generation time: 0.001 seconds\nFile list transfer time: 0.000 seconds\nTotal bytes sent: 5,708\nTotal bytes received: 299\n\nsent 5,708 bytes  received 299 bytes  12,014.00 bytes/sec\ntotal size is 11,082,890  speedup is 1,844.00\n"
+  },
+  "fullGeneratedFiles": 33611,
+  "fullGeneratedBytes": 213223208,
+  "assets": [
+    {
+      "path": "assets/package-search.json",
+      "bytes": 1675826,
+      "sha256": "231ccb65ea1c82918e83a94156dfd8ce4b615864eb3ecb0f5e61dcc246a9ac79"
+    },
+    {
+      "path": "assets/search.js",
+      "bytes": 3267,
+      "sha256": "f95a5e175e80c85c7ef59c22c9f08881cc250f0216b4497f81529dfce06ff5fe"
+    },
+    {
+      "path": "assets/site.css",
+      "bytes": 30298,
+      "sha256": "b39358d099ebcc963a785664389bd22e41ef9ad0a7981a6ecbec0715193f5e47"
+    }
+  ],
+  "fullMergedFiles": 33633,
+  "du": "395390976\t/var/tmp/cran-mirrors-20261029/full\n11300864\t/var/tmp/cran-mirrors-20261029/releases/a\n11300864\t/var/tmp/cran-mirrors-20261029/releases/b\n11300864\t/var/tmp/cran-mirrors-20261029/mirror\n",
+  "inodeStats": "Filesystem       Inodes  IUsed    IFree IUse% Mounted on\n/dev/sdd       67108864 741664 66367200    2% /\n"
+}

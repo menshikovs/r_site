@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "8252204f1c940e4fa6e70b7c3e77598b99e9a580c552f8a981b679179ff9bc37",
+  "packages": 25585,
+  "reversePages": 7949,
+  "categoryEdges": 243449,
+  "fullListsAndCountsMatchRds": true,
+  "allRequiredCommandsPassed": true,
+  "nodeTests": 21,
+  "prototypeBrowserCases": 20,
+  "fullBrowserCases": 24,
+  "noAutoReverseOrJsonRequests": true,
+  "noNewRuntimeJson": true,
+  "searchScriptAndFormatUnchanged": true,
+  "featureHtmlBytes": 54135342,
+  "featureGzipEstimate": 14312370,
+  "allocatedByteIncrease": 55271424,
+  "allHtmlChecked": 33606
+}

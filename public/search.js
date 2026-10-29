@@ -22,7 +22,7 @@ export function findPackageMatches(index, query, limit = 20) {
 
 async function loadPackageIndex() {
   if (!packageIndexPromise) {
-    packageIndexPromise = fetch('/assets/package-search.json', { credentials: 'same-origin' }).then(response => {
+    packageIndexPromise = fetch(new URL('package-search.json', import.meta.url), { credentials: 'same-origin' }).then(response => {
       if (!response.ok) throw new Error('Package-name index unavailable.')
       return response.json()
     }).then(createPackageSearchIndex)
@@ -34,7 +34,7 @@ function searchResult(name, title = '') {
   const item = document.createElement('li')
   const link = document.createElement('a')
   link.className = 'search-result'
-  link.href = '/web/packages/' + encodeURIComponent(name) + '/index.html'
+  link.href = new URL('../web/packages/' + encodeURIComponent(name) + '/index.html', import.meta.url).href
 
   const packageName = document.createElement('strong')
   packageName.className = 'search-result-name'

@@ -1,0 +1,6 @@
+0	/var/tmp/cran-adoption-20261029/current
+388616192	/var/tmp/cran-adoption-20261029/dist-only
+4096	/var/tmp/cran-adoption-20261029/finish-setup.sh
+4096	/var/tmp/cran-adoption-20261029/mirror
+16056320	/var/tmp/cran-adoption-20261029/original
+799375360	/var/tmp/cran-adoption-20261029/releases

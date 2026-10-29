@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/Rlogo.svg">
+  <meta name="description" content="Fast aggregation of large data (e.g. 100GB in RAM), fast
+ordered joins, fast add/modify/delete of columns by group using
+no copies at all, list columns, friendly and fast
+character-separated-value read/write. Offers a natural and
+flexible syntax, for faster development.">
+  <link rel="canonical" href="/web/packages/data.table/index.html">
+  <link rel="stylesheet" href="/assets/site.css">
+  <title>data.table: Extension of `data.frame` — CRAN</title>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a><header class="package-header"><a class="brand" href="/" aria-label="CRAN home"><img src="/Rlogo.svg" alt="" width="48" height="38"><span><strong>CRAN</strong><small>The R Archive Network</small></span></a><span>THE COMPREHENSIVE R ARCHIVE NETWORK</span><a href="https://cran.r-project.org/web/packages/data.table/index.html">Official CRAN page <span class="arrow" aria-hidden="true">&#8599;</span></a></header>
+<main id="main" class="package-main"><div class="package-actions"><a href="/web/packages/">← Browse packages</a><span>CRAN PACKAGE</span></div>
+<section class="package-hero"><p class="eyebrow">PACKAGE RECORD</p><h1>data.table</h1><p class="package-title">Extension of `data.frame`</p><div class="badges"><span>VERSION <b>1.18.6.1</b></span><span>LICENSE <b>MPL-2.0 | file LICENSE</b></span></div></section>
+<section class="panel"><div class="panel-heading"><div><span class="eyebrow">01 / FROM THE OFFICIAL PACKAGE INDEX</span><h2>Description</h2></div></div><pre class="package-description">Fast aggregation of large data (e.g. 100GB in RAM), fast
+ordered joins, fast add/modify/delete of columns by group using
+no copies at all, list columns, friendly and fast
+character-separated-value read/write. Offers a natural and
+flexible syntax, for faster development.</pre></section>
+<section class="panel"><div class="panel-heading"><div><span class="eyebrow">02 / PACKAGE INFORMATION</span><h2>Details</h2></div></div><dl class="metadata-grid"><div class="metadata-row"><dt>Authors</dt><dd>Tyson Barrett [aut, cre] (ORCID:
+&lt;<a href="https://orcid.org/0000-0002-2137-1391" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-2137-1391</a>&gt;), Matt Dowle [aut],
+Arun Srinivasan [aut], Jan Gorecki [aut], Michael Chirico [aut]
+(ORCID: &lt;<a href="https://orcid.org/0000-0003-0787-087X" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0003-0787-087X</a>&gt;), Toby Hocking
+[aut] (ORCID: &lt;<a href="https://orcid.org/0000-0002-3146-0865" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-3146-0865</a>&gt;),
+Benjamin Schwendinger [aut] (ORCID:
+&lt;<a href="https://orcid.org/0000-0003-3315-8114" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0003-3315-8114</a>&gt;), Ivan Krylov [aut]
+(ORCID: &lt;<a href="https://orcid.org/0000-0002-0172-3812" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-0172-3812</a>&gt;), Pasha
+Stetsenko [ctb], Tom Short [ctb], Steve Lianoglou [ctb], Eduard
+Antonyan [ctb], Markus Bonsch [ctb], Hugh Parsonage [ctb],
+Scott Ritchie [ctb], Kun Ren [ctb], Xianying Tan [ctb], Rick
+Saporta [ctb], Otto Seiskari [ctb], Xianghui Dong [ctb], Michel
+Lang [ctb], Watal Iwasaki [ctb], Seth Wenchel [ctb], Karl
+Broman [ctb], Tobias Schmidt [ctb], David Arenburg [ctb], Ethan
+Smith [ctb], Francois Cocquemas [ctb], Matthieu Gomez [ctb],
+Philippe Chataignon [ctb], Nello Blaser [ctb], Dmitry Selivanov
+[ctb], Andrey Riabushenko [ctb], Cheng Lee [ctb], Declan Groves
+[ctb], Daniel Possenriede [ctb], Felipe Parages [ctb], Denes
+Toth [ctb], Mus Yaramaz-David [ctb], Ayappan Perumal [ctb],
+James Sams [ctb], Martin Morgan [ctb], Michael Quinn [ctb],
+@javrucebo [ctb] (GitHub user), Marc Halperin [ctb], Roy Storey
+[ctb], Manish Saraswat [ctb], Morgan Jacob [ctb], Michael
+Schubmehl [ctb], Davis Vaughan [ctb], Leonardo Silvestri [ctb],
+Jim Hester [ctb], Anthony Damico [ctb], Sebastian Freundt
+[ctb], David Simons [ctb], Elliott Sales de Andrade [ctb], Cole
+Miller [ctb], Jens Peder Meldgaard [ctb], Vaclav Tlapak [ctb],
+Kevin Ushey [ctb], Dirk Eddelbuettel [ctb], Tony Fischetti
+[ctb], Ofek Shilon [ctb], Vadim Khotilovich [ctb], Hadley
+Wickham [ctb], Bennet Becker [ctb], Kyle Haynes [ctb], Boniface
+Christian Kamgang [ctb], Olivier Delmarcell [ctb], Josh O&#39;Brien
+[ctb], Dereck Mezquita [ctb] (ORCID:
+&lt;<a href="https://orcid.org/0000-0002-9307-6762" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-9307-6762</a>&gt;), Michael Czekanski
+[ctb], Dmitry Shemetov [ctb], Nitish Jha [ctb], Joshua Wu
+[ctb], Iago Giné-Vázquez [ctb], Anirban Chetia [ctb], Doris
+Amoakohene [ctb], Angel Feliz [ctb], Michael Young [ctb], Mark
+Seeto [ctb], Philippe Grosjean [ctb], Vincent Runge [ctb],
+Christian Wia [ctb], Elise Maigné [ctb], Vincent Rocher [ctb],
+Vijay Lulla [ctb], Aljaž Sluga [ctb], Bill Evans [ctb], Reino
+Bruner [ctb], @badasahog [ctb] (GitHub user), Vinit Thakur
+[ctb], Mukul Kumar [ctb], Ildikó Czeller [ctb], Manmita Das
+[ctb], Tarun Thammisetty [ctb], Marco Colombo [ctb] (ORCID:
+&lt;<a href="https://orcid.org/0000-0001-6672-0623" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0001-6672-0623</a>&gt;), Tim Taylor [ctb]
+(ORCID: &lt;<a href="https://orcid.org/0000-0002-8587-7113" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-8587-7113</a>&gt;)</dd></div><div class="metadata-row"><dt>Maintainer</dt><dd>Tyson Barrett &lt;t.barrett88@gmail.com&gt;</dd></div><div class="metadata-row"><dt>License</dt><dd>MPL-2.0 | file LICENSE</dd></div><div class="metadata-row"><dt>Published</dt><dd>2026-08-24 08:40:13 UTC</dd></div><div class="metadata-row"><dt>DOI</dt><dd><a href="https://doi.org/10.32614/CRAN.package.data.table">10.32614/CRAN.package.data.table</a></dd></div><div class="metadata-row"><dt>Requires</dt><dd>R (&gt;= 3.4.0)</dd></div><div class="metadata-row"><dt>Imports</dt><dd><a href="https://cran.r-project.org/doc/manuals/r-patched/packages/methods/refman/methods.html">methods</a></dd></div><div class="metadata-row"><dt>Suggests</dt><dd><a href="/web/packages/bit64/index.html">bit64</a> (&gt;= 4.0.0), <a href="/web/packages/bit/index.html">bit</a> (&gt;= 4.0.4), <a href="/web/packages/R.utils/index.html">R.utils</a> (&gt;= 2.13.0), <a href="/web/packages/xts/index.html">xts</a>,
+<a href="/web/packages/zoo/index.html">zoo</a> (&gt;= 1.8-1), <a href="/web/packages/yaml/index.html">yaml</a>, <a href="/web/packages/knitr/index.html">knitr</a>, <a href="/web/packages/markdown/index.html">markdown</a></dd></div><div class="metadata-row"><dt>Needs compilation</dt><dd>yes</dd></div><div class="metadata-row"><dt>Project URL</dt><dd><a href="https://r-datatable.com" target="_blank" rel="noopener noreferrer">https://r-datatable.com</a>, <a href="https://Rdatatable.gitlab.io/data.table" target="_blank" rel="noopener noreferrer">https://Rdatatable.gitlab.io/data.table</a>,
+<a href="https://github.com/Rdatatable/data.table" target="_blank" rel="noopener noreferrer">https://github.com/Rdatatable/data.table</a></dd></div><div class="metadata-row"><dt>Bug reports</dt><dd><a href="https://github.com/Rdatatable/data.table/issues" target="_blank" rel="noopener noreferrer">https://github.com/Rdatatable/data.table/issues</a></dd></div></dl></section>
+<section class="panel reverse-summary" aria-labelledby="reverse-heading"><h2 id="reverse-heading">Reverse dependencies</h2><dl class="reverse-counts"><div><dt><a href="/web/packages/data.table/reverse-dependencies.html#depends">Reverse Depends</a></dt><dd data-reverse-category="depends">74</dd></div><div><dt><a href="/web/packages/data.table/reverse-dependencies.html#imports">Reverse Imports</a></dt><dd data-reverse-category="imports">1940</dd></div><div><dt>Reverse LinkingTo</dt><dd data-reverse-category="linking-to">0</dd></div><div><dt><a href="/web/packages/data.table/reverse-dependencies.html#suggests">Reverse Suggests</a></dt><dd data-reverse-category="suggests">301</dd></div><div><dt><a href="/web/packages/data.table/reverse-dependencies.html#enhances">Reverse Enhances</a></dt><dd data-reverse-category="enhances">6</dd></div></dl></section>
+<section class="package-resources"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Go deeper with data.table.</h2><p>Visit official documentation and source files for this release.</p><p class="install-command"><code>install.packages("data.table")</code></p></div><div class="resource-links"><a class="button" href="https://cran.r-project.org/web/packages/data.table/data.table.pdf">Reference manual <span class="arrow" aria-hidden="true">&#8599;</span></a><a href="https://cran.r-project.org/web/packages/data.table/index.html">Documentation and downloads on CRAN <span class="arrow" aria-hidden="true">&#8599;</span></a><a href="https://cran.r-project.org/web/checks/check_results_data.table.html">CRAN check results <span class="arrow" aria-hidden="true">&#8599;</span></a><a href="https://cran.r-project.org/src/contrib/data.table_1.18.6.1.tar.gz">Download source package <span class="arrow" aria-hidden="true">&#8599;</span></a></div></section>
+<footer class="package-footer"><a class="brand" href="/" aria-label="CRAN home"><img src="/Rlogo.svg" alt="" width="48" height="38"><span><strong>CRAN</strong><small>The R Archive Network</small></span></a><span>Package metadata is published by CRAN.</span><a href="/">Back to home ↑</a></footer></main>
+
+</body>
+</html>

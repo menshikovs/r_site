@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/Rlogo.svg">
+  <meta name="description" content="Fast aggregation of large data (e.g. 100GB in RAM), fast
+ordered joins, fast add/modify/delete of columns by group using
+no copies at all, list columns, friendly and fast
+character-separated-value read/write. Offers a natural and
+flexible syntax, for faster development.">
+  <link rel="canonical" href="/web/packages/data.table/index.html">
+  <link rel="stylesheet" href="/assets/site.css">
+  <title>data.table: Extension of `data.frame` — CRAN</title>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a><header class="package-header"><a class="brand" href="/" aria-label="CRAN home"><img src="/Rlogo.svg" alt="" width="48" height="38"><span><strong>CRAN</strong><small>The R Archive Network</small></span></a><span>THE COMPREHENSIVE R ARCHIVE NETWORK</span><a href="https://cran.r-project.org/web/packages/data.table/index.html">Official CRAN page <span class="arrow" aria-hidden="true">&#8599;</span></a></header>
+<main id="main" class="package-main"><div class="package-actions"><a href="/web/packages/">← Browse packages</a><span>CRAN PACKAGE</span></div>
+<section class="package-hero"><p class="eyebrow">PACKAGE RECORD</p><h1>data.table</h1><p class="package-title">Extension of `data.frame`</p><div class="badges"><span>VERSION <b>1.18.6.1</b></span><span>LICENSE <b>MPL-2.0 | file LICENSE</b></span></div></section>
+<section class="panel"><div class="panel-heading"><div><span class="eyebrow">01 / FROM THE OFFICIAL PACKAGE INDEX</span><h2>Description</h2></div></div><pre class="package-description">Fast aggregation of large data (e.g. 100GB in RAM), fast
+ordered joins, fast add/modify/delete of columns by group using
+no copies at all, list columns, friendly and fast
+character-separated-value read/write. Offers a natural and
+flexible syntax, for faster development.</pre></section>
+<section class="panel"><div class="panel-heading"><div><span class="eyebrow">02 / PACKAGE INFORMATION</span><h2>Details</h2></div></div><dl class="metadata-grid"><div class="metadata-row"><dt>Authors</dt><dd>Tyson Barrett [aut, cre] (ORCID:
+&lt;<a href="https://orcid.org/0000-0002-2137-1391" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-2137-1391</a>&gt;), Matt Dowle [aut],
+Arun Srinivasan [aut], Jan Gorecki [aut], Michael Chirico [aut]
+(ORCID: &lt;<a href="https://orcid.org/0000-0003-0787-087X" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0003-0787-087X</a>&gt;), Toby Hocking
+[aut] (ORCID: &lt;<a href="https://orcid.org/0000-0002-3146-0865" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-3146-0865</a>&gt;),
+Benjamin Schwendinger [aut] (ORCID:
+&lt;<a href="https://orcid.org/0000-0003-3315-8114" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0003-3315-8114</a>&gt;), Ivan Krylov [aut]
+(ORCID: &lt;<a href="https://orcid.org/0000-0002-0172-3812" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-0172-3812</a>&gt;), Pasha
+Stetsenko [ctb], Tom Short [ctb], Steve Lianoglou [ctb], Eduard
+Antonyan [ctb], Markus Bonsch [ctb], Hugh Parsonage [ctb],
+Scott Ritchie [ctb], Kun Ren [ctb], Xianying Tan [ctb], Rick
+Saporta [ctb], Otto Seiskari [ctb], Xianghui Dong [ctb], Michel
+Lang [ctb], Watal Iwasaki [ctb], Seth Wenchel [ctb], Karl
+Broman [ctb], Tobias Schmidt [ctb], David Arenburg [ctb], Ethan
+Smith [ctb], Francois Cocquemas [ctb], Matthieu Gomez [ctb],
+Philippe Chataignon [ctb], Nello Blaser [ctb], Dmitry Selivanov
+[ctb], Andrey Riabushenko [ctb], Cheng Lee [ctb], Declan Groves
+[ctb], Daniel Possenriede [ctb], Felipe Parages [ctb], Denes
+Toth [ctb], Mus Yaramaz-David [ctb], Ayappan Perumal [ctb],
+James Sams [ctb], Martin Morgan [ctb], Michael Quinn [ctb],
+@javrucebo [ctb] (GitHub user), Marc Halperin [ctb], Roy Storey
+[ctb], Manish Saraswat [ctb], Morgan Jacob [ctb], Michael
+Schubmehl [ctb], Davis Vaughan [ctb], Leonardo Silvestri [ctb],
+Jim Hester [ctb], Anthony Damico [ctb], Sebastian Freundt
+[ctb], David Simons [ctb], Elliott Sales de Andrade [ctb], Cole
+Miller [ctb], Jens Peder Meldgaard [ctb], Vaclav Tlapak [ctb],
+Kevin Ushey [ctb], Dirk Eddelbuettel [ctb], Tony Fischetti
+[ctb], Ofek Shilon [ctb], Vadim Khotilovich [ctb], Hadley
+Wickham [ctb], Bennet Becker [ctb], Kyle Haynes [ctb], Boniface
+Christian Kamgang [ctb], Olivier Delmarcell [ctb], Josh O&#39;Brien
+[ctb], Dereck Mezquita [ctb] (ORCID:
+&lt;<a href="https://orcid.org/0000-0002-9307-6762" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-9307-6762</a>&gt;), Michael Czekanski
+[ctb], Dmitry Shemetov [ctb], Nitish Jha [ctb], Joshua Wu
+[ctb], Iago Gin&lt;U+00E9&gt;-V&lt;U+00E1&gt;zquez [ctb], Anirban Chetia [ctb], Doris
+Amoakohene [ctb], Angel Feliz [ctb], Michael Young [ctb], Mark
+Seeto [ctb], Philippe Grosjean [ctb], Vincent Runge [ctb],
+Christian Wia [ctb], Elise Maign&lt;U+00E9&gt; [ctb], Vincent Rocher [ctb],
+Vijay Lulla [ctb], Alja&lt;U+017E&gt; Sluga [ctb], Bill Evans [ctb], Reino
+Bruner [ctb], @badasahog [ctb] (GitHub user), Vinit Thakur
+[ctb], Mukul Kumar [ctb], Ildik&lt;U+00F3&gt; Czeller [ctb], Manmita Das
+[ctb], Tarun Thammisetty [ctb], Marco Colombo [ctb] (ORCID:
+&lt;<a href="https://orcid.org/0000-0001-6672-0623" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0001-6672-0623</a>&gt;), Tim Taylor [ctb]
+(ORCID: &lt;<a href="https://orcid.org/0000-0002-8587-7113" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0002-8587-7113</a>&gt;)
+email=&quot;t.barrett88@gmail.com&quot;, comment =
+c(ORCID=&quot;0000-0002-2137-1391&quot;)), person(&quot;Matt&quot;,&quot;Dowle&quot;,
+role=&quot;aut&quot;, email=&quot;mattjdowle@gmail.com&quot;),
+person(&quot;Arun&quot;,&quot;Srinivasan&quot;, role=&quot;aut&quot;, email=&quot;asrini@pm.me&quot;),
+person(&quot;Jan&quot;,&quot;Gorecki&quot;, role=&quot;aut&quot;,
+email=&quot;j.gorecki@wit.edu.pl&quot;), person(&quot;Michael&quot;,&quot;Chirico&quot;,
+role=&quot;aut&quot;, email=&quot;michaelchirico4@gmail.com&quot;, comment =
+c(ORCID=&quot;0000-0003-0787-087X&quot;)), person(&quot;Toby&quot;,&quot;Hocking&quot;,
+role=&quot;aut&quot;, email=&quot;toby.hocking@r-project.org&quot;, comment =
+c(ORCID=&quot;0000-0002-3146-0865&quot;)),
+person(&quot;Benjamin&quot;,&quot;Schwendinger&quot;,role=&quot;aut&quot;, comment =
+c(ORCID=&quot;0000-0003-3315-8114&quot;)), person(&quot;Ivan&quot;, &quot;Krylov&quot;,
+role=&quot;aut&quot;, email=&quot;ikrylov@disroot.org&quot;, comment =
+c(ORCID=&quot;0000-0002-0172-3812&quot;)), person(&quot;Pasha&quot;,&quot;Stetsenko&quot;,
+role=&quot;ctb&quot;), person(&quot;Tom&quot;,&quot;Short&quot;, role=&quot;ctb&quot;),
+person(&quot;Steve&quot;,&quot;Lianoglou&quot;, role=&quot;ctb&quot;),
+person(&quot;Eduard&quot;,&quot;Antonyan&quot;, role=&quot;ctb&quot;),
+person(&quot;Markus&quot;,&quot;Bonsch&quot;, role=&quot;ctb&quot;),
+person(&quot;Hugh&quot;,&quot;Parsonage&quot;, role=&quot;ctb&quot;),
+person(&quot;Scott&quot;,&quot;Ritchie&quot;, role=&quot;ctb&quot;), person(&quot;Kun&quot;,&quot;Ren&quot;,
+role=&quot;ctb&quot;), person(&quot;Xianying&quot;,&quot;Tan&quot;, role=&quot;ctb&quot;),
+person(&quot;Rick&quot;,&quot;Saporta&quot;, role=&quot;ctb&quot;), person(&quot;Otto&quot;,&quot;Seiskari&quot;,
+role=&quot;ctb&quot;), person(&quot;Xianghui&quot;,&quot;Dong&quot;, role=&quot;ctb&quot;),
+person(&quot;Michel&quot;,&quot;Lang&quot;, role=&quot;ctb&quot;), person(&quot;Watal&quot;,&quot;Iwasaki&quot;,
+role=&quot;ctb&quot;), person(&quot;Seth&quot;,&quot;Wenchel&quot;, role=&quot;ctb&quot;),
+person(&quot;Karl&quot;,&quot;Broman&quot;, role=&quot;ctb&quot;), person(&quot;Tobias&quot;,&quot;Schmidt&quot;,
+role=&quot;ctb&quot;), person(&quot;David&quot;,&quot;Arenburg&quot;, role=&quot;ctb&quot;),
+person(&quot;Ethan&quot;,&quot;Smith&quot;, role=&quot;ctb&quot;),
+person(&quot;Francois&quot;,&quot;Cocquemas&quot;, role=&quot;ctb&quot;),
+person(&quot;Matthieu&quot;,&quot;Gomez&quot;, role=&quot;ctb&quot;),
+person(&quot;Philippe&quot;,&quot;Chataignon&quot;, role=&quot;ctb&quot;),
+person(&quot;Nello&quot;,&quot;Blaser&quot;, role=&quot;ctb&quot;),
+person(&quot;Dmitry&quot;,&quot;Selivanov&quot;, role=&quot;ctb&quot;),
+person(&quot;Andrey&quot;,&quot;Riabushenko&quot;, role=&quot;ctb&quot;),
+person(&quot;Cheng&quot;,&quot;Lee&quot;, role=&quot;ctb&quot;), person(&quot;Declan&quot;,&quot;Groves&quot;,
+role=&quot;ctb&quot;), person(&quot;Daniel&quot;,&quot;Possenriede&quot;, role=&quot;ctb&quot;),
+person(&quot;Felipe&quot;,&quot;Parages&quot;, role=&quot;ctb&quot;), person(&quot;Denes&quot;,&quot;Toth&quot;,
+role=&quot;ctb&quot;), person(&quot;Mus&quot;,&quot;Yaramaz-David&quot;, role=&quot;ctb&quot;),
+person(&quot;Ayappan&quot;,&quot;Perumal&quot;, role=&quot;ctb&quot;), person(&quot;James&quot;,&quot;Sams&quot;,
+role=&quot;ctb&quot;), person(&quot;Martin&quot;,&quot;Morgan&quot;, role=&quot;ctb&quot;),
+person(&quot;Michael&quot;,&quot;Quinn&quot;, role=&quot;ctb&quot;),
+person(given=&quot;@javrucebo&quot;, role=&quot;ctb&quot;, comment=&quot;GitHub user&quot;),
+person(&quot;Marc&quot;,&quot;Halperin&quot;, role=&quot;ctb&quot;), person(&quot;Roy&quot;,&quot;Storey&quot;,
+role=&quot;ctb&quot;), person(&quot;Manish&quot;,&quot;Saraswat&quot;, role=&quot;ctb&quot;),
+person(&quot;Morgan&quot;,&quot;Jacob&quot;, role=&quot;ctb&quot;),
+person(&quot;Michael&quot;,&quot;Schubmehl&quot;, role=&quot;ctb&quot;),
+person(&quot;Davis&quot;,&quot;Vaughan&quot;, role=&quot;ctb&quot;),
+person(&quot;Leonardo&quot;,&quot;Silvestri&quot;, role=&quot;ctb&quot;),
+person(&quot;Jim&quot;,&quot;Hester&quot;, role=&quot;ctb&quot;), person(&quot;Anthony&quot;,&quot;Damico&quot;,
+role=&quot;ctb&quot;), person(&quot;Sebastian&quot;,&quot;Freundt&quot;, role=&quot;ctb&quot;),
+person(&quot;David&quot;,&quot;Simons&quot;, role=&quot;ctb&quot;), person(&quot;Elliott&quot;,&quot;Sales
+de Andrade&quot;, role=&quot;ctb&quot;), person(&quot;Cole&quot;,&quot;Miller&quot;, role=&quot;ctb&quot;),
+person(&quot;Jens Peder&quot;,&quot;Meldgaard&quot;, role=&quot;ctb&quot;),
+person(&quot;Vaclav&quot;,&quot;Tlapak&quot;, role=&quot;ctb&quot;), person(&quot;Kevin&quot;,&quot;Ushey&quot;,
+role=&quot;ctb&quot;), person(&quot;Dirk&quot;,&quot;Eddelbuettel&quot;, role=&quot;ctb&quot;),
+person(&quot;Tony&quot;,&quot;Fischetti&quot;, role=&quot;ctb&quot;), person(&quot;Ofek&quot;,&quot;Shilon&quot;,
+role=&quot;ctb&quot;), person(&quot;Vadim&quot;,&quot;Khotilovich&quot;, role=&quot;ctb&quot;),
+person(&quot;Hadley&quot;,&quot;Wickham&quot;, role=&quot;ctb&quot;),
+person(&quot;Bennet&quot;,&quot;Becker&quot;, role=&quot;ctb&quot;), person(&quot;Kyle&quot;,&quot;Haynes&quot;,
+role=&quot;ctb&quot;), person(&quot;Boniface Christian&quot;,&quot;Kamgang&quot;,
+role=&quot;ctb&quot;), person(&quot;Olivier&quot;,&quot;Delmarcell&quot;, role=&quot;ctb&quot;),
+person(&quot;Josh&quot;,&quot;O&#39;Brien&quot;, role=&quot;ctb&quot;),
+person(&quot;Dereck&quot;,&quot;Mezquita&quot;, role=&quot;ctb&quot;, comment =
+c(ORCID=&quot;0000-0002-9307-6762&quot;)), person(&quot;Michael&quot;,&quot;Czekanski&quot;,
+role=&quot;ctb&quot;), person(&quot;Dmitry&quot;, &quot;Shemetov&quot;, role=&quot;ctb&quot;),
+person(&quot;Nitish&quot;, &quot;Jha&quot;, role=&quot;ctb&quot;), person(&quot;Joshua&quot;, &quot;Wu&quot;,
+role=&quot;ctb&quot;), person(&quot;Iago&quot;, &quot;Gin&lt;U+00E9&gt;-V&lt;U+00E1&gt;zquez&quot;, role=&quot;ctb&quot;),
+person(&quot;Anirban&quot;, &quot;Chetia&quot;, role=&quot;ctb&quot;), person(&quot;Doris&quot;,
+&quot;Amoakohene&quot;, role=&quot;ctb&quot;), person(&quot;Angel&quot;, &quot;Feliz&quot;,
+role=&quot;ctb&quot;), person(&quot;Michael&quot;,&quot;Young&quot;, role=&quot;ctb&quot;),
+person(&quot;Mark&quot;, &quot;Seeto&quot;, role=&quot;ctb&quot;), person(&quot;Philippe&quot;,
+&quot;Grosjean&quot;, role=&quot;ctb&quot;), person(&quot;Vincent&quot;, &quot;Runge&quot;,
+role=&quot;ctb&quot;), person(&quot;Christian&quot;, &quot;Wia&quot;, role=&quot;ctb&quot;),
+person(&quot;Elise&quot;, &quot;Maign&lt;U+00E9&gt;&quot;, role=&quot;ctb&quot;), person(&quot;Vincent&quot;,
+&quot;Rocher&quot;, role=&quot;ctb&quot;), person(&quot;Vijay&quot;, &quot;Lulla&quot;, role=&quot;ctb&quot;),
+person(&quot;Alja&lt;U+017E&gt;&quot;, &quot;Sluga&quot;, role=&quot;ctb&quot;), person(&quot;Bill&quot;, &quot;Evans&quot;,
+role=&quot;ctb&quot;), person(&quot;Reino&quot;, &quot;Bruner&quot;, role=&quot;ctb&quot;),
+person(given=&quot;@badasahog&quot;, role=&quot;ctb&quot;, comment=&quot;GitHub user&quot;),
+person(&quot;Vinit&quot;, &quot;Thakur&quot;, role=&quot;ctb&quot;), person(&quot;Mukul&quot;, &quot;Kumar&quot;,
+role=&quot;ctb&quot;), person(&quot;Ildik&lt;U+00F3&gt;&quot;, &quot;Czeller&quot;, role=&quot;ctb&quot;),
+person(&quot;Manmita&quot;, &quot;Das&quot;, role=&quot;ctb&quot;), person(&quot;Tarun&quot;,
+&quot;Thammisetty&quot;, role=&quot;ctb&quot;), person(&quot;Marco&quot;, &quot;Colombo&quot;,
+role=&quot;ctb&quot;, comment = c(ORCID = &quot;0000-0001-6672-0623&quot;)),
+person(&quot;Tim&quot;, &quot;Taylor&quot;, role=&quot;ctb&quot;, comment = c(ORCID =
+&quot;0000-0002-8587-7113&quot;)) )</dd></div><div class="metadata-row"><dt>Maintainer</dt><dd>Tyson Barrett &lt;t.barrett88@gmail.com&gt;</dd></div><div class="metadata-row"><dt>License</dt><dd>MPL-2.0 | file LICENSE</dd></div><div class="metadata-row"><dt>Published</dt><dd>2026-08-24 08:40:13 UTC</dd></div><div class="metadata-row"><dt>Requires</dt><dd>R (&gt;= 3.4.0)</dd></div><div class="metadata-row"><dt>Imports</dt><dd>methods</dd></div><div class="metadata-row"><dt>Suggests</dt><dd>bit64 (&gt;= 4.0.0), bit (&gt;= 4.0.4), R.utils (&gt;= 2.13.0), xts,
+zoo (&gt;= 1.8-1), yaml, knitr, markdown</dd></div><div class="metadata-row"><dt>Needs compilation</dt><dd>yes</dd></div><div class="metadata-row"><dt>Project URL</dt><dd><a href="https://r-datatable.com" target="_blank" rel="noopener noreferrer">https://r-datatable.com</a>, <a href="https://Rdatatable.gitlab.io/data.table" target="_blank" rel="noopener noreferrer">https://Rdatatable.gitlab.io/data.table</a>,
+<a href="https://github.com/Rdatatable/data.table" target="_blank" rel="noopener noreferrer">https://github.com/Rdatatable/data.table</a></dd></div><div class="metadata-row"><dt>Bug reports</dt><dd><a href="https://github.com/Rdatatable/data.table/issues" target="_blank" rel="noopener noreferrer">https://github.com/Rdatatable/data.table/issues</a></dd></div></dl></section>
+<section class="package-resources"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Go deeper with data.table.</h2><p>Visit official documentation and source files for this release.</p><p class="install-command"><code>install.packages("data.table")</code></p></div><div class="resource-links"><a class="button" href="https://cran.r-project.org/web/packages/data.table/data.table.pdf">Reference manual <span class="arrow" aria-hidden="true">&#8599;</span></a><a href="https://cran.r-project.org/web/packages/data.table/vignettes/">Browse vignettes <span class="arrow" aria-hidden="true">&#8599;</span></a><a href="https://cran.r-project.org/src/contrib/data.table_1.18.6.1.tar.gz">Download source package <span class="arrow" aria-hidden="true">&#8599;</span></a></div></section>
+<footer class="package-footer"><a class="brand" href="/" aria-label="CRAN home"><img src="/Rlogo.svg" alt="" width="48" height="38"><span><strong>CRAN</strong><small>The R Archive Network</small></span></a><span>Package metadata is published by CRAN.</span><a href="/">Back to home ↑</a></footer></main>
+
+</body>
+</html>

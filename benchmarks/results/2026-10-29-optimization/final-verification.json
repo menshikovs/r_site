@@ -1,0 +1,16 @@
+{
+  "browserObservations": 400,
+  "k6Intervals": 72,
+  "lighthouseAudits": 20,
+  "initialQa": 44,
+  "postBuildQa": 44,
+  "allRequiredCommandsPassed": true,
+  "frontendSourcesUnchanged": true,
+  "previousArchivesUnchanged": true,
+  "zeroWarmBrowserTransfers": true,
+  "zeroNativeTimeouts": true,
+  "nginxLogBytes": {
+    "nginx-comparison-error.log": 0,
+    "nginx-native-error.log": 0
+  }
+}

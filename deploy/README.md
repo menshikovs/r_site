@@ -1,6 +1,39 @@
 # Static deployment
 
-`dist/` is the complete publishable site. Serving it requires only a static web server; Node.js and R are build-time tools, not runtime requirements.
+Generated HTML now uses page-relative navigation/assets, without `<base>`, so
+the same artifact can be mounted at `/`, `/CRAN/` or `/pub/CRAN/`. The search
+module resolves its JSON index and result URLs from its own URL. Mount the entire
+tree and retain directory-index redirects; opening HTML via `file://` is not a
+supported search deployment. Templates remain root-oriented inputs; the build
+writer performs the final URL conversion. Existing `dist` must be rebuilt to
+receive these changes.
+
+The default build retains central URLs for resources absent from this frontend.
+For an approved overlay on a complete CRAN tree, set `CRAN_MIRROR_RESOURCES=1`
+before building (PowerShell: `$env:CRAN_MIRROR_RESOURCES='1'`). This converts CRAN
+repository/document resource links to page-relative URLs. It does **not** copy
+those resources. Provenance links, package metadata URLs, mirror selection,
+central monitoring, CRAN Archive and other external services remain external.
+Canonical metadata uses central absolute long URLs; CRAN must approve the final
+SEO policy, including its recommended short package reference URLs.
+
+Long package paths are ordinary files. `/package=NAME` and versioned shortcuts
+need separate server routing; the stock example configs do not supply it. See
+[the mirror audit](../CRAN_MIRROR_COMPATIBILITY.md) and its loopback-only example
+for prefix-aware rules. They are not evidence of Apache or every mirror's setup.
+Adapt cache rules and optional error pages to the mount prefix. Nginx ignores
+`_headers`; provider-specific `_headers` path patterns are domain-root patterns
+and must be adapted by hosts that consume them under a prefix.
+
+For mirroring, prepare a complete merged authoritative tree, preserving native
+resources and removing only previously owned obsolete generated paths. Validate
+the whole release before publication. Mirror rsync can expose mixed releases;
+retry/rollback and cache policy need an operator agreement. Stable mtimes for
+byte-identical output are a proposed publisher improvement, not implemented by
+the generator. The builder's two directory renames are not a zero-gap live
+publication mechanism. Keep separately retained rollback artifacts.
+
+`dist/` is a publishable frontend, not a complete CRAN repository or mirror. Serving the frontend requires only a static web server; Node.js and R are build-time tools, not runtime requirements. Never synchronize `dist/ --delete` directly over a complete CRAN tree: it omits repository indexes, packages, archives and PDFs.
 
 For an isolated Nginx demo:
 
@@ -29,3 +62,16 @@ Open `http://127.0.0.1:8080/`. Stop only this test instance with:
 ```powershell
 wsl.exe -d Ubuntu -- nginx -s stop -c /mnt/c/Users/User001/r_site/deploy/nginx-wsl.conf
 ```
+
+For performance measurements, publish a separate copy of `dist/` on WSL's native
+ext4 filesystem and point a separate test virtual host at that copy. Keep editing
+sources on Windows if preferred. Verify the filesystem with `df -T`: this machine's
+`/tmp` is tmpfs, so a copy there does not measure ext4. Do not change the working
+8080 instance merely to run a comparison.
+
+The [2026-10-29 investigation](../PERFORMANCE_OPTIMIZATION.md) compares identical
+page bytes and Nginx settings on `/mnt/c`, tmpfs and ext4. The Windows-mounted root
+produced timeouts under the bounded 50-client test; the native copies did not.
+Use a native Linux document root for deployment and measure HTTPS on the actual
+host before making capacity claims. This also follows Microsoft's
+[WSL file storage guidance](https://learn.microsoft.com/en-us/windows/wsl/filesystems).

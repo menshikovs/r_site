@@ -1,0 +1,3 @@
+{
+  "reason": "Pilot used Lighthouse desktop default 5250ms quiet thresholds. Formal series uses explicit uniform 1000ms quiet thresholds and 5000ms FCP timeout for both sites/profiles; pilot reports are excluded."
+}

@@ -1,0 +1,12 @@
+{
+  "expected": 49,
+  "actual": 49,
+  "mismatch": [
+    {
+      "path": "web/packages/index.html",
+      "bytes": 3895,
+      "sha256": "fe941606d6b4bf31d93b99e09aa646c1f298fb06af506b5e5e371e8d8c245901",
+      "mtimeMs": 1793270410633.7788
+    }
+  ]
+}

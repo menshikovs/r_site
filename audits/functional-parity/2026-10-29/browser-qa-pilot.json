@@ -1,0 +1,232 @@
+[
+  {
+    "name": "ggplot2",
+    "width": 320,
+    "title": "ggplot2",
+    "documentWidth": 320,
+    "canonical": "/web/packages/ggplot2/index.html",
+    "details": {
+      "Authors": "Hadley Wickham [aut] (ORCID:\n<https://orcid.org/0000-0003-4757-117X>), Winston Chang [aut]\n(ORCID: <https://orcid.org/0000-0002-1576-2126>), Lionel Henry\n[aut], Thomas Lin Pedersen [aut, cre] (ORCID:\n<https://orcid.org/0000-0002-5147-4711>), Kohske Takahashi\n[aut], Claus Wilke [aut] (ORCID:\n<https://orcid.org/0000-0002-7470-9261>), Kara Woo [aut]\n(ORCID: <https://orcid.org/0000-0002-5125-4188>), Hiroaki\nYutani [aut] (ORCID: <https://orcid.org/0000-0002-3385-7233>),\nDewey Dunnington [aut] (ORCID:\n<https://orcid.org/0000-0002-9415-4582>), Teun van den Brand\n[aut] (ORCID: <https://orcid.org/0000-0002-9335-7468>), Posit,\nPBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)",
+      "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "License": "MIT + file LICENSE",
+      "Published": "2026-04-22 09:10:03 UTC",
+      "DOI": "10.32614/CRAN.package.ggplot2",
+      "Requires": "R (>= 4.1)",
+      "Imports": "cli, grDevices, grid, gtable (>= 0.3.6), isoband, lifecycle (>\n1.0.1), rlang (>= 1.1.0), S7, scales (>= 1.4.0), stats, vctrs\n(>= 0.6.0), withr (>= 2.5.0)",
+      "Suggests": "broom, covr, dplyr, ggplot2movies, hexbin, Hmisc, hms, knitr,\nmapproj, maps, MASS, mgcv, multcomp, munsell, nlme, profvis,\nquantreg, quarto, ragg (>= 1.2.6), RColorBrewer, roxygen2,\nrpart, sf (>= 0.7-3), svglite (>= 2.1.2), testthat (>= 3.1.5),\ntibble, vdiffr (>= 1.0.6), xml2",
+      "Enhances": "sp",
+      "Needs compilation": "no",
+      "Project URL": "https://ggplot2.tidyverse.org,\nhttps://github.com/tidyverse/ggplot2",
+      "Bug reports": "https://github.com/tidyverse/ggplot2/issues"
+    },
+    "internalLinks": [
+      "/",
+      "/web/packages/",
+      "/web/packages/cli/index.html",
+      "/web/packages/gtable/index.html",
+      "/web/packages/isoband/index.html",
+      "/web/packages/lifecycle/index.html",
+      "/web/packages/rlang/index.html",
+      "/web/packages/S7/index.html",
+      "/web/packages/scales/index.html",
+      "/web/packages/vctrs/index.html",
+      "/web/packages/withr/index.html",
+      "/web/packages/broom/index.html",
+      "/web/packages/covr/index.html",
+      "/web/packages/dplyr/index.html",
+      "/web/packages/ggplot2movies/index.html",
+      "/web/packages/hexbin/index.html",
+      "/web/packages/Hmisc/index.html",
+      "/web/packages/hms/index.html",
+      "/web/packages/knitr/index.html",
+      "/web/packages/mapproj/index.html",
+      "/web/packages/maps/index.html",
+      "/web/packages/MASS/index.html",
+      "/web/packages/mgcv/index.html",
+      "/web/packages/multcomp/index.html",
+      "/web/packages/munsell/index.html",
+      "/web/packages/nlme/index.html",
+      "/web/packages/profvis/index.html",
+      "/web/packages/quantreg/index.html",
+      "/web/packages/quarto/index.html",
+      "/web/packages/ragg/index.html",
+      "/web/packages/RColorBrewer/index.html",
+      "/web/packages/roxygen2/index.html",
+      "/web/packages/rpart/index.html",
+      "/web/packages/sf/index.html",
+      "/web/packages/svglite/index.html",
+      "/web/packages/testthat/index.html",
+      "/web/packages/tibble/index.html",
+      "/web/packages/vdiffr/index.html",
+      "/web/packages/xml2/index.html",
+      "/web/packages/sp/index.html",
+      "/",
+      "/"
+    ],
+    "missingAnchors": [],
+    "scripts": 0,
+    "focus": {
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "name": "data.table",
+    "width": 320,
+    "title": "data.table",
+    "documentWidth": 320,
+    "canonical": "/web/packages/data.table/index.html",
+    "details": {
+      "Authors": "Tyson Barrett [aut, cre] (ORCID:\n<https://orcid.org/0000-0002-2137-1391>), Matt Dowle [aut],\nArun Srinivasan [aut], Jan Gorecki [aut], Michael Chirico [aut]\n(ORCID: <https://orcid.org/0000-0003-0787-087X>), Toby Hocking\n[aut] (ORCID: <https://orcid.org/0000-0002-3146-0865>),\nBenjamin Schwendinger [aut] (ORCID:\n<https://orcid.org/0000-0003-3315-8114>), Ivan Krylov [aut]\n(ORCID: <https://orcid.org/0000-0002-0172-3812>), Pasha\nStetsenko [ctb], Tom Short [ctb], Steve Lianoglou [ctb], Eduard\nAntonyan [ctb], Markus Bonsch [ctb], Hugh Parsonage [ctb],\nScott Ritchie [ctb], Kun Ren [ctb], Xianying Tan [ctb], Rick\nSaporta [ctb], Otto Seiskari [ctb], Xianghui Dong [ctb], Michel\nLang [ctb], Watal Iwasaki [ctb], Seth Wenchel [ctb], Karl\nBroman [ctb], Tobias Schmidt [ctb], David Arenburg [ctb], Ethan\nSmith [ctb], Francois Cocquemas [ctb], Matthieu Gomez [ctb],\nPhilippe Chataignon [ctb], Nello Blaser [ctb], Dmitry Selivanov\n[ctb], Andrey Riabushenko [ctb], Cheng Lee [ctb], Declan Groves\n[ctb], Daniel Possenriede [ctb], Felipe Parages [ctb], Denes\nToth [ctb], Mus Yaramaz-David [ctb], Ayappan Perumal [ctb],\nJames Sams [ctb], Martin Morgan [ctb], Michael Quinn [ctb],\n@javrucebo [ctb] (GitHub user), Marc Halperin [ctb], Roy Storey\n[ctb], Manish Saraswat [ctb], Morgan Jacob [ctb], Michael\nSchubmehl [ctb], Davis Vaughan [ctb], Leonardo Silvestri [ctb],\nJim Hester [ctb], Anthony Damico [ctb], Sebastian Freundt\n[ctb], David Simons [ctb], Elliott Sales de Andrade [ctb], Cole\nMiller [ctb], Jens Peder Meldgaard [ctb], Vaclav Tlapak [ctb],\nKevin Ushey [ctb], Dirk Eddelbuettel [ctb], Tony Fischetti\n[ctb], Ofek Shilon [ctb], Vadim Khotilovich [ctb], Hadley\nWickham [ctb], Bennet Becker [ctb], Kyle Haynes [ctb], Boniface\nChristian Kamgang [ctb], Olivier Delmarcell [ctb], Josh O'Brien\n[ctb], Dereck Mezquita [ctb] (ORCID:\n<https://orcid.org/0000-0002-9307-6762>), Michael Czekanski\n[ctb], Dmitry Shemetov [ctb], Nitish Jha [ctb], Joshua Wu\n[ctb], Iago Giné-Vázquez [ctb], Anirban Chetia [ctb], Doris\nAmoakohene [ctb], Angel Feliz [ctb], Michael Young [ctb], Mark\nSeeto [ctb], Philippe Grosjean [ctb], Vincent Runge [ctb],\nChristian Wia [ctb], Elise Maigné [ctb], Vincent Rocher [ctb],\nVijay Lulla [ctb], Aljaž Sluga [ctb], Bill Evans [ctb], Reino\nBruner [ctb], @badasahog [ctb] (GitHub user), Vinit Thakur\n[ctb], Mukul Kumar [ctb], Ildikó Czeller [ctb], Manmita Das\n[ctb], Tarun Thammisetty [ctb], Marco Colombo [ctb] (ORCID:\n<https://orcid.org/0000-0001-6672-0623>), Tim Taylor [ctb]\n(ORCID: <https://orcid.org/0000-0002-8587-7113>)",
+      "Maintainer": "Tyson Barrett <t.barrett88@gmail.com>",
+      "License": "MPL-2.0 | file LICENSE",
+      "Published": "2026-08-24 08:40:13 UTC",
+      "DOI": "10.32614/CRAN.package.data.table",
+      "Requires": "R (>= 3.4.0)",
+      "Imports": "methods",
+      "Suggests": "bit64 (>= 4.0.0), bit (>= 4.0.4), R.utils (>= 2.13.0), xts,\nzoo (>= 1.8-1), yaml, knitr, markdown",
+      "Needs compilation": "yes",
+      "Project URL": "https://r-datatable.com, https://Rdatatable.gitlab.io/data.table,\nhttps://github.com/Rdatatable/data.table",
+      "Bug reports": "https://github.com/Rdatatable/data.table/issues"
+    },
+    "internalLinks": [
+      "/",
+      "/web/packages/",
+      "/web/packages/bit64/index.html",
+      "/web/packages/bit/index.html",
+      "/web/packages/R.utils/index.html",
+      "/web/packages/xts/index.html",
+      "/web/packages/zoo/index.html",
+      "/web/packages/yaml/index.html",
+      "/web/packages/knitr/index.html",
+      "/web/packages/markdown/index.html",
+      "/",
+      "/"
+    ],
+    "missingAnchors": [],
+    "scripts": 0,
+    "focus": {
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "name": "Rcpp",
+    "width": 320,
+    "title": "Rcpp",
+    "documentWidth": 320,
+    "canonical": "/web/packages/Rcpp/index.html",
+    "details": {
+      "Authors": "Dirk Eddelbuettel [aut, cre] (ORCID:\n<https://orcid.org/0000-0001-6419-907X>), Romain Francois [aut]\n(ORCID: <https://orcid.org/0000-0002-2444-4226>), JJ Allaire\n[aut] (ORCID: <https://orcid.org/0000-0003-0174-9868>), Kevin\nUshey [aut] (ORCID: <https://orcid.org/0000-0003-2880-7407>),\nQiang Kou [aut] (ORCID:\n<https://orcid.org/0000-0001-6786-5453>), Nathan Russell [aut],\nIñaki Ucar [aut] (ORCID:\n<https://orcid.org/0000-0001-6403-5550>), Doug Bates [aut]\n(ORCID: <https://orcid.org/0000-0001-8316-9503>), John Chambers\n[aut]",
+      "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
+      "License": "GPL (>= 2)",
+      "Published": "2026-07-05 08:30:08 UTC",
+      "DOI": "10.32614/CRAN.package.Rcpp",
+      "Requires": "R (>= 3.5.0)",
+      "Imports": "methods, utils",
+      "Suggests": "tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",
+      "Needs compilation": "yes",
+      "Project URL": "https://www.rcpp.org,\nhttps://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
+      "Bug reports": "https://github.com/RcppCore/Rcpp/issues"
+    },
+    "internalLinks": [
+      "/",
+      "/web/packages/",
+      "/web/packages/tinytest/index.html",
+      "/web/packages/inline/index.html",
+      "/web/packages/rbenchmark/index.html",
+      "/web/packages/pkgKitten/index.html",
+      "/",
+      "/"
+    ],
+    "missingAnchors": [],
+    "scripts": 0,
+    "focus": {
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "name": "termr",
+    "width": 320,
+    "title": "termr",
+    "documentWidth": 320,
+    "canonical": "/web/packages/termr/index.html",
+    "details": {
+      "Authors": "Akims Mensikovs [aut, cre, cph]",
+      "Maintainer": "Akims Mensikovs <akimm7926@gmail.com>",
+      "License": "MIT + file LICENSE",
+      "Published": "2026-10-21 10:20:02 UTC",
+      "DOI": "10.32614/CRAN.package.termr",
+      "Requires": "R (>= 4.1.0)",
+      "Imports": "codetools, grDevices, R6, processx, ps, stats, utils",
+      "Suggests": "DBI, jsonlite, knitr, RSQLite, testthat (>= 3.0.0), withr",
+      "Needs compilation": "no",
+      "Project URL": "https://github.com/41929424/termr",
+      "Bug reports": "https://github.com/41929424/termr/issues"
+    },
+    "internalLinks": [
+      "/",
+      "/web/packages/",
+      "/web/packages/codetools/index.html",
+      "/web/packages/R6/index.html",
+      "/web/packages/processx/index.html",
+      "/web/packages/ps/index.html",
+      "/web/packages/DBI/index.html",
+      "/web/packages/jsonlite/index.html",
+      "/web/packages/knitr/index.html",
+      "/web/packages/RSQLite/index.html",
+      "/web/packages/testthat/index.html",
+      "/web/packages/withr/index.html",
+      "/",
+      "/"
+    ],
+    "missingAnchors": [],
+    "scripts": 0,
+    "focus": {
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "name": "MASS",
+    "width": 320,
+    "title": "MASS",
+    "documentWidth": 320,
+    "canonical": "/web/packages/MASS/index.html",
+    "details": {
+      "Authors": "Brian Ripley [aut, cre, cph], Bill Venables [aut, cph], Douglas\nM. Bates [ctb], Kurt Hornik [trl] (partial port ca 1998),\nAlbrecht Gebhardt [trl] (partial port ca 1998), David Firth\n[ctb] (support functions for polr)",
+      "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
+      "License": "GPL-2 | GPL-3",
+      "Published": "2026-07-15 10:58:26 UTC",
+      "Priority": "recommended",
+      "Contact": "<MASS@stats.ox.ac.uk>",
+      "DOI": "10.32614/CRAN.package.MASS",
+      "Requires": "R (>= 4.4.0), grDevices, graphics, stats, utils",
+      "Imports": "methods",
+      "Suggests": "lattice, nlme, nnet, survival",
+      "Needs compilation": "yes",
+      "Project URL": "http://www.stats.ox.ac.uk/pub/MASS4/"
+    },
+    "internalLinks": [
+      "/",
+      "/web/packages/",
+      "/web/packages/lattice/index.html",
+      "/web/packages/nlme/index.html",
+      "/web/packages/nnet/index.html",
+      "/web/packages/survival/index.html",
+      "/",
+      "/"
+    ],
+    "missingAnchors": [],
+    "scripts": 0,
+    "focus": {
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "width": 320,
+    "nojsCatalogToAllFive": true
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 10224,
+      "sha256": "4a47fd43a6f02d5c396577388baca2120d3dca639bc485cd528dd368cf6f1982",
+      "currentSha256": "4a47fd43a6f02d5c396577388baca2120d3dca639bc485cd528dd368cf6f1982"
+    },
+    {
+      "path": "bin/windows/index.html",
+      "bytes": 4947,
+      "sha256": "fdc78f32600fe518416f7cc664e6bbb439a6cbcba2a3033776309694bd84630b",
+      "currentSha256": "fdc78f32600fe518416f7cc664e6bbb439a6cbcba2a3033776309694bd84630b"
+    },
+    {
+      "path": "web/packages/index.html",
+      "bytes": 7551,
+      "sha256": "b1690b99a282c46a605a039609414068f295b59bf83ca81a45672f133a7d77c5",
+      "currentSha256": "b1690b99a282c46a605a039609414068f295b59bf83ca81a45672f133a7d77c5"
+    },
+    {
+      "path": "web/packages/ggplot2/index.html",
+      "bytes": 7743,
+      "sha256": "e5194f3eebe6d600dcfd1fd31d0fabdb743620ce79b2fd0f3617084250ca80c0",
+      "currentSha256": "e5194f3eebe6d600dcfd1fd31d0fabdb743620ce79b2fd0f3617084250ca80c0"
+    },
+    {
+      "path": "manuals.html",
+      "bytes": 10777,
+      "sha256": "5c31ca4e309a87c042450b3d6c52ab8a787e279e92f0b250b2566bd3bd56f7f5",
+      "currentSha256": "5c31ca4e309a87c042450b3d6c52ab8a787e279e92f0b250b2566bd3bd56f7f5"
+    },
+    {
+      "path": "assets/site.css",
+      "bytes": 28854,
+      "sha256": "527b46f3002b5727e699a8d6388a79e23c07ae9b150d0f8fe69f1f6775b86968",
+      "currentSha256": "527b46f3002b5727e699a8d6388a79e23c07ae9b150d0f8fe69f1f6775b86968"
+    },
+    {
+      "path": "assets/search.js",
+      "bytes": 3216,
+      "sha256": "51f7d726b0fe0aa9d7265df31bcddc5bbfff6be9152c8e72e08de8865863c44b",
+      "currentSha256": "51f7d726b0fe0aa9d7265df31bcddc5bbfff6be9152c8e72e08de8865863c44b"
+    },
+    {
+      "path": "assets/package-search.json",
+      "bytes": 1675850,
+      "sha256": "4bfd522e9528ffb61649cf409b09c49f269bae9860195e5bc0f510057246d5d1",
+      "currentSha256": "4bfd522e9528ffb61649cf409b09c49f269bae9860195e5bc0f510057246d5d1"
+    },
+    {
+      "path": "Rlogo.svg",
+      "bytes": 2726,
+      "sha256": "dafd8d27a97460b080036291b634e888858656cb872a3fad1d458e32daa7f196",
+      "currentSha256": "dafd8d27a97460b080036291b634e888858656cb872a3fad1d458e32daa7f196"
+    },
+    {
+      "path": "web/packages/by-name/g.html",
+      "bytes": 197539,
+      "sha256": "56dfab9e45679ed17c41fbe1fec29b2e320cd50886f0ec53f8da82334bc941a3",
+      "currentSha256": "56dfab9e45679ed17c41fbe1fec29b2e320cd50886f0ec53f8da82334bc941a3"
+    }
+  ],
+  "allMatch": true,
+  "sourceFiles": [
+    {
+      "path": "src/site.css",
+      "sha256": "527b46f3002b5727e699a8d6388a79e23c07ae9b150d0f8fe69f1f6775b86968"
+    },
+    {
+      "path": "src/templates.mjs",
+      "sha256": "37904aa6c12ebf4bb21d7c0afa67dade02cd6ec6a3b87ca98508b19e1da13f62"
+    },
+    {
+      "path": "public/search.js",
+      "sha256": "51f7d726b0fe0aa9d7265df31bcddc5bbfff6be9152c8e72e08de8865863c44b"
+    }
+  ]
+}

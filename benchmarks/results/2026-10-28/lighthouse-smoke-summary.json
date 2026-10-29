@@ -1,0 +1,56 @@
+[
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 163.797
+      },
+      "largest-contentful-paint": {
+        "value": 163.797
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 162
+      }
+    }
+  }
+]

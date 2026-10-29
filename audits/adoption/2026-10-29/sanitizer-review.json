@@ -1,0 +1,7 @@
+{
+  "scope": "Controlled transformation only; nothing executed; no evidence of exploitation on CRAN",
+  "input": "<body><p>Controlled review fixture</p><a href=javascript:alert(1)>test</a><object data=\"https://example.invalid/object\"></object></body>",
+  "output": "<p>Controlled review fixture</p><a href=javascript:alert(1)>test</a><object data=\"https://example.invalid/object\"></object>",
+  "unquotedJavascriptHrefRetained": true,
+  "objectElementRetained": true
+}

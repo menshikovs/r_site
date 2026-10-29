@@ -1,0 +1,71 @@
+rows 25599
+Package
+Version
+Priority
+Depends
+Imports
+LinkingTo
+Suggests
+Enhances
+License
+License_is_FOSS
+License_restricts_use
+OS_type
+Archs
+MD5sum
+NeedsCompilation
+Additional_repositories
+Author
+Authors@R
+Biarch
+BugReports
+BuildKeepEmpty
+BuildManual
+BuildResaveData
+BuildVignettes
+Built
+ByteCompile
+Classification/ACM
+Classification/ACM-2012
+Classification/JEL
+Classification/MSC
+Classification/MSC-2010
+Collate
+Collate.unix
+Collate.windows
+Contact
+Copyright
+Date
+Date/Publication
+Description
+Encoding
+KeepSource
+Language
+LazyData
+LazyDataCompression
+LazyLoad
+MailingList
+Maintainer
+Note
+Packaged
+RdMacros
+StagedInstall
+SysDataCompression
+SystemRequirements
+Title
+Type
+URL
+UseLTO
+VignetteBuilder
+ZipData
+Path
+X-CRAN-Comment
+Published
+Reverse depends
+Reverse imports
+Reverse linking to
+Reverse suggests
+Reverse enhances
+Deadline
+Bounce
+DOI

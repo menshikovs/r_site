@@ -1,0 +1,117 @@
+[
+  {
+    "url": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+    "finalUrl": "https://cran.r-project.org/web/packages/ggplot2/index.html",
+    "status": 200,
+    "bytes": 683435,
+    "file": "ggplot2-official.html",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 08:36:26 GMT",
+      "etag": "\"a6dab-65eec0edc968d-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 20:03:34 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "sha256": "5f15866573af56f6c5197f44a8321dafd660fff914b95aefaaa11f56e80e059d",
+    "at": "2026-10-29T08:36:26.419Z"
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/data.table/index.html",
+    "finalUrl": "https://cran.r-project.org/web/packages/data.table/index.html",
+    "status": 200,
+    "bytes": 209033,
+    "file": "data.table-official.html",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "26502",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 08:36:27 GMT",
+      "etag": "\"33089-65eeaee94c607-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 18:42:58 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "sha256": "d22e479e576ab7216f6732a266a59622bd0991324c3c4ca92916914ea4df7455",
+    "at": "2026-10-29T08:36:27.154Z"
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/Rcpp/index.html",
+    "finalUrl": "https://cran.r-project.org/web/packages/Rcpp/index.html",
+    "status": 200,
+    "bytes": 578490,
+    "file": "Rcpp-official.html",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 08:36:28 GMT",
+      "etag": "\"8d3ba-65eeed82461e0-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 23:23:01 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "sha256": "b6bb46b6d5c2a1998d8cb5d41ef7c6ef466c69800b0e53b6053e130d5e0943f4",
+    "at": "2026-10-29T08:36:27.949Z"
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/termr/index.html",
+    "finalUrl": "https://cran.r-project.org/web/packages/termr/index.html",
+    "status": 200,
+    "bytes": 6939,
+    "file": "termr-official.html",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "1909",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 08:36:29 GMT",
+      "etag": "\"1b1b-65eead45800e6-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 18:35:38 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "sha256": "2fc7f105f2d47d1aed7a6c09d1cf19235ac893b20b99e06d0b69721acfc232e1",
+    "at": "2026-10-29T08:36:28.620Z"
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/MASS/index.html",
+    "finalUrl": "https://cran.r-project.org/web/packages/MASS/index.html",
+    "status": 200,
+    "bytes": 250267,
+    "file": "MASS-official.html",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "30907",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 08:36:29 GMT",
+      "etag": "\"3d19b-65eec0edd80ed-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 20:03:34 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "sha256": "5683eae355ad082bf332d012b6f84bf5325aa180bc21c7803b0d6092e8e2304f",
+    "at": "2026-10-29T08:36:29.355Z"
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/packages.rds",
+    "finalUrl": "https://cran.r-project.org/web/packages/packages.rds",
+    "status": 200,
+    "bytes": 12670601,
+    "file": "packages.rds",
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "12670601",
+      "date": "Thu, 29 Oct 2026 08:36:30 GMT",
+      "etag": "\"c15689-65ef65a8e4e1d\"",
+      "last-modified": "Thu, 29 Oct 2026 08:20:34 GMT",
+      "server": "Apache"
+    },
+    "sha256": "938b6d71a01d5b0816f8096ba517bfffd8636094417be51c9f3fbd034c92be48",
+    "at": "2026-10-29T08:36:35.132Z"
+  }
+]

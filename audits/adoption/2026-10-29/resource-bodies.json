@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/src/contrib/termr_1.0.1.tar.gz",
+    "url": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+    "status": 200,
+    "bytes": 454747,
+    "sha256": "3b3805d27f74fd44c1127369a3734c84de28810ca89ab7d4cd363c90493bcf3d"
+  },
+  {
+    "path": "/src/contrib/Archive/uuid/uuid_1.2-1.tar.gz",
+    "url": "https://cran.r-project.org/src/contrib/Archive/uuid/uuid_1.2-1.tar.gz",
+    "status": 200,
+    "bytes": 80662,
+    "sha256": "f90e49733d7d6ea7cf91abdc07b7d0e9a34a4b993e6914d754f0621281fc4b96"
+  },
+  {
+    "path": "/bin/windows/contrib/4.6/termr_1.0.1.zip",
+    "url": "https://cran.r-project.org/bin/windows/contrib/4.6/termr_1.0.1.zip",
+    "status": 200,
+    "bytes": 4023719,
+    "sha256": "99a017e356e1c3e1589799e901b00d759ae406ed5ce4f35f26fd3e22480eed9f"
+  },
+  {
+    "path": "/bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES.rds",
+    "url": "https://cran.r-project.org/bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES.rds",
+    "status": 200,
+    "bytes": 2427376,
+    "sha256": "d55410e22cb57de719bac242ce575ededf3d067ab05a9f361a44b035153be1ec"
+  },
+  {
+    "path": "/web/checks/check_results_termr.html",
+    "url": "https://cran.r-project.org/web/checks/check_results_termr.html",
+    "status": 200,
+    "bytes": 11507,
+    "sha256": "b1a407c7c9b2716788768191b6bb7c3482a7e30e394c61fc9110b18763806f19"
+  },
+  {
+    "path": "/web/views/index.html",
+    "url": "https://cran.r-project.org/web/views/index.html",
+    "status": 200,
+    "bytes": 10248,
+    "sha256": "8e21ee82018c0adc6ab18c7e3b470ac9322f24a2dc7a0f72e9dbdee5a0aadad6"
+  },
+  {
+    "path": "/web/packages/ggplot2/vignettes/ggplot2.html",
+    "url": "https://cran.r-project.org/web/packages/ggplot2/vignettes/ggplot2.html",
+    "status": 200,
+    "bytes": 1000217,
+    "sha256": "ab5712f905ace2bdeb0607cea185cbb5064e6b4f4f9e2ac47599b8e396f3ac8a"
+  }
+]

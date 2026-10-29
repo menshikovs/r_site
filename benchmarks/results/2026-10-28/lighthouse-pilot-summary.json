@@ -1,0 +1,245 @@
+[
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 153.301
+      },
+      "largest-contentful-paint": {
+        "value": 153.301
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 157
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 165.62
+      },
+      "largest-contentful-paint": {
+        "value": 165.62
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 168
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 148.892
+      },
+      "largest-contentful-paint": {
+        "value": 148.892
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 146
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 148.91
+      },
+      "largest-contentful-paint": {
+        "value": 148.91
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 146
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  }
+]

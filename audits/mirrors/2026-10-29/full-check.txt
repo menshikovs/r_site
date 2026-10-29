@@ -1,0 +1,2 @@
+﻿Static site check passed: 33606 HTML pages; 25585 package pages; optional search script is restricted to home and catalog.
+Reverse dependency checks passed: 7949 pages; all category counts, anchors, lists and local/external names checked.

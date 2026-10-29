@@ -1,0 +1,17 @@
+{
+  "prototypeChecks": 18,
+  "fullCandidateCheckPassed": true,
+  "productionDistHashUnchanged": true,
+  "productionSourceHashesUnchanged": true,
+  "originalCorpusFiles": 30,
+  "originalCorpusHashesUnchanged": true,
+  "generatedFiles": 33611,
+  "htmlFiles": 33606,
+  "generatedBytes": 218540640,
+  "changedGeneratedFiles": 6,
+  "buildWallMs": 238361.9325,
+  "sampledProcessTreeCpuLowerBoundMs": 206578.125,
+  "sampledPeakSummedWorkingSet": 616579072,
+  "canonicalLocationsAreLocalModel": true,
+  "fullIntegrationApproved": false
+}

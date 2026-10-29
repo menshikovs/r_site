@@ -1,0 +1,116 @@
+{
+  "scope": "Local limited official corpus; full generated overlays; no assertion about private CRAN configuration",
+  "results": [
+    {
+      "name": "R client on native baseline",
+      "stdout": "packages=25600\r\ntermr=1.0.1\r\n",
+      "stderr": "During startup - Warning messages:\r\n1: Setting LC_COLLATE=C.UTF-8 failed \r\n2: Setting LC_CTYPE=C.UTF-8 failed \r\n3: Setting LC_MONETARY=C.UTF-8 failed \r\n4: Setting LC_TIME=C.UTF-8 failed \r\n"
+    },
+    {
+      "name": "Directory index ownership",
+      "nativeListingShowsTarball": true,
+      "overlayListingShowsTarball": false,
+      "note": "Known discovery/ownership change; raw file is preserved"
+    },
+    {
+      "name": "Untouched original resources",
+      "checked": 21,
+      "hashesMatch": true
+    },
+    {
+      "name": "Canonical resolver",
+      "path": "/package=termr",
+      "status": 303,
+      "target": "/web/packages/termr/index.html",
+      "location": "http://127.0.0.1:8088/web/packages/termr/index.html"
+    },
+    {
+      "name": "Canonical resolver",
+      "path": "/package=termr&version=1.0.1",
+      "status": 303,
+      "target": "/src/contrib/termr_1.0.1.tar.gz",
+      "location": "http://127.0.0.1:8088/src/contrib/termr_1.0.1.tar.gz"
+    },
+    {
+      "name": "Canonical resolver",
+      "path": "/package=uuid&version=1.2-1",
+      "status": 303,
+      "target": "/src/contrib/Archive/uuid/uuid_1.2-1.tar.gz",
+      "location": "http://127.0.0.1:8088/src/contrib/Archive/uuid/uuid_1.2-1.tar.gz"
+    },
+    {
+      "name": "Real 404 policy",
+      "unknownPaths": 4,
+      "notSpaFallback": true,
+      "note": "Invalid version is direct 404 here; public CRAN was observed redirecting first, then 404"
+    },
+    {
+      "name": "Binary download range",
+      "status": 206,
+      "contentRange": "bytes 0-15/4023719",
+      "bytes": 16
+    },
+    {
+      "name": "Dist-only replacement negative control",
+      "repositoryIndex": 404,
+      "packagePdf": 404
+    },
+    {
+      "name": "Protected-path injection",
+      "path": "src/contrib/PACKAGES.rds",
+      "rejectedBeforeMerge": true,
+      "scope": "Policy predicate negative control; original file was never modified"
+    },
+    {
+      "name": "R client on overlay",
+      "stdout": "packages=25600\r\ntermr=1.0.1\r\n",
+      "stderr": "During startup - Warning messages:\r\n1: Setting LC_COLLATE=C.UTF-8 failed \r\n2: Setting LC_CTYPE=C.UTF-8 failed \r\n3: Setting LC_MONETARY=C.UTF-8 failed \r\n4: Setting LC_TIME=C.UTF-8 failed \r\n"
+    },
+    {
+      "name": "Local mirror initial sync",
+      "wallMs": 14978.308700000001,
+      "relativeSymlinkWorks": true
+    },
+    {
+      "name": "Release pointer and metadata update",
+      "path": "web/packages/frictionless/index.html",
+      "beforeSha256": "ae87622bd32d20e249af9018beb3bae2c55242c0f36aa399975abe66efd08afb",
+      "afterSha256": "8cf8815cf16fd919df942d6c3c093dff751d08d928b5b6410dd3e69369574e80",
+      "probeCount": 30,
+      "statuses": [
+        200
+      ],
+      "switchWallMs": 142.77720000000045,
+      "scope": "One symlink replacement; not a proof of cross-request/cache/remote-mirror atomicity"
+    },
+    {
+      "name": "Mirror update and deletion",
+      "wallMs": 12880.459600000002,
+      "retiredFixtureRemoved": true
+    },
+    {
+      "name": "R client on updated mirror",
+      "stdout": "packages=25600\r\ntermr=1.0.1\r\n",
+      "stderr": "During startup - Warning messages:\r\n1: Setting LC_COLLATE=C.UTF-8 failed \r\n2: Setting LC_CTYPE=C.UTF-8 failed \r\n3: Setting LC_MONETARY=C.UTF-8 failed \r\n4: Setting LC_TIME=C.UTF-8 failed \r\n"
+    },
+    {
+      "name": "No-JavaScript navigation",
+      "alphabetLinks": 26,
+      "packageAndFullReverseList": true
+    },
+    {
+      "name": "Subdirectory mount negative control",
+      "documentStatus": 200,
+      "stylesheetHref": "/assets/site.css",
+      "stylesheetStatus": 404,
+      "requiredChange": "Base-path-aware asset/navigation generation or an explicitly supported root mount"
+    },
+    {
+      "name": "Rollback and native integrity",
+      "oldHtmlRestored": true,
+      "mirrorRolledBack": true,
+      "originalCorpusHashesUnchanged": true,
+      "note": "Native repository was frozen for this limited experiment; rollback against a concurrently changing CRAN repository remains unproved"
+    }
+  ]
+}

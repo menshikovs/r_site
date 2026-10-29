@@ -1,0 +1,138 @@
+[
+  {
+    "path": "/mirror-howto.html",
+    "url": "https://cran.r-project.org/mirror-howto.html",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "3382",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 09:46:34 GMT",
+      "etag": "\"1e8e-620d33b6a057f-gzip\"",
+      "last-modified": "Thu, 29 Aug 2024 14:24:27 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "bytes": 7822,
+    "at": "2026-10-29T09:46:34.272Z",
+    "sha256": "2620d504f4c08f076458ab83e5a2c677d703685654a9b28c318b478bf74ae273"
+  },
+  {
+    "path": "/src/contrib/PACKAGES.rds",
+    "url": "https://cran.r-project.org/src/contrib/PACKAGES.rds",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "1318824",
+      "date": "Thu, 29 Oct 2026 09:46:35 GMT",
+      "etag": "\"141fa8-65ef77b454376\"",
+      "last-modified": "Thu, 29 Oct 2026 09:41:18 GMT",
+      "server": "Apache"
+    },
+    "bytes": 1318824,
+    "at": "2026-10-29T09:46:35.535Z",
+    "sha256": "4e0e42b88300cd40fdc25af25435c51cfceff1518c33411cb20289b03f6060a9"
+  },
+  {
+    "path": "/bin/windows/contrib/4.6/PACKAGES.rds",
+    "url": "https://cran.r-project.org/bin/windows/contrib/4.6/PACKAGES.rds",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "1088984",
+      "date": "Thu, 29 Oct 2026 09:46:36 GMT",
+      "etag": "\"109dd8-65edc6cd954c1\"",
+      "last-modified": "Wed, 28 Oct 2026 01:24:32 GMT",
+      "server": "Apache"
+    },
+    "bytes": 1088984,
+    "at": "2026-10-29T09:46:36.588Z",
+    "sha256": "fe8ac076f52dc4723b6e95c7840c41d0f3c0a80181418047f8b46bccb4b02c94"
+  },
+  {
+    "path": "/web/packages/termr/termr.pdf",
+    "url": "https://cran.r-project.org/web/packages/termr/termr.pdf",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "476471",
+      "content-type": "application/pdf",
+      "date": "Thu, 29 Oct 2026 09:46:37 GMT",
+      "etag": "\"74537-65e5717fabe99\"",
+      "last-modified": "Wed, 21 Oct 2026 10:20:17 GMT",
+      "server": "Apache"
+    },
+    "bytes": 476471,
+    "at": "2026-10-29T09:46:37.412Z",
+    "sha256": "293483aa2170bea3d9298d6288372405885813d744b744ce8db727dc3e1fef17"
+  },
+  {
+    "path": "/web/packages/termr/LICENSE",
+    "url": "https://cran.r-project.org/web/packages/termr/LICENSE",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "45",
+      "date": "Thu, 29 Oct 2026 09:46:38 GMT",
+      "etag": "\"2d-65e5717e4f47f\"",
+      "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+      "server": "Apache"
+    },
+    "bytes": 45,
+    "at": "2026-10-29T09:46:38.072Z",
+    "sha256": "1263a38feb3bb85b833bc7d51a67b239dcbc34900dd826b92614f02796c264d2"
+  },
+  {
+    "path": "/web/packages/termr/readme/README.html",
+    "url": "https://cran.r-project.org/web/packages/termr/readme/README.html",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "5417",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 09:46:39 GMT",
+      "etag": "\"4585-65e5717eb4d7d-gzip\"",
+      "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "bytes": 17797,
+    "at": "2026-10-29T09:46:38.736Z",
+    "sha256": "bcdbca839016d13b8e661130f9b92dbec2426c45addd15f6c273e4b6cdca6c22"
+  },
+  {
+    "path": "/web/packages/termr/news/news.html",
+    "url": "https://cran.r-project.org/web/packages/termr/news/news.html",
+    "method": "GET",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-encoding": "gzip",
+      "content-length": "8481",
+      "content-type": "text/html",
+      "date": "Thu, 29 Oct 2026 09:46:40 GMT",
+      "etag": "\"5657-65e5717eee75c-gzip\"",
+      "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+      "server": "Apache",
+      "vary": "Accept-Encoding"
+    },
+    "bytes": 22103,
+    "at": "2026-10-29T09:46:39.415Z",
+    "sha256": "955dc0b285b6cccf7fc5e809ef3d57e12bbdcba62c217825cc6547663b0be2ed"
+  }
+]

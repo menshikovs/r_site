@@ -1,0 +1,722 @@
+[
+  {
+    "profile": "desktop",
+    "page": "home",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 210.948,
+      "largest-contentful-paint": 210.948,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 75.523,
+      "largest-contentful-paint": 75.523,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 150.404,
+      "largest-contentful-paint": 150.404,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 55.399,
+      "largest-contentful-paint": 55.399,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 143.954,
+      "largest-contentful-paint": 143.954,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 46.925,
+      "largest-contentful-paint": 46.925,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 150.097,
+      "largest-contentful-paint": 150.097,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 55.628,
+      "largest-contentful-paint": 55.628,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 147.033,
+      "largest-contentful-paint": 147.033,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 61.522,
+      "largest-contentful-paint": 61.522,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 498.485,
+      "largest-contentful-paint": 498.485,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 349.066,
+      "largest-contentful-paint": 349.066,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 346.877,
+      "largest-contentful-paint": 346.877,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 218.822,
+      "largest-contentful-paint": 218.822,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 670.291,
+      "largest-contentful-paint": 670.291,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 197.148,
+      "largest-contentful-paint": 197.148,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 376.356,
+      "largest-contentful-paint": 376.356,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 236.349,
+      "largest-contentful-paint": 236.349,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "cache": "cold",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 313.718,
+      "largest-contentful-paint": 313.718,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "cache": "warm",
+    "score": 1,
+    "accessibility": 1,
+    "metrics": {
+      "first-contentful-paint": 185.549,
+      "largest-contentful-paint": 185.549,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 0
+    },
+    "contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "warnings": []
+  }
+]

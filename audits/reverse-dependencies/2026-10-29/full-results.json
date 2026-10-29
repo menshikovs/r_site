@@ -1,0 +1,102 @@
+{
+  "snapshotSha256": "8252204f1c940e4fa6e70b7c3e77598b99e9a580c552f8a981b679179ff9bc37",
+  "packages": 25585,
+  "reversePages": 7949,
+  "edges": 243449,
+  "externalEdges": 25680,
+  "reverseBytes": 37963786,
+  "reverseGzipBytes": 10353314,
+  "summaryBytes": 16171556,
+  "summaryGzipIncrement": 3959056,
+  "addedFeatureBytes": 54135342,
+  "addedFeatureGzipEstimate": 14312370,
+  "mainBytes": 162368639,
+  "files": 33611,
+  "htmlFiles": 33606,
+  "totalBytes": 218540292,
+  "top": {
+    "name": "testthat",
+    "edges": 14429
+  },
+  "representatives": [
+    {
+      "name": "data.table",
+      "counts": {
+        "depends": 74,
+        "imports": 1939,
+        "linking-to": 0,
+        "suggests": 301,
+        "enhances": 6
+      },
+      "mainBytes": 9669,
+      "mainGzipBytes": 3183,
+      "reverseBytes": 151087
+    },
+    {
+      "name": "ggplot2",
+      "counts": {
+        "depends": 480,
+        "imports": 5398,
+        "linking-to": 0,
+        "suggests": 2355,
+        "enhances": 8
+      },
+      "mainBytes": 9709,
+      "mainGzipBytes": 2609,
+      "reverseBytes": 531223
+    },
+    {
+      "name": "MASS",
+      "counts": {
+        "depends": 325,
+        "imports": 2022,
+        "linking-to": 0,
+        "suggests": 843,
+        "enhances": 2
+      },
+      "mainBytes": 6074,
+      "mainGzipBytes": 1923,
+      "reverseBytes": 205296
+    },
+    {
+      "name": "Rcpp",
+      "counts": {
+        "depends": 172,
+        "imports": 3445,
+        "linking-to": 3674,
+        "suggests": 56,
+        "enhances": 0
+      },
+      "mainBytes": 8365,
+      "mainGzipBytes": 2397,
+      "reverseBytes": 470750
+    },
+    {
+      "name": "termr",
+      "counts": {
+        "depends": 0,
+        "imports": 0,
+        "linking-to": 0,
+        "suggests": 0,
+        "enhances": 0
+      },
+      "mainBytes": 6819,
+      "mainGzipBytes": 2100,
+      "reverseBytes": 0
+    },
+    {
+      "name": "testthat",
+      "counts": {
+        "depends": 13,
+        "imports": 98,
+        "linking-to": 42,
+        "suggests": 14275,
+        "enhances": 1
+      },
+      "mainBytes": 7783,
+      "mainGzipBytes": 2229,
+      "reverseBytes": 931086
+    }
+  ],
+  "allSourceListsAndCountsMatch": true
+}

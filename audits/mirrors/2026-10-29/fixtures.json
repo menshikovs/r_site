@@ -1,0 +1,117 @@
+{
+  "scope": "Synthetic controlled metadata fixtures, never official package releases",
+  "a": [
+    {
+      "Package": "ggplot2",
+      "Version": "1.0.0",
+      "Title": "ggplot2",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "termr, RetiredAuditPackage",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "termr",
+      "Version": "1.0.0",
+      "Title": "termr",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "plotly",
+      "Version": "1.0.0",
+      "Title": "plotly",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "plotrix",
+      "Version": "1.0.0",
+      "Title": "plotrix",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "RetiredAuditPackage",
+      "Version": "1.0.0",
+      "Title": "RetiredAuditPackage",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    }
+  ],
+  "b": [
+    {
+      "Package": "ggplot2",
+      "Version": "1.0.0",
+      "Title": "Controlled metadata update",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "termr, AddedAuditPackage",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "termr",
+      "Version": "1.0.0",
+      "Title": "termr",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "plotly",
+      "Version": "1.0.0",
+      "Title": "plotly",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "plotrix",
+      "Version": "1.0.0",
+      "Title": "plotrix",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    },
+    {
+      "Package": "AddedAuditPackage",
+      "Version": "1.0.0",
+      "Title": "AddedAuditPackage",
+      "Description": "Local controlled deployment fixture; not a CRAN release.",
+      "Reverse depends": "",
+      "Reverse imports": "",
+      "Reverse linking to": "",
+      "Reverse suggests": "",
+      "Reverse enhances": ""
+    }
+  ]
+}

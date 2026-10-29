@@ -1,0 +1,98 @@
+sending incremental file list
+*deleting   navbar.html
+*deleting   mirror-howto.html
+*deleting   manuals.html
+*deleting   logo.html
+*deleting   favicon.ico
+*deleting   banner.shtml
+*deleting   R.css
+*deleting   bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES.rds
+*deleting   bin/macosx/sonoma-arm64/contrib/4.6/
+*deleting   bin/macosx/sonoma-arm64/contrib/
+*deleting   bin/macosx/sonoma-arm64/
+*deleting   bin/windows/contrib/4.6/termr_1.0.1.zip
+*deleting   bin/windows/contrib/4.6/PACKAGES.rds
+*deleting   bin/windows/contrib/4.6/
+*deleting   bin/windows/contrib/
+*deleting   bin/windows/base/index.html
+*deleting   bin/windows/base/
+*deleting   src/contrib/Archive/uuid/uuid_1.2-1.tar.gz
+*deleting   src/contrib/Archive/uuid/
+*deleting   src/contrib/Archive/
+*deleting   src/contrib/termr_1.0.1.tar.gz
+*deleting   src/contrib/PACKAGES.rds
+*deleting   web/views/index.html
+*deleting   web/views/
+*deleting   web/checks/check_results_termr.html
+*deleting   web/checks/
+*deleting   web/ror.svg
+*deleting   web/orcid.svg
+*deleting   web/CRAN_web.css
+*deleting   web/packages/ggplot2/vignettes/ggplot2.html
+*deleting   web/packages/ggplot2/vignettes/
+*deleting   web/packages/termr/readme/README.html
+*deleting   web/packages/termr/readme/
+*deleting   web/packages/termr/news/news.html
+*deleting   web/packages/termr/news/
+*deleting   web/packages/termr/termr.pdf
+*deleting   web/packages/termr/LICENSE
+.d..t...... ./
+>f.st...... Rlogo.svg
+>f+++++++++ _headers
+>f.st...... index.html
+>f+++++++++ mirrors.html
+cd+++++++++ assets/
+>f+++++++++ assets/package-search.json
+>f+++++++++ assets/search.js
+>f+++++++++ assets/site.css
+.d..t...... bin/
+cd+++++++++ bin/linux/
+>f+++++++++ bin/linux/index.html
+.d..t...... bin/macosx/
+>f+++++++++ bin/macosx/index.html
+.d..t...... bin/windows/
+>f.st...... bin/windows/index.html
+.d..t...... src/
+>f+++++++++ src/index.html
+cd+++++++++ src/base/
+>f+++++++++ src/base/index.html
+.d..t...... src/contrib/
+>f+++++++++ src/contrib/index.html
+.d..t...... web/
+.d..t...... web/packages/
+>f.st...... web/packages/available_packages_by_name.html
+>f.st...... web/packages/index.html
+cd+++++++++ web/packages/RetiredAuditPackage/
+>f+++++++++ web/packages/RetiredAuditPackage/index.html
+cd+++++++++ web/packages/by-name/
+>f+++++++++ web/packages/by-name/g.html
+>f+++++++++ web/packages/by-name/p.html
+>f+++++++++ web/packages/by-name/r.html
+>f+++++++++ web/packages/by-name/t.html
+.d..t...... web/packages/ggplot2/
+>f.st...... web/packages/ggplot2/index.html
+>f+++++++++ web/packages/ggplot2/reverse-dependencies.html
+cd+++++++++ web/packages/plotly/
+>f+++++++++ web/packages/plotly/index.html
+cd+++++++++ web/packages/plotrix/
+>f+++++++++ web/packages/plotrix/index.html
+.d..t...... web/packages/termr/
+>f+++++++++ web/packages/termr/index.html
+
+Number of files: 42 (reg: 25, dir: 17)
+Number of created files: 26 (reg: 19, dir: 7)
+Number of deleted files: 37 (reg: 24, dir: 13)
+Number of regular files transferred: 25
+Total file size: 110,319 bytes
+Total transferred file size: 110,319 bytes
+Literal data: 110,319 bytes
+Matched data: 0 bytes
+File list size: 0
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 21,605
+Total bytes received: 1,598
+
+sent 21,605 bytes  received 1,598 bytes  46,406.00 bytes/sec
+total size is 110,319  speedup is 4.75
+Negative confirmed: raw overlay --delete removed repository index, source, PDF and binary in disposable copies only.

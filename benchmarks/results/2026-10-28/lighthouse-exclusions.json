@@ -1,0 +1,8 @@
+{
+  "excluded": [
+    { "summary": "lighthouse-pilot-summary.json", "reports": "lighthouse-pilot/", "reason": "Preliminary configuration used default desktop quiet windows and a shared browser. Diagnostic only." },
+    { "summary": "lighthouse-reused-summary.json", "reports": "lighthouse-pilot-reused/", "reason": "Reused-browser pilot produced false NO_FCP results for the redesign. Excluded before comparison; no site code was changed." }
+  ],
+  "formalMethod": "Fresh Chrome process for every audit, random debugging port, background throttling disabled, the pinned effective Lighthouse quiet windows (5250 ms for both profiles in DevTools throttling mode) and 10000 ms FCP timeout. Site order alternates, ten audits per condition.",
+  "smokeCheck": "Fresh-process diagnostic recovered a valid Performance=100 for the redesign. Original frameset root still has no top-level FCP; score remains unavailable."
+}

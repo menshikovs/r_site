@@ -1,0 +1,54 @@
+{
+  "sizes": [
+    {
+      "name": "ggplot2",
+      "before": 7743,
+      "after": 8859,
+      "gzipBefore": 2370,
+      "gzipAfter": 2432,
+      "linksBefore": 21,
+      "linksAfter": 64
+    },
+    {
+      "name": "data.table",
+      "before": 15686,
+      "after": 8809,
+      "gzipBefore": 4053,
+      "gzipAfter": 3006,
+      "linksBefore": 21,
+      "linksAfter": 32
+    },
+    {
+      "name": "Rcpp",
+      "before": 7836,
+      "after": 7524,
+      "gzipBefore": 2266,
+      "gzipAfter": 2217,
+      "linksBefore": 21,
+      "linksAfter": 29
+    },
+    {
+      "name": "termr",
+      "before": 5208,
+      "after": 6206,
+      "gzipBefore": 1808,
+      "gzipAfter": 1947,
+      "linksBefore": 11,
+      "linksAfter": 26
+    },
+    {
+      "name": "MASS",
+      "before": 4686,
+      "after": 5237,
+      "gzipBefore": 1685,
+      "gzipAfter": 1746,
+      "linksBefore": 10,
+      "linksAfter": 21
+    }
+  ],
+  "dist": {
+    "files": 25662,
+    "html": 25657,
+    "bytes": 164377749
+  }
+}

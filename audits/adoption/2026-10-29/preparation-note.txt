@@ -1,0 +1,6 @@
+Initial file-wise copying across /mnt/c was interrupted for performance reasons.
+Native extraction of Windows-created tar archives completed the two release trees.
+The first R-client baseline check found an empty local mirror because that copy
+step had not yet run in the interrupted preparation. The missing preparation step
+was restored before the final experiment. This was a harness preparation failure,
+not a CRAN/r_site compatibility result. No production resources were modified.

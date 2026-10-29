@@ -1,0 +1,29 @@
+sending incremental file list
+*deleting   web/packages/RetiredAuditPackage/index.html
+*deleting   web/packages/RetiredAuditPackage/
+*deleting   web/packages/by-name/r.html
+>f.st...... assets/package-search.json
+>f..t...... web/packages/index.html
+cd+++++++++ web/packages/AddedAuditPackage/
+>f+++++++++ web/packages/AddedAuditPackage/index.html
+>f+++++++++ web/packages/by-name/a.html
+>f.st...... web/packages/by-name/g.html
+>f.st...... web/packages/ggplot2/index.html
+>f.st...... web/packages/ggplot2/reverse-dependencies.html
+
+Number of files: 79 (reg: 49, dir: 30)
+Number of created files: 3 (reg: 2, dir: 1)
+Number of deleted files: 3 (reg: 2, dir: 1)
+Number of regular files transferred: 7
+Total file size: 11,082,928 bytes
+Total transferred file size: 19,260 bytes
+Literal data: 19,260 bytes
+Matched data: 0 bytes
+File list size: 0
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 5,726
+Total bytes received: 303
+
+sent 5,726 bytes  received 303 bytes  12,058.00 bytes/sec
+total size is 11,082,928  speedup is 1,838.27

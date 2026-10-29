@@ -1,0 +1,504 @@
+{
+  "requestCap": 65,
+  "requests": 35,
+  "redirects": "Recorded without automatically following; no archive/binary body download",
+  "results": [
+    {
+      "path": "/",
+      "url": "https://cran.r-project.org/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "467",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:40 GMT",
+        "etag": "\"362-612dafe59ac63-gzip\"",
+        "last-modified": "Mon, 04 Mar 2024 19:47:19 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:40.095Z"
+    },
+    {
+      "path": "/bin/windows/",
+      "url": "https://cran.r-project.org/bin/windows/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "785",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:41 GMT",
+        "etag": "\"649-612e9ee8528ed-gzip\"",
+        "last-modified": "Tue, 05 Mar 2024 13:36:38 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:40.763Z"
+    },
+    {
+      "path": "/bin/macosx/",
+      "url": "https://cran.r-project.org/bin/macosx/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "3699",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:42 GMT",
+        "etag": "\"30a2-6551bfe5bfcd5-gzip\"",
+        "last-modified": "Thu, 25 Jun 2026 23:03:00 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:41.436Z"
+    },
+    {
+      "path": "/bin/linux/",
+      "url": "https://cran.r-project.org/bin/linux/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "content-type": "text/html;charset=UTF-8",
+        "date": "Thu, 29 Oct 2026 09:46:42 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:42.101Z"
+    },
+    {
+      "path": "/web/packages/",
+      "url": "https://cran.r-project.org/web/packages/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "1480",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:43 GMT",
+        "etag": "\"fbd-65ef77883a38d-gzip\"",
+        "last-modified": "Thu, 29 Oct 2026 09:40:32 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:42.762Z"
+    },
+    {
+      "path": "/web/packages/termr/index.html",
+      "url": "https://cran.r-project.org/web/packages/termr/index.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "1909",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:44 GMT",
+        "etag": "\"1b1b-65eead45800e6-gzip\"",
+        "last-modified": "Wed, 28 Oct 2026 18:35:38 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:43.419Z"
+    },
+    {
+      "path": "/package=termr",
+      "url": "https://cran.r-project.org/package=termr",
+      "method": "HEAD",
+      "status": 303,
+      "location": "https://cran.r-project.org/web/packages/termr/index.html",
+      "headers": {
+        "content-type": "text/html; charset=iso-8859-1",
+        "date": "Thu, 29 Oct 2026 09:46:44 GMT",
+        "location": "https://cran.r-project.org/web/packages/termr/index.html",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:44.077Z"
+    },
+    {
+      "path": "/package=termr&version=1.0.1",
+      "url": "https://cran.r-project.org/package=termr&version=1.0.1",
+      "method": "HEAD",
+      "status": 303,
+      "location": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+      "headers": {
+        "content-type": "text/html; charset=iso-8859-1",
+        "date": "Thu, 29 Oct 2026 09:46:45 GMT",
+        "location": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:44.745Z"
+    },
+    {
+      "path": "/package=ggplot2&version=4.0.2",
+      "url": "https://cran.r-project.org/package=ggplot2&version=4.0.2",
+      "method": "HEAD",
+      "status": 303,
+      "location": "https://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_4.0.2.tar.gz",
+      "headers": {
+        "content-type": "text/html; charset=iso-8859-1",
+        "date": "Thu, 29 Oct 2026 09:46:46 GMT",
+        "location": "https://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_4.0.2.tar.gz",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:45.403Z"
+    },
+    {
+      "path": "/package=termr&version=0.0.0",
+      "url": "https://cran.r-project.org/package=termr&version=0.0.0",
+      "method": "HEAD",
+      "status": 303,
+      "location": "https://cran.r-project.org/web/packages/termr&version=0.0.0/index.html",
+      "headers": {
+        "content-type": "text/html; charset=iso-8859-1",
+        "date": "Thu, 29 Oct 2026 09:46:46 GMT",
+        "location": "https://cran.r-project.org/web/packages/termr&version=0.0.0/index.html",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:46.063Z"
+    },
+    {
+      "path": "/src/contrib/",
+      "url": "https://cran.r-project.org/src/contrib/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "content-type": "text/html;charset=UTF-8",
+        "date": "Thu, 29 Oct 2026 09:46:47 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:46.723Z"
+    },
+    {
+      "path": "/src/contrib/PACKAGES",
+      "url": "https://cran.r-project.org/src/contrib/PACKAGES",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "7422065",
+        "date": "Thu, 29 Oct 2026 09:46:48 GMT",
+        "etag": "\"714071-65ef77b19de21\"",
+        "last-modified": "Thu, 29 Oct 2026 09:41:15 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:47.394Z"
+    },
+    {
+      "path": "/src/contrib/PACKAGES.gz",
+      "url": "https://cran.r-project.org/src/contrib/PACKAGES.gz",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "1963064",
+        "content-type": "application/x-gzip",
+        "date": "Thu, 29 Oct 2026 09:46:48 GMT",
+        "etag": "\"1df438-65ef77b1e1440\"",
+        "last-modified": "Thu, 29 Oct 2026 09:41:15 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:48.056Z"
+    },
+    {
+      "path": "/src/contrib/PACKAGES.rds",
+      "url": "https://cran.r-project.org/src/contrib/PACKAGES.rds",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "1318824",
+        "date": "Thu, 29 Oct 2026 09:46:49 GMT",
+        "etag": "\"141fa8-65ef77b454376\"",
+        "last-modified": "Thu, 29 Oct 2026 09:41:18 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:48.715Z"
+    },
+    {
+      "path": "/src/contrib/termr_1.0.1.tar.gz",
+      "url": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "454747",
+        "content-type": "application/x-gzip",
+        "date": "Thu, 29 Oct 2026 09:46:50 GMT",
+        "etag": "\"6f05b-65e5717e496bf\"",
+        "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:49.372Z"
+    },
+    {
+      "path": "/bin/windows/contrib/4.6/PACKAGES.rds",
+      "url": "https://cran.r-project.org/bin/windows/contrib/4.6/PACKAGES.rds",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "1088984",
+        "date": "Thu, 29 Oct 2026 09:46:50 GMT",
+        "etag": "\"109dd8-65edc6cd954c1\"",
+        "last-modified": "Wed, 28 Oct 2026 01:24:32 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:50.030Z"
+    },
+    {
+      "path": "/bin/windows/contrib/4.6/termr_1.0.1.zip",
+      "url": "https://cran.r-project.org/bin/windows/contrib/4.6/termr_1.0.1.zip",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "4023719",
+        "content-type": "application/zip",
+        "date": "Thu, 29 Oct 2026 09:46:51 GMT",
+        "etag": "\"3d65a7-65eb5ca57cdf8\"",
+        "last-modified": "Mon, 26 Oct 2026 03:18:57 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:50.695Z"
+    },
+    {
+      "path": "/bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES.rds",
+      "url": "https://cran.r-project.org/bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES.rds",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "2427376",
+        "date": "Thu, 29 Oct 2026 09:46:51 GMT",
+        "etag": "\"2509f0-65ef0b3cd4480\"",
+        "last-modified": "Thu, 29 Oct 2026 01:36:02 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:51.356Z"
+    },
+    {
+      "path": "/manuals.html",
+      "url": "https://cran.r-project.org/manuals.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "2159",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:52 GMT",
+        "etag": "\"1e73-64f3eac297cac-gzip\"",
+        "last-modified": "Sun, 12 Apr 2026 07:54:15 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:52.016Z"
+    },
+    {
+      "path": "/doc/manuals/r-release/R-intro.html",
+      "url": "https://cran.r-project.org/doc/manuals/r-release/R-intro.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:53 GMT",
+        "etag": "\"92f72-655238ea7bd08-gzip\"",
+        "last-modified": "Fri, 26 Jun 2026 08:04:25 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:52.761Z"
+    },
+    {
+      "path": "/web/checks/check_results_termr.html",
+      "url": "https://cran.r-project.org/web/checks/check_results_termr.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "2097",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:56 GMT",
+        "etag": "\"2cf3-65ef6e55d9002-gzip\"",
+        "last-modified": "Thu, 29 Oct 2026 08:59:23 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:55.555Z"
+    },
+    {
+      "path": "/src/contrib/Archive/ggplot2/",
+      "url": "https://cran.r-project.org/src/contrib/Archive/ggplot2/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "content-type": "text/html;charset=UTF-8",
+        "date": "Thu, 29 Oct 2026 09:46:56 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:56.218Z"
+    },
+    {
+      "path": "/web/views/",
+      "url": "https://cran.r-project.org/web/views/",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "2319",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:57 GMT",
+        "etag": "\"2808-65ef30c9865f2-gzip\"",
+        "last-modified": "Thu, 29 Oct 2026 04:24:01 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:56.880Z"
+    },
+    {
+      "path": "/web/packages/ggplot2/vignettes/ggplot2.html",
+      "url": "https://cran.r-project.org/web/packages/ggplot2/vignettes/ggplot2.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:58 GMT",
+        "etag": "\"f4319-65150f8ee0bf0-gzip\"",
+        "last-modified": "Fri, 08 May 2026 16:34:35 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:57.601Z"
+    },
+    {
+      "path": "/web/packages/termr/readme/README.html",
+      "url": "https://cran.r-project.org/web/packages/termr/readme/README.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "5417",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:46:59 GMT",
+        "etag": "\"4585-65e5717eb4d7d-gzip\"",
+        "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:58.838Z"
+    },
+    {
+      "path": "/web/packages/termr/news/news.html",
+      "url": "https://cran.r-project.org/web/packages/termr/news/news.html",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-encoding": "gzip",
+        "content-length": "8481",
+        "content-type": "text/html",
+        "date": "Thu, 29 Oct 2026 09:47:00 GMT",
+        "etag": "\"5657-65e5717eee75c-gzip\"",
+        "last-modified": "Wed, 21 Oct 2026 10:20:16 GMT",
+        "server": "Apache",
+        "vary": "Accept-Encoding"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:46:59.501Z"
+    },
+    {
+      "path": "/web/packages/termr/termr.pdf",
+      "url": "https://cran.r-project.org/web/packages/termr/termr.pdf",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-length": "476471",
+        "content-type": "application/pdf",
+        "date": "Thu, 29 Oct 2026 09:47:00 GMT",
+        "etag": "\"74537-65e5717fabe99\"",
+        "last-modified": "Wed, 21 Oct 2026 10:20:17 GMT",
+        "server": "Apache"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:47:00.164Z"
+    },
+    {
+      "path": "/assets/site.css",
+      "url": "https://cran.r-project.org/assets/site.css",
+      "method": "HEAD",
+      "status": 404,
+      "location": null,
+      "headers": {
+        "accept-ranges": "bytes",
+        "content-language": "en",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 29 Oct 2026 09:47:01 GMT",
+        "server": "Apache",
+        "vary": "accept-language,accept-charset"
+      },
+      "bytes": 0,
+      "at": "2026-10-29T09:47:00.829Z"
+    }
+  ]
+}

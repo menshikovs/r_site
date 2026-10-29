@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-28T17:56:22.902Z",
+  "node": "v26.11.1",
+  "platform": "win32",
+  "release": "10.0.26100",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+  "logicalCpus": 20,
+  "ramBytes": 25463480320,
+  "note": "Browser and WSL server share the same physical computer."
+}

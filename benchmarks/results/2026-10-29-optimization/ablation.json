@@ -1,0 +1,425 @@
+{
+  "warning": "Appearance-changing diagnostic controls; CSS intercepted in every control; not page-load comparisons or proposed production changes.",
+  "rows": [
+    {
+      "name": "home",
+      "run": 0,
+      "variant": "control",
+      "layoutMs": 255.53500000000003,
+      "styleMs": 25.468
+    },
+    {
+      "name": "home",
+      "run": 0,
+      "variant": "noGrid",
+      "layoutMs": 302.86800000000005,
+      "styleMs": 41.247
+    },
+    {
+      "name": "home",
+      "run": 0,
+      "variant": "automaticText",
+      "layoutMs": 252.72099999999998,
+      "styleMs": 24.211
+    },
+    {
+      "name": "home",
+      "run": 0,
+      "variant": "singleFont",
+      "layoutMs": 262.08799999999997,
+      "styleMs": 22.199
+    },
+    {
+      "name": "home",
+      "run": 1,
+      "variant": "singleFont",
+      "layoutMs": 238.735,
+      "styleMs": 21.605
+    },
+    {
+      "name": "home",
+      "run": 1,
+      "variant": "automaticText",
+      "layoutMs": 236.927,
+      "styleMs": 21.648
+    },
+    {
+      "name": "home",
+      "run": 1,
+      "variant": "noGrid",
+      "layoutMs": 239.714,
+      "styleMs": 22.028
+    },
+    {
+      "name": "home",
+      "run": 1,
+      "variant": "control",
+      "layoutMs": 221.31,
+      "styleMs": 21.383
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "variant": "control",
+      "layoutMs": 316.156,
+      "styleMs": 26.974
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "variant": "noGrid",
+      "layoutMs": 235.23,
+      "styleMs": 20.882
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "variant": "automaticText",
+      "layoutMs": 227.806,
+      "styleMs": 22.435
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "variant": "singleFont",
+      "layoutMs": 200.617,
+      "styleMs": 22.553
+    },
+    {
+      "name": "home",
+      "run": 3,
+      "variant": "singleFont",
+      "layoutMs": 212.142,
+      "styleMs": 21.061
+    },
+    {
+      "name": "home",
+      "run": 3,
+      "variant": "automaticText",
+      "layoutMs": 230.044,
+      "styleMs": 20.02
+    },
+    {
+      "name": "home",
+      "run": 3,
+      "variant": "noGrid",
+      "layoutMs": 216.779,
+      "styleMs": 20
+    },
+    {
+      "name": "home",
+      "run": 3,
+      "variant": "control",
+      "layoutMs": 210.76500000000001,
+      "styleMs": 20.962
+    },
+    {
+      "name": "home",
+      "run": 4,
+      "variant": "control",
+      "layoutMs": 212.197,
+      "styleMs": 20.622999999999998
+    },
+    {
+      "name": "home",
+      "run": 4,
+      "variant": "noGrid",
+      "layoutMs": 214.85399999999998,
+      "styleMs": 19.808
+    },
+    {
+      "name": "home",
+      "run": 4,
+      "variant": "automaticText",
+      "layoutMs": 213.203,
+      "styleMs": 21.439
+    },
+    {
+      "name": "home",
+      "run": 4,
+      "variant": "singleFont",
+      "layoutMs": 218.754,
+      "styleMs": 19.515
+    },
+    {
+      "name": "windows",
+      "run": 0,
+      "variant": "control",
+      "layoutMs": 145.31900000000002,
+      "styleMs": 4.2379999999999995
+    },
+    {
+      "name": "windows",
+      "run": 0,
+      "variant": "noGrid",
+      "layoutMs": 160.941,
+      "styleMs": 4.406000000000001
+    },
+    {
+      "name": "windows",
+      "run": 0,
+      "variant": "automaticText",
+      "layoutMs": 146.571,
+      "styleMs": 4.026
+    },
+    {
+      "name": "windows",
+      "run": 0,
+      "variant": "singleFont",
+      "layoutMs": 124.316,
+      "styleMs": 4.072
+    },
+    {
+      "name": "windows",
+      "run": 1,
+      "variant": "singleFont",
+      "layoutMs": 123.55,
+      "styleMs": 4.861
+    },
+    {
+      "name": "windows",
+      "run": 1,
+      "variant": "automaticText",
+      "layoutMs": 145.135,
+      "styleMs": 4.228
+    },
+    {
+      "name": "windows",
+      "run": 1,
+      "variant": "noGrid",
+      "layoutMs": 142.5,
+      "styleMs": 5.0169999999999995
+    },
+    {
+      "name": "windows",
+      "run": 1,
+      "variant": "control",
+      "layoutMs": 144.137,
+      "styleMs": 3.684
+    },
+    {
+      "name": "windows",
+      "run": 2,
+      "variant": "control",
+      "layoutMs": 139.27100000000002,
+      "styleMs": 4.242
+    },
+    {
+      "name": "windows",
+      "run": 2,
+      "variant": "noGrid",
+      "layoutMs": 146.466,
+      "styleMs": 4.635
+    },
+    {
+      "name": "windows",
+      "run": 2,
+      "variant": "automaticText",
+      "layoutMs": 151.643,
+      "styleMs": 4.685
+    },
+    {
+      "name": "windows",
+      "run": 2,
+      "variant": "singleFont",
+      "layoutMs": 158.417,
+      "styleMs": 5.127
+    },
+    {
+      "name": "windows",
+      "run": 3,
+      "variant": "singleFont",
+      "layoutMs": 205.996,
+      "styleMs": 8.118
+    },
+    {
+      "name": "windows",
+      "run": 3,
+      "variant": "automaticText",
+      "layoutMs": 172.263,
+      "styleMs": 4.623
+    },
+    {
+      "name": "windows",
+      "run": 3,
+      "variant": "noGrid",
+      "layoutMs": 168.236,
+      "styleMs": 4.622
+    },
+    {
+      "name": "windows",
+      "run": 3,
+      "variant": "control",
+      "layoutMs": 155.168,
+      "styleMs": 4.843
+    },
+    {
+      "name": "windows",
+      "run": 4,
+      "variant": "control",
+      "layoutMs": 164.732,
+      "styleMs": 4.2490000000000006
+    },
+    {
+      "name": "windows",
+      "run": 4,
+      "variant": "noGrid",
+      "layoutMs": 153.138,
+      "styleMs": 5.048
+    },
+    {
+      "name": "windows",
+      "run": 4,
+      "variant": "automaticText",
+      "layoutMs": 174.30499999999998,
+      "styleMs": 4.218
+    },
+    {
+      "name": "windows",
+      "run": 4,
+      "variant": "singleFont",
+      "layoutMs": 201.244,
+      "styleMs": 5.6160000000000005
+    },
+    {
+      "name": "catalog",
+      "run": 0,
+      "variant": "control",
+      "layoutMs": 148.57600000000002,
+      "styleMs": 20.858999999999998
+    },
+    {
+      "name": "catalog",
+      "run": 0,
+      "variant": "noGrid",
+      "layoutMs": 127.714,
+      "styleMs": 18.571
+    },
+    {
+      "name": "catalog",
+      "run": 0,
+      "variant": "automaticText",
+      "layoutMs": 212.044,
+      "styleMs": 41.397000000000006
+    },
+    {
+      "name": "catalog",
+      "run": 0,
+      "variant": "singleFont",
+      "layoutMs": 145.49,
+      "styleMs": 24.575
+    },
+    {
+      "name": "catalog",
+      "run": 1,
+      "variant": "singleFont",
+      "layoutMs": 110.974,
+      "styleMs": 18.686999999999998
+    },
+    {
+      "name": "catalog",
+      "run": 1,
+      "variant": "automaticText",
+      "layoutMs": 127.47500000000001,
+      "styleMs": 21.275
+    },
+    {
+      "name": "catalog",
+      "run": 1,
+      "variant": "noGrid",
+      "layoutMs": 131.48299999999998,
+      "styleMs": 18.409
+    },
+    {
+      "name": "catalog",
+      "run": 1,
+      "variant": "control",
+      "layoutMs": 127.46,
+      "styleMs": 17.975
+    },
+    {
+      "name": "catalog",
+      "run": 2,
+      "variant": "control",
+      "layoutMs": 154.414,
+      "styleMs": 22.439
+    },
+    {
+      "name": "catalog",
+      "run": 2,
+      "variant": "noGrid",
+      "layoutMs": 124.44,
+      "styleMs": 17.614
+    },
+    {
+      "name": "catalog",
+      "run": 2,
+      "variant": "automaticText",
+      "layoutMs": 130.405,
+      "styleMs": 18.573
+    },
+    {
+      "name": "catalog",
+      "run": 2,
+      "variant": "singleFont",
+      "layoutMs": 164.516,
+      "styleMs": 17.326
+    },
+    {
+      "name": "catalog",
+      "run": 3,
+      "variant": "singleFont",
+      "layoutMs": 105.035,
+      "styleMs": 18.486
+    },
+    {
+      "name": "catalog",
+      "run": 3,
+      "variant": "automaticText",
+      "layoutMs": 131.301,
+      "styleMs": 19.456
+    },
+    {
+      "name": "catalog",
+      "run": 3,
+      "variant": "noGrid",
+      "layoutMs": 124.92999999999999,
+      "styleMs": 18.807000000000002
+    },
+    {
+      "name": "catalog",
+      "run": 3,
+      "variant": "control",
+      "layoutMs": 129.707,
+      "styleMs": 20.017
+    },
+    {
+      "name": "catalog",
+      "run": 4,
+      "variant": "control",
+      "layoutMs": 140.185,
+      "styleMs": 18.04
+    },
+    {
+      "name": "catalog",
+      "run": 4,
+      "variant": "noGrid",
+      "layoutMs": 131.501,
+      "styleMs": 18.951
+    },
+    {
+      "name": "catalog",
+      "run": 4,
+      "variant": "automaticText",
+      "layoutMs": 143.536,
+      "styleMs": 18.211000000000002
+    },
+    {
+      "name": "catalog",
+      "run": 4,
+      "variant": "singleFont",
+      "layoutMs": 107.169,
+      "styleMs": 16.308
+    }
+  ]
+}

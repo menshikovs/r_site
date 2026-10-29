@@ -1,0 +1,407 @@
+{
+  "method": "HEAD only; no PDF/tarball bodies downloaded",
+  "maxRequests": 45,
+  "requests": 31,
+  "results": [
+    {
+      "name": "ggplot2",
+      "kind": "Package source",
+      "url": "https://cran.r-project.org/src/contrib/ggplot2_4.0.3.tar.gz",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/ggplot2_4.0.3.tar.gz",
+          "error": "The operation was aborted due to timeout"
+        }
+      ]
+    },
+    {
+      "name": "ggplot2",
+      "kind": "Reference manual",
+      "url": "https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf",
+          "status": 200,
+          "location": null,
+          "contentLength": "1076535",
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "name": "ggplot2",
+      "kind": "currently generated vignette directory",
+      "url": "https://cran.r-project.org/web/packages/ggplot2/vignettes/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/ggplot2/vignettes/",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html;charset=UTF-8"
+        }
+      ]
+    },
+    {
+      "name": "data.table",
+      "kind": "Package source",
+      "url": "https://cran.r-project.org/src/contrib/data.table_1.18.6.1.tar.gz",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/data.table_1.18.6.1.tar.gz",
+          "status": 200,
+          "location": null,
+          "contentLength": "6028881",
+          "type": "application/x-gzip"
+        }
+      ]
+    },
+    {
+      "name": "data.table",
+      "kind": "Reference manual",
+      "url": "https://cran.r-project.org/web/packages/data.table/data.table.pdf",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/data.table/data.table.pdf",
+          "status": 200,
+          "location": null,
+          "contentLength": "594103",
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "name": "data.table",
+      "kind": "currently generated vignette directory",
+      "url": "https://cran.r-project.org/web/packages/data.table/vignettes/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/data.table/vignettes/",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html;charset=UTF-8"
+        }
+      ]
+    },
+    {
+      "name": "Rcpp",
+      "kind": "Package source",
+      "url": "https://cran.r-project.org/src/contrib/Rcpp_1.1.2.tar.gz",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/Rcpp_1.1.2.tar.gz",
+          "status": 200,
+          "location": null,
+          "contentLength": "1892159",
+          "type": "application/x-gzip"
+        }
+      ]
+    },
+    {
+      "name": "Rcpp",
+      "kind": "Reference manual",
+      "url": "https://cran.r-project.org/web/packages/Rcpp/Rcpp.pdf",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/Rcpp/Rcpp.pdf",
+          "status": 200,
+          "location": null,
+          "contentLength": "197515",
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "name": "Rcpp",
+      "kind": "currently generated vignette directory",
+      "url": "https://cran.r-project.org/web/packages/Rcpp/vignettes/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/Rcpp/vignettes/",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html;charset=UTF-8"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "Package source",
+      "url": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/termr_1.0.1.tar.gz",
+          "status": 200,
+          "location": null,
+          "contentLength": "454747",
+          "type": "application/x-gzip"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "Reference manual",
+      "url": "https://cran.r-project.org/web/packages/termr/termr.pdf",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/termr.pdf",
+          "status": 200,
+          "location": null,
+          "contentLength": "476471",
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "currently generated vignette directory",
+      "url": "https://cran.r-project.org/web/packages/termr/vignettes/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/vignettes/",
+          "status": 404,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "name": "MASS",
+      "kind": "Package source",
+      "url": "https://cran.r-project.org/src/contrib/MASS_7.3-66.tar.gz",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/MASS_7.3-66.tar.gz",
+          "error": "The operation was aborted due to timeout"
+        }
+      ]
+    },
+    {
+      "name": "MASS",
+      "kind": "Reference manual",
+      "url": "https://cran.r-project.org/web/packages/MASS/MASS.pdf",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/MASS/MASS.pdf",
+          "status": 200,
+          "location": null,
+          "contentLength": "534811",
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "name": "MASS",
+      "kind": "currently generated vignette directory",
+      "url": "https://cran.r-project.org/web/packages/MASS/vignettes/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/MASS/vignettes/",
+          "status": 404,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "canonical short form",
+      "url": "https://CRAN.R-project.org/package=termr",
+      "chain": [
+        {
+          "url": "https://CRAN.R-project.org/package=termr",
+          "status": 303,
+          "location": "https://cran.r-project.org/web/packages/termr/index.html",
+          "contentLength": null,
+          "type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/index.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "1909",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "checks",
+      "url": "https://cran.r-project.org/web/checks/check_results_termr.html",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/checks/check_results_termr.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "2097",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "MASS",
+      "kind": "canonical short form",
+      "url": "https://CRAN.R-project.org/package=MASS",
+      "chain": [
+        {
+          "url": "https://CRAN.R-project.org/package=MASS",
+          "status": 303,
+          "location": "https://cran.r-project.org/web/packages/MASS/index.html",
+          "contentLength": null,
+          "type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://cran.r-project.org/web/packages/MASS/index.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "30899",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "MASS",
+      "kind": "checks",
+      "url": "https://cran.r-project.org/web/checks/check_results_MASS.html",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/checks/check_results_MASS.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "934",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "Materials",
+      "url": "https://cran.r-project.org/web/packages/termr/readme/README.html",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/readme/README.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "5417",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "Materials",
+      "url": "https://cran.r-project.org/web/packages/termr/news/news.html",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/news/news.html",
+          "status": 200,
+          "location": null,
+          "contentLength": "8481",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "BugReports",
+      "url": "https://github.com/41929424/termr/issues",
+      "chain": [
+        {
+          "url": "https://github.com/41929424/termr/issues",
+          "status": 301,
+          "location": "https://github.com/menshikovs/termr/issues",
+          "contentLength": "0",
+          "type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://github.com/menshikovs/termr/issues",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "URL",
+      "url": "https://github.com/41929424/termr",
+      "chain": [
+        {
+          "url": "https://github.com/41929424/termr",
+          "status": 301,
+          "location": "https://github.com/menshikovs/termr",
+          "contentLength": "0",
+          "type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://github.com/menshikovs/termr",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "License",
+      "url": "https://cran.r-project.org/web/licenses/MIT",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/licenses/MIT",
+          "status": 200,
+          "location": null,
+          "contentLength": "1265",
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "License",
+      "url": "https://cran.r-project.org/web/packages/termr/LICENSE",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/web/packages/termr/LICENSE",
+          "status": 200,
+          "location": null,
+          "contentLength": "45",
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "ggplot2",
+      "kind": "archive",
+      "url": "https://cran.r-project.org/src/contrib/Archive/ggplot2/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/Archive/ggplot2/",
+          "status": 200,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html;charset=UTF-8"
+        }
+      ]
+    },
+    {
+      "name": "termr",
+      "kind": "hypothetical archive (not linked by official page)",
+      "url": "https://cran.r-project.org/src/contrib/Archive/termr/",
+      "chain": [
+        {
+          "url": "https://cran.r-project.org/src/contrib/Archive/termr/",
+          "status": 404,
+          "location": null,
+          "contentLength": null,
+          "type": "text/html; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

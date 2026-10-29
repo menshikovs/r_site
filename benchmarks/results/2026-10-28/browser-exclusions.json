@@ -1,0 +1,6 @@
+{
+  "reason": "Ancillary local HTTP-header probe ran at 2026-10-28T18:06:51Z during the initial series. Conservatively repeat both neighboring mobile/cold catalog and ggplot2 groups; groups selected by time, before examining outcomes.",
+  "excluded": 40,
+  "replacementFile": "browser-repair.jsonl",
+  "initialFile": "browser-initial.jsonl"
+}

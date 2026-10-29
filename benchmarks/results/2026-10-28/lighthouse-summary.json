@@ -1,0 +1,5402 @@
+[
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 165.225
+      },
+      "largest-contentful-paint": {
+        "value": 165.225
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 163
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 146.719
+      },
+      "largest-contentful-paint": {
+        "value": 146.719
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 145
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 155.584
+      },
+      "largest-contentful-paint": {
+        "value": 155.584
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 155
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 177.48
+      },
+      "largest-contentful-paint": {
+        "value": 177.48
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 178
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 193.666
+      },
+      "largest-contentful-paint": {
+        "value": 193.666
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 189
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 171.561
+      },
+      "largest-contentful-paint": {
+        "value": 171.561
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 169
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 164.295
+      },
+      "largest-contentful-paint": {
+        "value": 164.295
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 162
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 164.788
+      },
+      "largest-contentful-paint": {
+        "value": 164.788
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 162
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 193.756
+      },
+      "largest-contentful-paint": {
+        "value": 193.756
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 195
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 158.304
+      },
+      "largest-contentful-paint": {
+        "value": 158.304
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 157
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 130.882
+      },
+      "largest-contentful-paint": {
+        "value": 130.882
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 127
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 177.483
+      },
+      "largest-contentful-paint": {
+        "value": 177.483
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 176
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 175.558
+      },
+      "largest-contentful-paint": {
+        "value": 175.558
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 172
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 114.5
+      },
+      "largest-contentful-paint": {
+        "value": 114.5
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 113
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 110.722
+      },
+      "largest-contentful-paint": {
+        "value": 110.722
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 109
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 151.151
+      },
+      "largest-contentful-paint": {
+        "value": 151.151
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 152
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 158.437
+      },
+      "largest-contentful-paint": {
+        "value": 158.437
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 159
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 112.45
+      },
+      "largest-contentful-paint": {
+        "value": 112.45
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 112
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 131.375
+      },
+      "largest-contentful-paint": {
+        "value": 131.375
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 132
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 152.66
+      },
+      "largest-contentful-paint": {
+        "value": 152.66
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 152
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 186.309
+      },
+      "largest-contentful-paint": {
+        "value": 186.309
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 183
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 128.239
+      },
+      "largest-contentful-paint": {
+        "value": 128.239
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 129
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 121.639
+      },
+      "largest-contentful-paint": {
+        "value": 121.639
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 122
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 149.947
+      },
+      "largest-contentful-paint": {
+        "value": 149.947
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 148
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 125.689
+      },
+      "largest-contentful-paint": {
+        "value": 125.689
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 123
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 105.063
+      },
+      "largest-contentful-paint": {
+        "value": 105.063
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 101
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 95.034
+      },
+      "largest-contentful-paint": {
+        "value": 95.034
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 96
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 138.997
+      },
+      "largest-contentful-paint": {
+        "value": 138.997
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 138
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 124.872
+      },
+      "largest-contentful-paint": {
+        "value": 124.872
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 124
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "windows",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 114.645
+      },
+      "largest-contentful-paint": {
+        "value": 114.645
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 114
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 140.911
+      },
+      "largest-contentful-paint": {
+        "value": 140.911
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 142
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 132.792
+      },
+      "largest-contentful-paint": {
+        "value": 132.792
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 129
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 127.243
+      },
+      "largest-contentful-paint": {
+        "value": 127.243
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 128
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 148.065
+      },
+      "largest-contentful-paint": {
+        "value": 148.065
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 149
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 159.898
+      },
+      "largest-contentful-paint": {
+        "value": 159.898
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 161
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 145.722
+      },
+      "largest-contentful-paint": {
+        "value": 145.722
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 144
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 127.656
+      },
+      "largest-contentful-paint": {
+        "value": 127.656
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 125
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 149.753
+      },
+      "largest-contentful-paint": {
+        "value": 149.753
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 150
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 163.694
+      },
+      "largest-contentful-paint": {
+        "value": 163.694
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 164
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 112.983
+      },
+      "largest-contentful-paint": {
+        "value": 112.983
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 113
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 123.374
+      },
+      "largest-contentful-paint": {
+        "value": 123.374
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 120
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 146.32
+      },
+      "largest-contentful-paint": {
+        "value": 146.32
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 147
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 144.589
+      },
+      "largest-contentful-paint": {
+        "value": 144.589
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 145
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 167.781
+      },
+      "largest-contentful-paint": {
+        "value": 167.781
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 166
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 162.734
+      },
+      "largest-contentful-paint": {
+        "value": 162.734
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 164
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 214.307
+      },
+      "largest-contentful-paint": {
+        "value": 214.307
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 215
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 142.253
+      },
+      "largest-contentful-paint": {
+        "value": 142.253
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 141
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 164.787
+      },
+      "largest-contentful-paint": {
+        "value": 164.787
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 166
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 130.317
+      },
+      "largest-contentful-paint": {
+        "value": 130.317
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 128
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 162.329
+      },
+      "largest-contentful-paint": {
+        "value": 162.329
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 163
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 348.831
+      },
+      "largest-contentful-paint": {
+        "value": 348.831
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0001365300092336103
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 349
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 181.281
+      },
+      "largest-contentful-paint": {
+        "value": 181.281
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 182
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 186.672
+      },
+      "largest-contentful-paint": {
+        "value": 186.672
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 187
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 279.324
+      },
+      "largest-contentful-paint": {
+        "value": 279.324
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 280
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 268.935
+      },
+      "largest-contentful-paint": {
+        "value": 268.935
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 274
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 156.075
+      },
+      "largest-contentful-paint": {
+        "value": 156.075
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 152
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 133.36
+      },
+      "largest-contentful-paint": {
+        "value": 133.36
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 134
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 288.556
+      },
+      "largest-contentful-paint": {
+        "value": 288.556
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 291
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 334.108
+      },
+      "largest-contentful-paint": {
+        "value": 334.108
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0001365300092336103
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 337
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 150.154
+      },
+      "largest-contentful-paint": {
+        "value": 150.154
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 147
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 188.198
+      },
+      "largest-contentful-paint": {
+        "value": 188.198
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 188
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 244.989
+      },
+      "largest-contentful-paint": {
+        "value": 244.989
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 246
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 319.353
+      },
+      "largest-contentful-paint": {
+        "value": 319.353
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 320
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 191.162
+      },
+      "largest-contentful-paint": {
+        "value": 191.162
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 192
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 148.742
+      },
+      "largest-contentful-paint": {
+        "value": 148.742
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 149
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 285.058
+      },
+      "largest-contentful-paint": {
+        "value": 285.058
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 290
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 299.998
+      },
+      "largest-contentful-paint": {
+        "value": 299.998
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 301
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 165.507
+      },
+      "largest-contentful-paint": {
+        "value": 165.507
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 167
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 133.798
+      },
+      "largest-contentful-paint": {
+        "value": 133.798
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 134
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 265.172
+      },
+      "largest-contentful-paint": {
+        "value": 265.172
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 266
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 117.975
+      },
+      "largest-contentful-paint": {
+        "value": 117.975
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 115
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 140.441
+      },
+      "largest-contentful-paint": {
+        "value": 140.441
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 142
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 141.643
+      },
+      "largest-contentful-paint": {
+        "value": 141.643
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 142
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 140.239
+      },
+      "largest-contentful-paint": {
+        "value": 140.239
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 141
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 146.133
+      },
+      "largest-contentful-paint": {
+        "value": 146.133
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 142
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 156.213
+      },
+      "largest-contentful-paint": {
+        "value": 156.213
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 178
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 164.586
+      },
+      "largest-contentful-paint": {
+        "value": 164.586
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 167
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 133.565
+      },
+      "largest-contentful-paint": {
+        "value": 133.565
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 133
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 144.477
+      },
+      "largest-contentful-paint": {
+        "value": 144.477
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 141
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 146.195
+      },
+      "largest-contentful-paint": {
+        "value": 146.195
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 147
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 150.177
+      },
+      "largest-contentful-paint": {
+        "value": 150.177
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 151
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 133.749
+      },
+      "largest-contentful-paint": {
+        "value": 133.749
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 135
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 157.361
+      },
+      "largest-contentful-paint": {
+        "value": 157.361
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 158
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 188.954
+      },
+      "largest-contentful-paint": {
+        "value": 188.954
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 188
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 142.091
+      },
+      "largest-contentful-paint": {
+        "value": 142.091
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 143
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 146.992
+      },
+      "largest-contentful-paint": {
+        "value": 146.992
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 148
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 154.546
+      },
+      "largest-contentful-paint": {
+        "value": 154.546
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 156
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 188.125
+      },
+      "largest-contentful-paint": {
+        "value": 188.125
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 186
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 143.548
+      },
+      "largest-contentful-paint": {
+        "value": 143.548
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 144
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 131.076
+      },
+      "largest-contentful-paint": {
+        "value": 131.076
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 129
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 438.597
+      },
+      "largest-contentful-paint": {
+        "value": 438.597
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 440
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 511.798
+      },
+      "largest-contentful-paint": {
+        "value": 511.798
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 515
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 445.315
+      },
+      "largest-contentful-paint": {
+        "value": 445.315
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 451
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 483.382
+      },
+      "largest-contentful-paint": {
+        "value": 483.382
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 481
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 425.585
+      },
+      "largest-contentful-paint": {
+        "value": 425.585
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 427
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 426.864
+      },
+      "largest-contentful-paint": {
+        "value": 426.864
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 430
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 470.271
+      },
+      "largest-contentful-paint": {
+        "value": 470.271
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 470
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 484.052
+      },
+      "largest-contentful-paint": {
+        "value": 484.052
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 492
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 467.612
+      },
+      "largest-contentful-paint": {
+        "value": 467.612
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 467
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 490.683
+      },
+      "largest-contentful-paint": {
+        "value": 490.683
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 492
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "home",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 254.773
+      },
+      "largest-contentful-paint": {
+        "value": 254.773
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 249
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 331.353
+      },
+      "largest-contentful-paint": {
+        "value": 331.353
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 340
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 370.829
+      },
+      "largest-contentful-paint": {
+        "value": 370.829
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 377
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 245.696
+      },
+      "largest-contentful-paint": {
+        "value": 245.696
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 246
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 258.602
+      },
+      "largest-contentful-paint": {
+        "value": 258.602
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 259
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 335.119
+      },
+      "largest-contentful-paint": {
+        "value": 335.119
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 343
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 357.188
+      },
+      "largest-contentful-paint": {
+        "value": 357.188
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 360
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 246.58
+      },
+      "largest-contentful-paint": {
+        "value": 246.58
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 247
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 284.679
+      },
+      "largest-contentful-paint": {
+        "value": 284.679
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 285
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 348.69
+      },
+      "largest-contentful-paint": {
+        "value": 348.69
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 352
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 688.532
+      },
+      "largest-contentful-paint": {
+        "value": 688.532
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 692
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 475.178
+      },
+      "largest-contentful-paint": {
+        "value": 475.178
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 476
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 420.839
+      },
+      "largest-contentful-paint": {
+        "value": 420.839
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 422
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 414.856
+      },
+      "largest-contentful-paint": {
+        "value": 414.856
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 420
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 647.944
+      },
+      "largest-contentful-paint": {
+        "value": 647.944
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 652
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 456.288
+      },
+      "largest-contentful-paint": {
+        "value": 456.288
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 451
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 264.548
+      },
+      "largest-contentful-paint": {
+        "value": 264.548
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 265
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 593.891
+      },
+      "largest-contentful-paint": {
+        "value": 593.891
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 601
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 512.642
+      },
+      "largest-contentful-paint": {
+        "value": 512.642
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 520
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "windows",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 260.062
+      },
+      "largest-contentful-paint": {
+        "value": 260.062
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 261
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 412.319
+      },
+      "largest-contentful-paint": {
+        "value": 412.319
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 413
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 703.132
+      },
+      "largest-contentful-paint": {
+        "value": 703.132
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 711
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 355.57
+      },
+      "largest-contentful-paint": {
+        "value": 355.57
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 357
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 584.102
+      },
+      "largest-contentful-paint": {
+        "value": 584.102
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 588
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 484.745
+      },
+      "largest-contentful-paint": {
+        "value": 484.745
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 484
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 552.49
+      },
+      "largest-contentful-paint": {
+        "value": 552.49
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 560
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 328.461
+      },
+      "largest-contentful-paint": {
+        "value": 328.461
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 333
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 335.207
+      },
+      "largest-contentful-paint": {
+        "value": 335.207
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 338
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 337.658
+      },
+      "largest-contentful-paint": {
+        "value": 337.658
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 337
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 370.731
+      },
+      "largest-contentful-paint": {
+        "value": 370.731
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 371
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 352.528
+      },
+      "largest-contentful-paint": {
+        "value": 352.528
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 359
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 336.001
+      },
+      "largest-contentful-paint": {
+        "value": 336.001
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 335
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 324.243
+      },
+      "largest-contentful-paint": {
+        "value": 324.243
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 325
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 350.284
+      },
+      "largest-contentful-paint": {
+        "value": 350.284
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 357
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 348.03
+      },
+      "largest-contentful-paint": {
+        "value": 348.03
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 351
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 319.556
+      },
+      "largest-contentful-paint": {
+        "value": 319.556
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 319
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 338.618
+      },
+      "largest-contentful-paint": {
+        "value": 338.618
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 342
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 348.541
+      },
+      "largest-contentful-paint": {
+        "value": 348.541
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 352
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 326.801
+      },
+      "largest-contentful-paint": {
+        "value": 326.801
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 335
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "catalog",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 310.609
+      },
+      "largest-contentful-paint": {
+        "value": 310.609
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 315
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 0.91,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 561.271
+      },
+      "largest-contentful-paint": {
+        "value": 561.271
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 365.43100000000015
+      },
+      "speed-index": {
+        "value": 562
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 397.146
+      },
+      "largest-contentful-paint": {
+        "value": 397.146
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 398
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 415.698
+      },
+      "largest-contentful-paint": {
+        "value": 415.698
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 421
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 0.89,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 566.621
+      },
+      "largest-contentful-paint": {
+        "value": 566.621
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 458.669
+      },
+      "speed-index": {
+        "value": 570
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 0.91,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 556.783
+      },
+      "largest-contentful-paint": {
+        "value": 556.783
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 373.18999999999994
+      },
+      "speed-index": {
+        "value": 561
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 393.553
+      },
+      "largest-contentful-paint": {
+        "value": 393.553
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 400
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 355.45
+      },
+      "largest-contentful-paint": {
+        "value": 355.45
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 363
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 0.92,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 547.077
+      },
+      "largest-contentful-paint": {
+        "value": 547.077
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 348.89700000000016
+      },
+      "speed-index": {
+        "value": 549
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 0.91,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 622.189
+      },
+      "largest-contentful-paint": {
+        "value": 622.189
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 379.4169999999999
+      },
+      "speed-index": {
+        "value": 621
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 371.639
+      },
+      "largest-contentful-paint": {
+        "value": 371.639
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 375
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 390.181
+      },
+      "largest-contentful-paint": {
+        "value": 390.181
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 395
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 0.92,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 565.194
+      },
+      "largest-contentful-paint": {
+        "value": 565.194
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 364.0469999999999
+      },
+      "speed-index": {
+        "value": 569
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 0.88,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 546.777
+      },
+      "largest-contentful-paint": {
+        "value": 546.777
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 482.3810000000001
+      },
+      "speed-index": {
+        "value": 551
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 411.835
+      },
+      "largest-contentful-paint": {
+        "value": 411.835
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 413
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 389.629
+      },
+      "largest-contentful-paint": {
+        "value": 389.629
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 396
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 0.86,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 625.237
+      },
+      "largest-contentful-paint": {
+        "value": 625.237
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 566.026
+      },
+      "speed-index": {
+        "value": 629
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 0.89,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 558.943
+      },
+      "largest-contentful-paint": {
+        "value": 558.943
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 442.37800000000004
+      },
+      "speed-index": {
+        "value": 557
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 352.636
+      },
+      "largest-contentful-paint": {
+        "value": 352.636
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 358
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 374.387
+      },
+      "largest-contentful-paint": {
+        "value": 374.387
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 380
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "ggplot2",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 0.91,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 547.021
+      },
+      "largest-contentful-paint": {
+        "value": 547.021
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 368.0980000000002
+      },
+      "speed-index": {
+        "value": 552
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 302.779
+      },
+      "largest-contentful-paint": {
+        "value": 302.779
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 304
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 372.92
+      },
+      "largest-contentful-paint": {
+        "value": 372.92
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 379
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 343.614
+      },
+      "largest-contentful-paint": {
+        "value": 343.614
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 350
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 314.942
+      },
+      "largest-contentful-paint": {
+        "value": 314.942
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 313
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 308.3
+      },
+      "largest-contentful-paint": {
+        "value": 308.3
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 309
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 345.74
+      },
+      "largest-contentful-paint": {
+        "value": 345.74
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 352
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 365.291
+      },
+      "largest-contentful-paint": {
+        "value": 365.291
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 372
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 289.761
+      },
+      "largest-contentful-paint": {
+        "value": 289.761
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 290
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 275.625
+      },
+      "largest-contentful-paint": {
+        "value": 275.625
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 283
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 367.261
+      },
+      "largest-contentful-paint": {
+        "value": 367.261
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 368
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 354.291
+      },
+      "largest-contentful-paint": {
+        "value": 354.291
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 355
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 275.386
+      },
+      "largest-contentful-paint": {
+        "value": 275.386
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 278
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 503.5
+      },
+      "largest-contentful-paint": {
+        "value": 503.5
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 502
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 359.373
+      },
+      "largest-contentful-paint": {
+        "value": 359.373
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 363
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 320.931
+      },
+      "largest-contentful-paint": {
+        "value": 320.931
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 327
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 305.894
+      },
+      "largest-contentful-paint": {
+        "value": 305.894
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 306
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 305.386
+      },
+      "largest-contentful-paint": {
+        "value": 305.386
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 302
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 8,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 381.968
+      },
+      "largest-contentful-paint": {
+        "value": 381.968
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 391
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "redesign",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 365.379
+      },
+      "largest-contentful-paint": {
+        "value": 365.379
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 369
+      }
+    }
+  },
+  {
+    "profile": "mobile",
+    "page": "manuals",
+    "site": "original",
+    "repeat": 9,
+    "version": "13.6.0",
+    "score": 1,
+    "runtimeError": null,
+    "warnings": [],
+    "audits": {
+      "first-contentful-paint": {
+        "value": 282.976
+      },
+      "largest-contentful-paint": {
+        "value": 282.976
+      },
+      "cumulative-layout-shift": {
+        "value": 0
+      },
+      "total-blocking-time": {
+        "value": 0
+      },
+      "speed-index": {
+        "value": 284
+      }
+    }
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 0,
+    "initialLoadedMs": 133.03429999999935,
+    "totalToDownloadRequestMs": 337.2618999999995,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 0,
+    "initialLoadedMs": 129.70799999999963,
+    "totalToDownloadRequestMs": 281.9507999999996,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 1,
+    "initialLoadedMs": 151.0004999999992,
+    "totalToDownloadRequestMs": 282.4373999999998,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 1,
+    "initialLoadedMs": 146.15369999999984,
+    "totalToDownloadRequestMs": 356.02250000000004,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 2,
+    "initialLoadedMs": 139.04699999999957,
+    "totalToDownloadRequestMs": 348.15579999999954,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 2,
+    "initialLoadedMs": 150.8226999999997,
+    "totalToDownloadRequestMs": 281.6855000000005,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 3,
+    "initialLoadedMs": 150.02760000000126,
+    "totalToDownloadRequestMs": 320.3814000000002,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 3,
+    "initialLoadedMs": 125.58380000000034,
+    "totalToDownloadRequestMs": 326.1701000000012,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 4,
+    "initialLoadedMs": 120.77060000000165,
+    "totalToDownloadRequestMs": 358.1363000000001,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 4,
+    "initialLoadedMs": 140.21709999999985,
+    "totalToDownloadRequestMs": 284.59940000000097,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 5,
+    "initialLoadedMs": 159.1703000000016,
+    "totalToDownloadRequestMs": 289.9408000000003,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 5,
+    "initialLoadedMs": 134.18149999999878,
+    "totalToDownloadRequestMs": 335.6369999999988,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 6,
+    "initialLoadedMs": 134.11470000000008,
+    "totalToDownloadRequestMs": 343.1014000000014,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 6,
+    "initialLoadedMs": 156.83510000000024,
+    "totalToDownloadRequestMs": 295.8804999999993,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 7,
+    "initialLoadedMs": 144.0553,
+    "totalToDownloadRequestMs": 289.4435999999987,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 7,
+    "initialLoadedMs": 124.27260000000024,
+    "totalToDownloadRequestMs": 335.96360000000095,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 8,
+    "initialLoadedMs": 155.35390000000007,
+    "totalToDownloadRequestMs": 350.03340000000026,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 8,
+    "initialLoadedMs": 169.39069999999992,
+    "totalToDownloadRequestMs": 310.78080000000045,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "run": 9,
+    "initialLoadedMs": 155.38839999999982,
+    "totalToDownloadRequestMs": 286.9847000000009,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "run": 9,
+    "initialLoadedMs": 117.31219999999666,
+    "totalToDownloadRequestMs": 340.33179999999993,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 0,
+    "initialLoadedMs": 365.26360000000204,
+    "totalToDownloadRequestMs": 890.649300000001,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 0,
+    "initialLoadedMs": 448.72619999999733,
+    "totalToDownloadRequestMs": 778.2145999999993,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 1,
+    "initialLoadedMs": 480.619200000001,
+    "totalToDownloadRequestMs": 786.2647999999972,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 1,
+    "initialLoadedMs": 356.3940999999977,
+    "totalToDownloadRequestMs": 811.347600000001,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 2,
+    "initialLoadedMs": 338.6392999999953,
+    "totalToDownloadRequestMs": 829.8050999999978,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 2,
+    "initialLoadedMs": 506.21680000000197,
+    "totalToDownloadRequestMs": 811.4192000000039,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 3,
+    "initialLoadedMs": 471.5335999999952,
+    "totalToDownloadRequestMs": 774.8260999999984,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 3,
+    "initialLoadedMs": 366.22009999999864,
+    "totalToDownloadRequestMs": 862.889599999995,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 4,
+    "initialLoadedMs": 340.4948000000004,
+    "totalToDownloadRequestMs": 799.5328000000009,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 4,
+    "initialLoadedMs": 463.7952000000005,
+    "totalToDownloadRequestMs": 790.6414000000004,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 5,
+    "initialLoadedMs": 472.56150000000343,
+    "totalToDownloadRequestMs": 784.2822999999989,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 5,
+    "initialLoadedMs": 365.7563000000009,
+    "totalToDownloadRequestMs": 853.5486000000019,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 6,
+    "initialLoadedMs": 367.32480000000214,
+    "totalToDownloadRequestMs": 839.2661000000007,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 6,
+    "initialLoadedMs": 497.22499999999854,
+    "totalToDownloadRequestMs": 791.4715999999971,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 7,
+    "initialLoadedMs": 451.02679999999964,
+    "totalToDownloadRequestMs": 758.8947000000044,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 7,
+    "initialLoadedMs": 361.5339000000022,
+    "totalToDownloadRequestMs": 851.956299999998,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 8,
+    "initialLoadedMs": 353.7392999999938,
+    "totalToDownloadRequestMs": 853.6972999999998,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 8,
+    "initialLoadedMs": 490.6664000000019,
+    "totalToDownloadRequestMs": 765.9390000000058,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "run": 9,
+    "initialLoadedMs": 524.9936000000016,
+    "totalToDownloadRequestMs": 829.0092000000004,
+    "clicks": 2,
+    "download": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "run": 9,
+    "initialLoadedMs": 357.63850000000093,
+    "totalToDownloadRequestMs": 818.9156999999977,
+    "clicks": 3,
+    "download": "http://127.0.0.1:8081/bin/windows/base/R-4.6.1-win.exe",
+    "rebinding": [
+      "https://cran.r-project.org/R.css"
+    ],
+    "blocked": [],
+    "note": "Binary request intercepted and aborted; binary bytes and human decision time are not measured."
+  }
+]

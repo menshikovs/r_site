@@ -1,0 +1,25 @@
+{
+  "recordedChecks": 36,
+  "browserContexts": 12,
+  "searchQueries": 48,
+  "offlineTests": 24,
+  "fullHtml": 33606,
+  "rootRelativeAttributes": 0,
+  "originalCorpus": 30,
+  "nonownedOriginalsPreserved": 21,
+  "knownBrokenManualFragments": 3,
+  "productionFilesUnchanged": 33611,
+  "productionStylesDataExportAnd8080ConfigUnchanged": true,
+  "fullMirrorCompatibilityApproved": false,
+  "generatedBytes": 213223208,
+  "auditNginxStopped": true,
+  "sourceHashes": {
+    "src/static-urls.mjs": "11e64dd1d8aa3a9ac48ff8cfee8a5d9a7cf91cc7fc018ba892e92c1df9ce82d8",
+    "src/templates.mjs": "46c6e5a151e2ed66a562669e1dd9a14e7fb67aa4696741f18d89c52d56d50c40",
+    "public/search.js": "f95a5e175e80c85c7ef59c22c9f08881cc250f0216b4497f81529dfce06ff5fe",
+    "scripts/build.mjs": "963e3c83935123b550936ed5ce75da1860ef8762c5cb78558390964e546b7ea3",
+    "scripts/check-site.mjs": "7ea9f0316ff1b916761caf6c967ab3063e9762369a66db89907169c2c657f0ab",
+    "tests/mirror-urls.test.mjs": "329348ba455ca597e135c6e03ad599c4daadc80d264545509578b921d38d0c4e",
+    "CRAN_MIRROR_COMPATIBILITY.md": "4350d285600bb16b0b964eabd2b9f049b2552034cf7d93494b7e3b61a42e8f96"
+  }
+}

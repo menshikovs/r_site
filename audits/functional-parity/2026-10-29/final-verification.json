@@ -1,0 +1,74 @@
+{
+  "comparisons": [
+    {
+      "name": "data.table",
+      "identityAndDescriptionMatch": true,
+      "displayedFieldsMatch": true,
+      "authorsCharacters": 2532,
+      "reverseCounts": {
+        "Reverse depends": 74,
+        "Reverse imports": 1940,
+        "Reverse linking to": 0,
+        "Reverse suggests": 301,
+        "Reverse enhances": 6
+      }
+    },
+    {
+      "name": "ggplot2",
+      "identityAndDescriptionMatch": true,
+      "displayedFieldsMatch": true,
+      "authorsCharacters": 674,
+      "reverseCounts": {
+        "Reverse depends": 480,
+        "Reverse imports": 5398,
+        "Reverse linking to": 0,
+        "Reverse suggests": 2354,
+        "Reverse enhances": 8
+      }
+    },
+    {
+      "name": "MASS",
+      "identityAndDescriptionMatch": true,
+      "displayedFieldsMatch": true,
+      "authorsCharacters": 216,
+      "reverseCounts": {
+        "Reverse depends": 325,
+        "Reverse imports": 2023,
+        "Reverse linking to": 0,
+        "Reverse suggests": 843,
+        "Reverse enhances": 2
+      }
+    },
+    {
+      "name": "Rcpp",
+      "identityAndDescriptionMatch": true,
+      "displayedFieldsMatch": true,
+      "authorsCharacters": 527,
+      "reverseCounts": {
+        "Reverse depends": 172,
+        "Reverse imports": 3445,
+        "Reverse linking to": 3674,
+        "Reverse suggests": 56,
+        "Reverse enhances": 0
+      }
+    },
+    {
+      "name": "termr",
+      "identityAndDescriptionMatch": true,
+      "displayedFieldsMatch": true,
+      "authorsCharacters": 31,
+      "reverseCounts": {
+        "Reverse depends": 0,
+        "Reverse imports": 0,
+        "Reverse linking to": 0,
+        "Reverse suggests": 0,
+        "Reverse enhances": 0
+      }
+    }
+  ],
+  "qaRecords": 31,
+  "allRequiredCommandsPassed": true,
+  "sourceHashesMatch": true,
+  "cssAndSearchScriptUnchanged": true,
+  "reverseSystemNotImplemented": true
+}

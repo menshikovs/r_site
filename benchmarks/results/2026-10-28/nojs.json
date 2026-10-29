@@ -1,0 +1,537 @@
+[
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "home",
+    "status": 200,
+    "frames": [
+      {
+        "title": "The Comprehensive R Archive Network",
+        "links": 0,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 0
+      },
+      {
+        "title": "R Logo",
+        "links": 1,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 0
+      },
+      {
+        "title": "R Contents",
+        "links": 14,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 179
+      },
+      {
+        "title": "The Comprehensive R Archive Network",
+        "links": 24,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 3155
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/logo.html",
+      "http://127.0.0.1:8081/navbar.html",
+      "http://127.0.0.1:8081/banner.shtml",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/Rlogo.svg",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/R.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "windows",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R for Windows",
+        "links": 7,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 773
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/bin/windows/",
+      "http://127.0.0.1:8081/R.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "catalog",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Contributed Packages",
+        "links": 17,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 1983
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/web/packages/",
+      "http://127.0.0.1:8081/web/CRAN_web.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "ggplot2",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Package ggplot2",
+        "links": 8330,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 86576
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:8081/web/CRAN_web.css",
+      "http://127.0.0.1:8081/web/orcid.svg",
+      "http://127.0.0.1:8081/web/ror.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "manuals",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Manuals",
+        "links": 61,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 2577
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/manuals.html",
+      "http://127.0.0.1:8081/R.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "original",
+    "page": "catalog-to-ggplot2",
+    "linkFound": true,
+    "destination": "http://127.0.0.1:8081/web/packages/ggplot2/index.html"
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "home",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN — The Comprehensive R Archive Network",
+        "links": 40,
+        "letters": 0,
+        "noscript": [
+          "JavaScript is disabled. Browse the complete alphabetical package catalog."
+        ],
+        "textLength": 3366
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "windows",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R for Windows — CRAN",
+        "links": 27,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 1330
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/bin/windows/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "catalog",
+    "status": 200,
+    "frames": [
+      {
+        "title": "Search CRAN packages",
+        "links": 47,
+        "letters": 26,
+        "noscript": [
+          "JavaScript is disabled. Browse the complete alphabetical package catalog."
+        ],
+        "textLength": 1304
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/web/packages/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "ggplot2",
+    "status": 200,
+    "frames": [
+      {
+        "title": "ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics — CRAN",
+        "links": 21,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 3147
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "manuals",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R manuals — CRAN",
+        "links": 82,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 3018
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/manuals.html",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "desktop",
+    "site": "redesign",
+    "page": "catalog-to-ggplot2",
+    "linkFound": true,
+    "destination": "http://127.0.0.1:8082/web/packages/ggplot2/index.html"
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "home",
+    "status": 200,
+    "frames": [
+      {
+        "title": "The Comprehensive R Archive Network",
+        "links": 0,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 0
+      },
+      {
+        "title": "R Logo",
+        "links": 1,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 0
+      },
+      {
+        "title": "R Contents",
+        "links": 14,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 179
+      },
+      {
+        "title": "The Comprehensive R Archive Network",
+        "links": 24,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 3155
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/logo.html",
+      "http://127.0.0.1:8081/navbar.html",
+      "http://127.0.0.1:8081/banner.shtml",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/R.css",
+      "http://127.0.0.1:8081/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "windows",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R for Windows",
+        "links": 7,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 773
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/bin/windows/",
+      "http://127.0.0.1:8081/R.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "catalog",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Contributed Packages",
+        "links": 17,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 1983
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/web/packages/",
+      "http://127.0.0.1:8081/web/CRAN_web.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "ggplot2",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Package ggplot2",
+        "links": 8330,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 86576
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:8081/web/CRAN_web.css",
+      "http://127.0.0.1:8081/web/orcid.svg",
+      "http://127.0.0.1:8081/web/ror.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "manuals",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN: Manuals",
+        "links": 61,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 2577
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8081/manuals.html",
+      "http://127.0.0.1:8081/R.css"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "original",
+    "page": "catalog-to-ggplot2",
+    "linkFound": true,
+    "destination": "http://127.0.0.1:8081/web/packages/ggplot2/index.html"
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "home",
+    "status": 200,
+    "frames": [
+      {
+        "title": "CRAN — The Comprehensive R Archive Network",
+        "links": 40,
+        "letters": 0,
+        "noscript": [
+          "JavaScript is disabled. Browse the complete alphabetical package catalog."
+        ],
+        "textLength": 3256
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "windows",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R for Windows — CRAN",
+        "links": 27,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 1239
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/bin/windows/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "catalog",
+    "status": 200,
+    "frames": [
+      {
+        "title": "Search CRAN packages",
+        "links": 47,
+        "letters": 26,
+        "noscript": [
+          "JavaScript is disabled. Browse the complete alphabetical package catalog."
+        ],
+        "textLength": 1213
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/web/packages/",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "ggplot2",
+    "status": 200,
+    "frames": [
+      {
+        "title": "ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics — CRAN",
+        "links": 21,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 3089
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/web/packages/ggplot2/index.html",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "manuals",
+    "status": 200,
+    "frames": [
+      {
+        "title": "R manuals — CRAN",
+        "links": 82,
+        "letters": 0,
+        "noscript": [],
+        "textLength": 2927
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:8082/manuals.html",
+      "http://127.0.0.1:8082/assets/site.css",
+      "http://127.0.0.1:8082/Rlogo.svg",
+      "http://127.0.0.1:8082/Rlogo.svg"
+    ],
+    "failures": [],
+    "indexRequested": false
+  },
+  {
+    "profile": "mobile",
+    "site": "redesign",
+    "page": "catalog-to-ggplot2",
+    "linkFound": true,
+    "destination": "http://127.0.0.1:8082/web/packages/ggplot2/index.html"
+  }
+]

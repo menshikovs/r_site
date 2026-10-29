@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-28T18:10:47.306Z",
+  "chrome": "156.0.8078.48",
+  "profiles": {
+    "desktop": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "cpu": 1,
+      "latency": 20,
+      "mbps": 50
+    },
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "cpu": 4,
+      "latency": 40,
+      "mbps": 10
+    }
+  },
+  "runs": 10,
+  "sites": {
+    "original": "http://127.0.0.1:8081",
+    "redesign": "http://127.0.0.1:8082"
+  },
+  "routes": {
+    "home": "/",
+    "windows": "/bin/windows/",
+    "catalog": "/web/packages/",
+    "ggplot2": "/web/packages/ggplot2/index.html",
+    "manuals": "/manuals.html"
+  },
+  "headless": true,
+  "extensions": false,
+  "settleAfterLoadMs": 500
+}

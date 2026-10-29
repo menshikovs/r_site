@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "path": "build-resources.json",
+      "bytes": 755558,
+      "sha256": "0008ca3e200c0bde306af99b8b6feef2ec05cf6cc3889fa71d6283819ee4bb43"
+    },
+    {
+      "path": "build-result.json",
+      "bytes": 754,
+      "sha256": "60694e7c12efe8f80b36732ce80461e60671cb26a36e06350960d1637853d3bc"
+    },
+    {
+      "path": "build-stderr.txt",
+      "bytes": 188,
+      "sha256": "b3aad99a991f98252f3a0842635009f1fbec82b901a63d11a0168dadc69467cb"
+    },
+    {
+      "path": "build-stdout.txt",
+      "bytes": 6323,
+      "sha256": "37f54e5d9edb9b3c72190166eae53f43d67f03e423527cd6bb2ba5bb22c8f69e"
+    },
+    {
+      "path": "canonical-locations.conf",
+      "bytes": 665,
+      "sha256": "b9e62b0c344adb0eca982470a0be39b77fb119fbd6b34a5055ba3e79b3968b5b"
+    },
+    {
+      "path": "check-result.json",
+      "bytes": 166,
+      "sha256": "c65b0e58ab73637baa5fdcd171af53a7df1348e797ebc279d96da8c7b0c1ae64"
+    },
+    {
+      "path": "check-stdout.txt",
+      "bytes": 484,
+      "sha256": "a2cfd259ed5c1f66bc05ab1eaf6cd56a427027f120d03de67c8a6536d5f71dea"
+    },
+    {
+      "path": "final-verification.json",
+      "bytes": 529,
+      "sha256": "cf369996250b49003176c421638594b7bc67cc82302ade4648194e65f8e0b8d4"
+    },
+    {
+      "path": "http-audit.json",
+      "bytes": 16089,
+      "sha256": "591a72b0b5fe838456263a256e124f986d6270823c3fa8fa6c29bf569378e1f9"
+    },
+    {
+      "path": "hypothetical-invalid-archive.json",
+      "bytes": 192,
+      "sha256": "afebd1dc7e0977265d57c9bb7c40035a206e5eb2a5fb364c0d3c0dc53606eea9"
+    },
+    {
+      "path": "inputs/packages.dcf",
+      "bytes": 43201265,
+      "sha256": "4ce1fd18efc3126273f813b3c15f08294b0cb326badff955a9e27e34314705ec"
+    },
+    {
+      "path": "inputs/packages.rds",
+      "bytes": 12671894,
+      "sha256": "605fc3eb4074ac118423fa3a6ca324383776ed8873d06ad7e0b1dd646f3a1aba"
+    },
+    {
+      "path": "inputs/snapshot.json",
+      "bytes": 211,
+      "sha256": "d56f87ed80005bd49c1e715873c785c5e7575aeb19cf4b4895158c0871114365"
+    },
+    {
+      "path": "invalid-version-final.json",
+      "bytes": 240,
+      "sha256": "906244f38dfeeb5b1dfa99c423c8f12598be48cf40c673fb98c947d6713cad74"
+    },
+    {
+      "path": "inventory-console.txt",
+      "bytes": 1770,
+      "sha256": "79496c924652874c096b496a23150cb26e4ab3622d1804e5b3844488662a5765"
+    },
+    {
+      "path": "inventory.json",
+      "bytes": 13612907,
+      "sha256": "bf4118915085582c4c6a63f595173b760c23e19dd24dbf36fed089c629455cab"
+    },
+    {
+      "path": "native-after.sha256",
+      "bytes": 2794,
+      "sha256": "6a3e965c82800365ea3ed633aa61b9c4d43bc15fb0c4b322d29da234d71f66cd"
+    },
+    {
+      "path": "native-before.sha256",
+      "bytes": 2794,
+      "sha256": "6a3e965c82800365ea3ed633aa61b9c4d43bc15fb0c4b322d29da234d71f66cd"
+    },
+    {
+      "path": "nginx-error.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nginx-version.txt",
+      "bytes": 37,
+      "sha256": "3fdc9b974bc057cbd6138ac73ace93469adb0b1c36386e48dec24ba4361efbe6"
+    },
+    {
+      "path": "official-snapshot.tar.gz",
+      "bytes": 11384577,
+      "sha256": "788ac6f0ebc92502ccfb5ac1e366fc3b13947e66b518664dcdef3b69c83ebc67"
+    },
+    {
+      "path": "overlay-nojs.png",
+      "bytes": 24752,
+      "sha256": "476d8befdb9e215595445dc941f2549056fbecc25e974102c7be6dbc6ed6ff85"
+    },
+    {
+      "path": "preparation-note.txt",
+      "bytes": 487,
+      "sha256": "5f5fb8fb7df3d8267a8ac2e174f3f20aa5262b66ad7ae6e9006235317419456f"
+    },
+    {
+      "path": "prototype-pilot.json",
+      "bytes": 783,
+      "sha256": "4e2057184b9135eb9ace23e763bb9e0054aafe378d01950ab3ace86fa2c18e84"
+    },
+    {
+      "path": "prototype-results.json",
+      "bytes": 4317,
+      "sha256": "8bcb2b2b4f148ce4ee4576f23b2b33be208b2509313a2dade82d09c2c221cf6a"
+    },
+    {
+      "path": "resource-bodies.json",
+      "bytes": 1839,
+      "sha256": "d0a8720afd8bf0f1da8f5c1055fd62415cc5cc9ce672f4b4d3bdbadb5e2d6983"
+    },
+    {
+      "path": "rsync-initial.txt",
+      "bytes": 618,
+      "sha256": "a3bcb96547c6221d29d8d40d46e4b3c8ec96b299dcbbf6943ebe2414a3bfccfa"
+    },
+    {
+      "path": "rsync-rollback.txt",
+      "bytes": 586,
+      "sha256": "db1f60d7bba81dea2e1e507be693625bcddcd2c86f892df1f8fb5e058683963f"
+    },
+    {
+      "path": "rsync-update.txt",
+      "bytes": 586,
+      "sha256": "ee00ce576043219d6db954bfcf427ca72a9dddbcf71ae86cb3a2d378c871d3b7"
+    },
+    {
+      "path": "rsync-version.txt",
+      "bytes": 162,
+      "sha256": "2aacb0dd8251dd8f49329d57ffc8bb3b942f38b73b2113fda7c6b7a983dc607b"
+    },
+    {
+      "path": "sanitizer-review.json",
+      "bytes": 471,
+      "sha256": "7f890f126d9751641174c7f280ea2aa79193da4eb2ea93b6aece029d4e30b5a5"
+    },
+    {
+      "path": "snapshot-additions.json",
+      "bytes": 4451,
+      "sha256": "b094963bff3637915ffcbd98e0aec27ad89b7773d9c3017c928c95dc9f831583"
+    },
+    {
+      "path": "stand-disk.txt",
+      "bytes": 292,
+      "sha256": "56446548179c401ed922fdfe476bea17866aac34e8932c784ea536232be856cd"
+    },
+    {
+      "path": "stand-filesystem.txt",
+      "bytes": 123,
+      "sha256": "f651a70e7e85da5be544dbeb64df0f7d254794667514be4ca145c93510223824"
+    },
+    {
+      "path": "stand-nginx.conf",
+      "bytes": 1036,
+      "sha256": "844e773e794d7b83881c341b19fa5fbf6924196dafdf0e832d269bf8a9bc74b5"
+    }
+  ]
+}

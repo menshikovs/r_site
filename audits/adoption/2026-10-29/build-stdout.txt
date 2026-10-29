@@ -1,0 +1,81 @@
+Fetched official CRAN mirror directory: 18,061 bytes from https://cran.r-project.org/mirrors.html
+Fetched official package index: 12,671,894 bytes from https://cran.r-project.org/web/packages/packages.rds
+Fetching official CRAN page: windows_base
+Fetched windows_base: 2,967 bytes from https://cran.r-project.org/bin/windows/base/
+Fetching official CRAN page: windows_contrib
+Fetched windows_contrib: 3,152 bytes from https://cran.r-project.org/bin/windows/contrib/
+Fetching official CRAN page: rtools
+Fetched rtools: 1,295 bytes from https://cran.r-project.org/bin/windows/Rtools/
+Fetching official CRAN page: windows_faq
+Fetched windows_faq: 131,102 bytes from https://cran.r-project.org/bin/windows/base/rw-FAQ.html
+Fetching official CRAN page: macos
+Fetched macos: 12,450 bytes from https://mac.r-project.org/bin/macosx/
+Fetching official CRAN page: macos_contrib
+Fetched macos_contrib: 1,366 bytes from https://cran.r-project.org/bin/macosx/contrib/
+Fetching official CRAN page: macos_tools
+Fetched macos_tools: 1,975 bytes from https://cran.r-project.org/bin/macosx/tools/
+Fetching official CRAN page: macos_faq
+Fetched macos_faq: 128,060 bytes from https://cran.r-project.org/bin/macosx/RMacOSX-FAQ.html
+Fetching official CRAN page: linux_debian
+Fetched linux_debian: 63,421 bytes from https://cran.r-project.org/bin/linux/debian/
+Fetching official CRAN page: linux_ubuntu
+Fetched linux_ubuntu: 31,312 bytes from https://cran.r-project.org/bin/linux/ubuntu/
+Fetching official CRAN page: linux_fedora
+Fetched linux_fedora: 64,314 bytes from https://cran.r-project.org/bin/linux/fedora/
+Fetching official CRAN page: manuals
+Fetched manuals: 7,795 bytes from https://cran.r-project.org/manuals.html
+Fetching official CRAN page: faqs
+Fetched faqs: 1,283 bytes from https://cran.r-project.org/faqs.html
+Fetching official CRAN page: mirror_howto
+Fetched mirror_howto: 7,822 bytes from https://cran.r-project.org/mirror-howto.html
+Fetching official CRAN page: policies
+Fetched policies: 30,933 bytes from https://cran.r-project.org/web/packages/policies.html
+Fetching official CRAN page: cran_team
+Fetched cran_team: 2,630 bytes from https://cran.r-project.org/CRAN_team.htm
+Fetching official CRAN page: source_base
+Fetched source_base: 5,284 bytes from https://cran.r-project.org/src/base/
+Fetching official R manual: manual_r-release_R-FAQ
+Fetched manual_r-release_R-FAQ: 277,611 bytes from https://cran.r-project.org/doc/manuals/r-release/R-FAQ.html
+Fetching official R manual: manual_r-release_R-intro
+Fetched manual_r-release_R-intro: 601,970 bytes from https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+Fetching official R manual: manual_r-release_R-data
+Fetched manual_r-release_R-data: 219,760 bytes from https://cran.r-project.org/doc/manuals/r-release/R-data.html
+Fetching official R manual: manual_r-release_R-admin
+Fetched manual_r-release_R-admin: 478,735 bytes from https://cran.r-project.org/doc/manuals/r-release/R-admin.html
+Fetching official R manual: manual_r-release_R-exts
+Fetched manual_r-release_R-exts: 1,759,427 bytes from https://cran.r-project.org/doc/manuals/r-release/R-exts.html
+Fetching official R manual: manual_r-release_R-lang
+Fetched manual_r-release_R-lang: 411,910 bytes from https://cran.r-project.org/doc/manuals/r-release/R-lang.html
+Fetching official R manual: manual_r-release_R-ints
+Fetched manual_r-release_R-ints: 469,140 bytes from https://cran.r-project.org/doc/manuals/r-release/R-ints.html
+Fetching official R manual: manual_r-patched_R-FAQ
+Fetched manual_r-patched_R-FAQ: 277,611 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-FAQ.html
+Fetching official R manual: manual_r-patched_R-intro
+Fetched manual_r-patched_R-intro: 601,976 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-intro.html
+Fetching official R manual: manual_r-patched_R-data
+Fetched manual_r-patched_R-data: 219,766 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-data.html
+Fetching official R manual: manual_r-patched_R-admin
+Fetched manual_r-patched_R-admin: 479,832 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-admin.html
+Fetching official R manual: manual_r-patched_R-exts
+Fetched manual_r-patched_R-exts: 1,759,601 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-exts.html
+Fetching official R manual: manual_r-patched_R-lang
+Fetched manual_r-patched_R-lang: 411,916 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-lang.html
+Fetching official R manual: manual_r-patched_R-ints
+Fetched manual_r-patched_R-ints: 469,146 bytes from https://cran.r-project.org/doc/manuals/r-patched/R-ints.html
+Fetching official R manual: manual_r-devel_R-FAQ
+Fetched manual_r-devel_R-FAQ: 277,598 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-FAQ.html
+Fetching official R manual: manual_r-devel_R-intro
+Fetched manual_r-devel_R-intro: 602,006 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-intro.html
+Fetching official R manual: manual_r-devel_R-data
+Fetched manual_r-devel_R-data: 219,796 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-data.html
+Fetching official R manual: manual_r-devel_R-admin
+Fetched manual_r-devel_R-admin: 485,182 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-admin.html
+Fetching official R manual: manual_r-devel_R-exts
+Fetched manual_r-devel_R-exts: 1,762,194 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-exts.html
+Fetching official R manual: manual_r-devel_R-lang
+Fetched manual_r-devel_R-lang: 411,946 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-lang.html
+Fetching official R manual: manual_r-devel_R-ints
+Fetched manual_r-devel_R-ints: 475,040 bytes from https://cran.r-project.org/doc/manuals/r-devel/R-ints.html
+Official HTTPS fallback mirrors available: https://cloud.r-project.org/, https://cran.csiro.au/, https://ftp.fau.de/cran/, https://mirror.aarnet.edu.au/pub/CRAN/, https://cran.ms.unimelb.edu.au/, https://cran.wu.ac.at/, https://www.freestatistics.org/cran/, https://ftp.belnet.be/mirror/CRAN/
+ISOLATED_GENERATION_START
+ISOLATED_BUILD_DONE {"packages":25585,"mirrors":81,"searchEntries":25585,"reversePages":7949,"reverseEdges":243451,"reverseExternalEdges":25680,"reverseBytes":37963916,"reverseSummaryBytes":16171556,"output":"C:\\Users\\User001\\r_site\\audits\\adoption\\.cache\\generated"}

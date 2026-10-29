@@ -3,6 +3,8 @@ import { execFileSync } from 'node:child_process'
 import { dirname, join, resolve } from 'node:path'
 import { tmpdir } from 'node:os'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import { createHash } from 'node:crypto'
+import { portableHtml } from '../src/static-urls.mjs'
 import {
   MIRRORS_URL,
   PACKAGES_URL,
@@ -15,12 +17,16 @@ import {
   parseWindowsInstaller,
   validateOfficialPage,
   validatePackages,
+  parseReverseDependencies,
+  REVERSE_CATEGORIES,
+  reverseDependenciesPath,
 } from '../src/cran-data.mjs'
 import {
   renderCatalog,
   renderHome,
   renderMirrors,
   renderPackage,
+  renderReverseDependencies,
   renderPackageIndexRedirect,
   renderCatalogLetter,
   renderOfficialPage,
@@ -54,6 +60,13 @@ export async function fetchCranData() {
       timeout: 900_000,
     })
     const records = validatePackages(parseDcf(readFileSync(dcf, 'utf8')))
+    if (process.env.CRAN_BUILD_AUDIT_DIR) {
+      const auditDir = resolve(process.env.CRAN_BUILD_AUDIT_DIR)
+      mkdirSync(auditDir, { recursive: true })
+      cpSync(packageRds, join(auditDir, 'packages.rds'))
+      cpSync(dcf, join(auditDir, 'packages.dcf'))
+      writeFileSync(join(auditDir, 'snapshot.json'), JSON.stringify({ url: PACKAGES_URL, fetchedAt: new Date().toISOString(), sha256: createHash('sha256').update(readFileSync(packageRds)).digest('hex'), packages: records.length }, null, 2))
+    }
     const mirrors = parseMirrorsHtml(readFileSync(mirrorsFile, 'utf8'))
     const basePageNames = ['windows_base', 'windows_contrib', 'rtools', 'windows_faq', 'macos', 'macos_contrib', 'macos_tools', 'macos_faq', 'linux_debian', 'linux_ubuntu', 'linux_fedora', 'manuals', 'faqs', 'mirror_howto', 'policies', 'cran_team', 'source_base']
     const pages = Object.fromEntries([...basePageNames, ...manualPageNames].map(name => [name, validateOfficialPage(readFileSync(join(resourceDir, `${name}.html`), 'utf8'), name)]))
@@ -63,10 +76,10 @@ export async function fetchCranData() {
   }
 }
 
-function writePage(root, route, content) {
+function writeOutput(root, route, content, mirrorResources = false) {
   const file = join(root, route)
   mkdirSync(dirname(file), { recursive: true })
-  writeFileSync(file, content, 'utf8')
+  writeFileSync(file, /\.html?$/i.test(route) ? portableHtml(content, route, { mirrorResources }) : content, 'utf8')
 }
 
 function renameDirectoryWithRetry(source, destination) {
@@ -84,8 +97,12 @@ function renameDirectoryWithRetry(source, destination) {
   throw lastError
 }
 
-export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, minimumPackages = 1000 }) {
+export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, minimumPackages = 1000, mirrorResources = false }) {
+  const writePage = (root, route, content) => writeOutput(root, route, content, mirrorResources)
   validatePackages(records, { minimum: minimumPackages })
+  // Validate every category before staging, including packages with no reverse
+  // relationships. Unknown or malformed data must never become a zero count.
+  const reverseByPackage = new Map(records.map(record => [record.Package, parseReverseDependencies(record)]))
   if (!Array.isArray(mirrors) || mirrors.length < 10) throw new Error('CRAN mirror data is incomplete; refusing to publish a partial site.')
   if (pages.windows_base && !parseWindowsInstaller(pages.windows_base)) throw new Error('The current stable Windows installer could not be found in the official CRAN listing.')
   if (pages.macos && !parseMacInstallers(pages.macos).length) throw new Error('Current macOS installers could not be found in the official release listing.')
@@ -170,7 +187,31 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
     }
     const packageSearchIndex = buildPackageSearchIndex(records)
     writePage(staging, 'assets/package-search.json', JSON.stringify(packageSearchIndex))
-    for (const record of records) writePage(staging, `web/packages/${record.Package}/index.html`, renderPackage(record))
+    const packageNames = new Set(records.map(record => record.Package))
+    let reversePages = 0, reverseEdges = 0, reverseExternalEdges = 0, reverseBytes = 0, reverseSummaryBytes = 0
+    for (const record of records) {
+      const reverseDependencies = reverseByPackage.get(record.Package)
+      const options = { packageNames, reverseDependencies }
+      const mainHtml = renderPackage(record, options)
+      writePage(staging, `web/packages/${record.Package}/index.html`, mainHtml)
+      reverseSummaryBytes += Buffer.byteLength(mainHtml.match(/<section class="panel reverse-summary"[\s\S]*?<\/section>/)[0])
+      const names = REVERSE_CATEGORIES.flatMap(({ id }) => reverseDependencies[id])
+      if (names.length) {
+        const reverseHtml = renderReverseDependencies(record, options)
+        writePage(staging, reverseDependenciesPath(record.Package).slice(1), reverseHtml)
+        reverseBytes += Buffer.byteLength(reverseHtml)
+        reversePages++
+      }
+      reverseEdges += names.length
+      reverseExternalEdges += names.filter(name => !packageNames.has(name)).length
+    }
+
+    // Optional measurement-run budget: fail before publishing if real output
+    // unexpectedly exceeds the reviewed allowance. Normal releases have no cap.
+    if (process.env.CRAN_BUILD_MAX_ADDED_BYTES) {
+      const budget = Number(process.env.CRAN_BUILD_MAX_ADDED_BYTES)
+      if (!Number.isFinite(budget) || budget <= 0 || reverseBytes + reverseSummaryBytes > budget) throw new Error('Reverse dependency output exceeds the configured build measurement budget; existing release preserved.')
+    }
 
     rmSync(backup, { recursive: true, force: true })
     if (existsSync(destination)) renameDirectoryWithRetry(destination, backup)
@@ -181,7 +222,7 @@ export function buildSite({ records, mirrors, pages = {}, outDir = outputPath, m
       throw error
     }
     rmSync(backup, { recursive: true, force: true })
-    return { packages: records.length, mirrors: mirrors.length, searchEntries: packageSearchIndex.length, output: destination }
+    return { packages: records.length, mirrors: mirrors.length, searchEntries: packageSearchIndex.length, reversePages, reverseEdges, reverseExternalEdges, reverseBytes, reverseSummaryBytes, output: destination }
   } catch (error) {
     rmSync(staging, { recursive: true, force: true })
     throw error
@@ -192,8 +233,10 @@ async function main() {
   console.log('Downloading official CRAN package data and pages...')
   const data = await fetchCranData()
   console.log(`Generating static HTML and search index for ${data.records.length} packages and ${data.mirrors.length} mirrors...`)
-  const result = buildSite(data)
+  const result = buildSite({ ...data, mirrorResources: process.env.CRAN_MIRROR_RESOURCES === '1' })
   console.log(`Built ${result.packages} package pages and one name-and-title search index with ${result.searchEntries} entries in ${result.output}`)
+  console.log(`Reverse dependencies: ${result.reversePages} pages, ${result.reverseEdges} category relationships, ${result.reverseExternalEdges} relationships to names outside this snapshot`)
+  console.log(`Reverse HTML bytes: ${result.reverseBytes}; main-page summary bytes: ${result.reverseSummaryBytes}`)
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

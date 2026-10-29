@@ -1,0 +1,616 @@
+[
+  {
+    "site": "original",
+    "page": "home",
+    "first": {
+      "url": "http://127.0.0.1:8081/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 17:56:28 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374c-362\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 467,
+      "ttfbMs": 18.15270000000001,
+      "totalMs": 19.317700000000002
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:28 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374c-362\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 14.101699999999994,
+      "totalMs": 14.24090000000001
+    }
+  },
+  {
+    "site": "original",
+    "page": "windows",
+    "first": {
+      "url": "http://127.0.0.1:8081/bin/windows/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 17:56:29 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374d-649\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 785,
+      "ttfbMs": 16.334799999999973,
+      "totalMs": 16.479600000000005
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/bin/windows/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:29 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374d-649\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 15.260800000000017,
+      "totalMs": 15.355200000000025
+    }
+  },
+  {
+    "site": "original",
+    "page": "catalog",
+    "first": {
+      "url": "http://127.0.0.1:8081/web/packages/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 17:56:29 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374d-fbd\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 1479,
+      "ttfbMs": 14.48599999999999,
+      "totalMs": 14.614199999999983
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/web/packages/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:29 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374d-fbd\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 14.855600000000038,
+      "totalMs": 15.037200000000041
+    }
+  },
+  {
+    "site": "original",
+    "page": "ggplot2",
+    "first": {
+      "url": "http://127.0.0.1:8081/web/packages/ggplot2/index.html",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 17:56:30 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374e-a6d15\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 79636,
+      "ttfbMs": 9.650599999999997,
+      "totalMs": 17.086400000000026
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/web/packages/ggplot2/index.html",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:30 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374e-a6d15\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 6.675299999999993,
+      "totalMs": 6.75690000000003
+    }
+  },
+  {
+    "site": "original",
+    "page": "manuals",
+    "first": {
+      "url": "http://127.0.0.1:8081/manuals.html",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 17:56:30 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374e-1e73\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 2192,
+      "ttfbMs": 4.316500000000019,
+      "totalMs": 4.4179000000000315
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/manuals.html",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:30 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374e-1e73\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 4.6276000000000295,
+      "totalMs": 4.746500000000026
+    }
+  },
+  {
+    "site": "original",
+    "page": "slashRedirect",
+    "first": {
+      "url": "http://127.0.0.1:8081/bin/windows",
+      "status": 301,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "content-length": "162",
+        "location": "http://127.0.0.1:8081/bin/windows/",
+        "connection": "keep-alive",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 162,
+      "ttfbMs": 6.725500000000011,
+      "totalMs": 6.801800000000014
+    },
+    "conditional": null
+  },
+  {
+    "site": "original",
+    "page": "missing",
+    "first": {
+      "url": "http://127.0.0.1:8081/__benchmark_missing__",
+      "status": 404,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "content-length": "146",
+        "connection": "keep-alive",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 146,
+      "ttfbMs": 2.9569000000000187,
+      "totalMs": 3.016300000000001
+    },
+    "conditional": null
+  },
+  {
+    "site": "original",
+    "page": "css",
+    "first": {
+      "url": "http://127.0.0.1:8081/R.css",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/css",
+        "last-modified": "Wed, 28 Oct 2026 17:56:31 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae2374f-537\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 353,
+      "ttfbMs": 3.886699999999962,
+      "totalMs": 3.9606999999999744
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8081/R.css",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 17:56:31 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae2374f-537\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 3.9308999999999514,
+      "totalMs": 4.00019999999995
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "home",
+    "first": {
+      "url": "http://127.0.0.1:8082/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e931-27f0\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 3464,
+      "ttfbMs": 6.472199999999987,
+      "totalMs": 6.551800000000014
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e931-27f0\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 4.291699999999992,
+      "totalMs": 4.335900000000038
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "windows",
+    "first": {
+      "url": "http://127.0.0.1:8082/bin/windows/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e931-1353\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 1602,
+      "ttfbMs": 8.052599999999984,
+      "totalMs": 8.143799999999999
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/bin/windows/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e931-1353\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 7.383600000000001,
+      "totalMs": 7.420099999999991
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "catalog",
+    "first": {
+      "url": "http://127.0.0.1:8082/web/packages/",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e931-1d7f\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 1637,
+      "ttfbMs": 7.628600000000006,
+      "totalMs": 7.681500000000028
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/web/packages/",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e931-1d7f\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 7.384500000000003,
+      "totalMs": 7.4243999999999915
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "ggplot2",
+    "first": {
+      "url": "http://127.0.0.1:8082/web/packages/ggplot2/index.html",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 12:23:18 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e936-1e3f\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 2372,
+      "ttfbMs": 3.2199000000000524,
+      "totalMs": 3.2665000000000077
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/web/packages/ggplot2/index.html",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:18 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e936-1e3f\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 3.926499999999976,
+      "totalMs": 3.9723000000000184
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "manuals",
+    "first": {
+      "url": "http://127.0.0.1:8082/manuals.html",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e931-2a19\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 2766,
+      "ttfbMs": 2.0966999999999985,
+      "totalMs": 2.1464000000000283
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/manuals.html",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e931-2a19\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 1.6278999999999542,
+      "totalMs": 1.6929999999999836
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "slashRedirect",
+    "first": {
+      "url": "http://127.0.0.1:8082/bin/windows",
+      "status": 301,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "content-length": "162",
+        "location": "http://127.0.0.1:8082/bin/windows/",
+        "connection": "keep-alive",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 162,
+      "ttfbMs": 4.176299999999969,
+      "totalMs": 4.2309999999999945
+    },
+    "conditional": null
+  },
+  {
+    "site": "redesign",
+    "page": "missing",
+    "first": {
+      "url": "http://127.0.0.1:8082/__benchmark_missing__",
+      "status": 404,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/html",
+        "content-length": "146",
+        "connection": "keep-alive",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 146,
+      "ttfbMs": 1.1387000000000285,
+      "totalMs": 1.1824000000000296
+    },
+    "conditional": null
+  },
+  {
+    "site": "redesign",
+    "page": "index",
+    "first": {
+      "url": "http://127.0.0.1:8082/assets/package-search.json",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "application/json",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e931-19924a\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 580596,
+      "ttfbMs": 12.296799999999962,
+      "totalMs": 57.01139999999998
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/assets/package-search.json",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:23:13 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e931-19924a\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 2.814199999999971,
+      "totalMs": 2.8648000000000025
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "css",
+    "first": {
+      "url": "http://127.0.0.1:8082/assets/site.css",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "text/css",
+        "last-modified": "Wed, 28 Oct 2026 12:18:43 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e823-70b6\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 6181,
+      "ttfbMs": 2.761099999999999,
+      "totalMs": 2.837699999999984
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/assets/site.css",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:18:43 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e823-70b6\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 5.246300000000019,
+      "totalMs": 5.287000000000035
+    }
+  },
+  {
+    "site": "redesign",
+    "page": "script",
+    "first": {
+      "url": "http://127.0.0.1:8082/assets/search.js",
+      "status": 200,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "content-type": "application/javascript",
+        "last-modified": "Wed, 28 Oct 2026 12:21:19 GMT",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "vary": "Accept-Encoding",
+        "etag": "W/\"6ae1e8bf-c90\"",
+        "cache-control": "public, max-age=300, must-revalidate",
+        "content-encoding": "gzip"
+      },
+      "encodedBodyBytes": 1236,
+      "ttfbMs": 2.324200000000019,
+      "totalMs": 2.374300000000005
+    },
+    "conditional": {
+      "url": "http://127.0.0.1:8082/assets/search.js",
+      "status": 304,
+      "headers": {
+        "server": "nginx",
+        "date": "Wed, 28 Oct 2026 18:06:51 GMT",
+        "last-modified": "Wed, 28 Oct 2026 12:21:19 GMT",
+        "connection": "keep-alive",
+        "etag": "\"6ae1e8bf-c90\"",
+        "cache-control": "public, max-age=300, must-revalidate"
+      },
+      "encodedBodyBytes": 0,
+      "ttfbMs": 2.0381999999999607,
+      "totalMs": 2.091200000000015
+    }
+  }
+]

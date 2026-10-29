@@ -1,0 +1,546 @@
+[
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 0,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 1,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 2,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 3,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 4,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 5,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 6,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "redesign",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  },
+  {
+    "profile": "desktop",
+    "page": "home",
+    "site": "original",
+    "repeat": 7,
+    "version": "13.6.0",
+    "score": null,
+    "runtimeError": {
+      "code": "NO_FCP",
+      "message": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+      "errorStack": "LighthouseError: NO_FCP\n    at Timeout.<anonymous> (file:///C:/Users/User001/r_site/benchmarks/tooling/node_modules/lighthouse/core/gather/driver/wait-for-condition.js:85:14)\n    at listOnTimeout (node:internal/timers:685:17)\n    at process.processTimers (node:internal/timers:618:7)",
+      "artifactKey": "PageLoadError"
+    },
+    "warnings": [
+      "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+    ],
+    "audits": {
+      "first-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "largest-contentful-paint": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "cumulative-layout-shift": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "total-blocking-time": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      },
+      "speed-index": {
+        "error": "The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+      }
+    }
+  }
+]

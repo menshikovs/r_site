@@ -1,4 +1,4 @@
-import { CRAN_BASE, escapeHtml, linkifyText, packagePath } from './cran-data.mjs'
+import { CRAN_BASE, escapeHtml, linkifyText, linkifyDependencies, packagePath, REVERSE_CATEGORIES, parseReverseDependencies, reverseDependenciesPath } from './cran-data.mjs'
 
 const logo = '<img src="/Rlogo.svg" alt="" width="48" height="38">'
 
@@ -144,7 +144,7 @@ export function renderPlatform(platform, { windowsInstaller = null, macInstaller
   return documentPage({ title: `${page.title} — CRAN`, description: page.intro, canonical: path, body })
 }
 
-export function renderPackage(record) {
+export function renderPackage(record, { packageNames = new Set(), reverseDependencies = parseReverseDependencies(record) } = {}) {
   const name = record.Package
   const canonical = packagePath(name)
   const metadataFields = [
@@ -152,28 +152,65 @@ export function renderPackage(record) {
     ['Maintainer', record.Maintainer],
     ['License', record.License],
     ['Published', record['Date/Publication']],
+    ['Priority', record.Priority],
+    ['Contact', record.Contact],
+    ['DOI', record.DOI],
     ['Requires', record.Depends],
     ['Imports', record.Imports],
     ['Suggests', record.Suggests],
     ['Linking to', record.LinkingTo],
+    ['Enhances', record.Enhances],
     ['System requirements', record.SystemRequirements],
     ['Needs compilation', record.NeedsCompilation],
+    ['Operating system', record.OS_type],
+    ['Architectures', record.Archs],
+    ['Additional repositories', record.Additional_repositories],
     ['Project URL', record.URL],
     ['Bug reports', record.BugReports],
   ].filter(([, value]) => typeof value === 'string' && value.trim())
-  const metadata = metadataFields.map(([label, value]) => `<div class="metadata-row"><dt>${escapeHtml(label)}</dt><dd>${linkifyText(value)}</dd></div>`).join('')
+  const dependencies = new Set(['Requires', 'Imports', 'Suggests', 'Linking to', 'Enhances'])
+  const metadata = metadataFields.map(([label, value]) => {
+    const content = dependencies.has(label) ? linkifyDependencies(value, packageNames)
+      : label === 'DOI' && /^10\.\d{4,9}\/\S+$/.test(value.trim()) ? `<a href="${escapeHtml(`https://doi.org/${value.trim()}`)}">${escapeHtml(value)}</a>`
+      : linkifyText(value)
+    return `<div class="metadata-row"><dt>${escapeHtml(label)}</dt><dd>${content}</dd></div>`
+  }).join('')
   const description = record.Description ? linkifyText(record.Description) : '<span class="muted">No description is available in the CRAN package index.</span>'
   const manual = `${CRAN_BASE}/web/packages/${encodeURIComponent(name)}/${encodeURIComponent(name)}.pdf`
-  const vignette = `${CRAN_BASE}/web/packages/${encodeURIComponent(name)}/vignettes/`
+  const officialPage = `${CRAN_BASE}${canonical}`
+  const checks = `${CRAN_BASE}/web/checks/check_results_${encodeURIComponent(name)}.html`
   const source = record.Version ? `${CRAN_BASE}/src/contrib/${encodeURIComponent(name)}_${encodeURIComponent(record.Version)}.tar.gz` : ''
-  const body = `<a class="skip-link" href="#main">Skip to content</a><header class="package-header">${brand()}<span>THE COMPREHENSIVE R ARCHIVE NETWORK</span><a href="${CRAN_BASE}${canonical}">Official CRAN page ${arrow()}</a></header>
+  const body = `<a class="skip-link" href="#main">Skip to content</a><header class="package-header">${brand()}<span>THE COMPREHENSIVE R ARCHIVE NETWORK</span><a rel="external" href="${CRAN_BASE}${canonical}">Official CRAN page ${arrow()}</a></header>
 <main id="main" class="package-main"><div class="package-actions"><a href="/web/packages/">← Browse packages</a><span>CRAN PACKAGE</span></div>
 <section class="package-hero"><p class="eyebrow">PACKAGE RECORD</p><h1>${escapeHtml(name)}</h1>${record.Title ? `<p class="package-title">${escapeHtml(record.Title)}</p>` : ''}<div class="badges">${record.Version ? `<span>VERSION <b>${escapeHtml(record.Version)}</b></span>` : ''}${record.License ? `<span>LICENSE <b>${escapeHtml(record.License)}</b></span>` : ''}</div></section>
 <section class="panel"><div class="panel-heading"><div><span class="eyebrow">01 / FROM THE OFFICIAL PACKAGE INDEX</span><h2>Description</h2></div></div><pre class="package-description">${description}</pre></section>
 ${metadata ? `<section class="panel"><div class="panel-heading"><div><span class="eyebrow">02 / PACKAGE INFORMATION</span><h2>Details</h2></div></div><dl class="metadata-grid">${metadata}</dl></section>` : ''}
-<section class="package-resources"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Go deeper with ${escapeHtml(name)}.</h2><p>Visit official documentation and source files for this release.</p><p class="install-command"><code>install.packages("${escapeHtml(name)}")</code></p></div><div class="resource-links"><a class="button" href="${manual}">Reference manual ${arrow()}</a><a href="${vignette}">Browse vignettes ${arrow()}</a>${source ? `<a href="${source}">Download source package ${arrow()}</a>` : ''}</div></section>
+${renderReverseSummary(name, reverseDependencies)}
+<section class="package-resources"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Go deeper with ${escapeHtml(name)}.</h2><p>Visit official documentation and source files for this release.</p><p class="install-command"><code>install.packages("${escapeHtml(name)}")</code></p></div><div class="resource-links"><a class="button" href="${manual}">Reference manual ${arrow()}</a><a rel="external" href="${officialPage}">Documentation and downloads on CRAN ${arrow()}</a><a href="${checks}">CRAN check results ${arrow()}</a>${source ? `<a href="${source}">Download source package ${arrow()}</a>` : ''}</div></section>
 <footer class="package-footer">${brand()}<span>Package metadata is published by CRAN.</span><a href="/">Back to home ↑</a></footer></main>`
   return documentPage({ title: `${name}${record.Title ? `: ${record.Title}` : ''} — CRAN`, description: record.Description || `${name} package on CRAN.`, canonical, body })
+}
+
+function renderReverseSummary(name, reverse) {
+  const total = REVERSE_CATEGORIES.reduce((sum, { id }) => sum + reverse[id].length, 0)
+  const counts = REVERSE_CATEGORIES.map(({ id, label }) => {
+    const count = reverse[id].length
+    return `<div><dt>${count ? `<a href="${reverseDependenciesPath(name)}#${id}">${label}</a>` : label}</dt><dd data-reverse-category="${id}">${count}</dd></div>`
+  }).join('')
+  return `<section class="panel reverse-summary" aria-labelledby="reverse-heading"><h2 id="reverse-heading">Reverse dependencies</h2>${total ? '' : '<p>No reverse dependencies in this CRAN snapshot.</p>'}<dl class="reverse-counts">${counts}</dl></section>`
+}
+
+export function renderReverseDependencies(record, { packageNames = new Set(), reverseDependencies = parseReverseDependencies(record) } = {}) {
+  const name = record.Package
+  if (!REVERSE_CATEGORIES.some(({ id }) => reverseDependencies[id].length)) throw new Error(`No reverse dependencies page is needed for ${name}`)
+  const navigation = REVERSE_CATEGORIES.map(({ id, label }) => `<a href="#${id}">${label} (${reverseDependencies[id].length})</a>`).join('')
+  const sections = REVERSE_CATEGORIES.map(({ id, label }) => {
+    const names = reverseDependencies[id]
+    const list = names.length ? `<ul class="reverse-packages">${names.map(dependent => `<li>${packageNames.has(dependent) ? `<a href="${packagePath(dependent)}">${escapeHtml(dependent)}</a>` : `<span class="reverse-external">${escapeHtml(dependent)}</span>`}</li>`).join('')}</ul>` : '<p>No packages in this category.</p>'
+    return `<section id="${id}" class="panel reverse-section"><h2>${label} <span>${names.length} packages</span></h2>${list}</section>`
+  }).join('')
+  const body = `<a class="skip-link" href="#main">Skip to content</a><header class="package-header">${brand()}<span>THE COMPREHENSIVE R ARCHIVE NETWORK</span><a rel="external" href="${CRAN_BASE}${packagePath(name)}">Official CRAN page ${arrow()}</a></header><main id="main" class="package-main"><div class="package-actions"><a href="${packagePath(name)}">← Back to ${escapeHtml(name)}</a><span>CRAN PACKAGE</span></div><header class="package-hero reverse-hero"><p class="eyebrow">PACKAGE RELATIONSHIPS</p><h1>Reverse dependencies of ${escapeHtml(name)}</h1><p class="package-title">Packages that depend on, import, link to, suggest or enhance ${escapeHtml(name)}. Packages outside this CRAN snapshot are listed as plain text.</p></header><nav class="reverse-navigation" aria-label="Reverse dependency categories">${navigation}</nav>${sections}<footer class="package-footer">${brand()}<a href="${packagePath(name)}">Back to ${escapeHtml(name)} ↑</a></footer></main>`
+  return documentPage({ title: `Reverse dependencies of ${name} — CRAN`, description: `Full reverse dependency lists for ${name} from the same CRAN snapshot as its package record.`, canonical: reverseDependenciesPath(name), body })
 }
 
 export function renderCatalog(records) {
@@ -210,7 +247,7 @@ export function renderMirrors(mirrors) {
     if (!groups.has(mirror.country)) groups.set(mirror.country, [])
     groups.get(mirror.country).push(mirror)
   }
-  const content = `<header class="topbar"><a href="/">← CRAN home</a><a href="/mirror-howto.html">Host a CRAN mirror ${arrow()}</a></header><section class="catalog-hero"><p class="eyebrow">THE COMPREHENSIVE R ARCHIVE NETWORK</p><h1>CRAN mirrors</h1><p>Choose a mirror close to you. CRAN mirrors carry the R distribution, packages, and documentation.</p><p class="catalog-updated">Mirror locations are synchronized from the official CRAN mirror directory during site build.</p><p class="mirror-status"><a href="${CRAN_BASE}/mirmon_report.html">Mirror status</a><a href="${CRAN_BASE}/mirmon_report_release.html">Windows release status</a><a href="${CRAN_BASE}/mirmon_report_old_release.html">Older Windows release status</a></p></section><div class="mirror-groups">${[...groups].map(([country, entries]) => `<section class="mirror-group"><h2>${escapeHtml(country)}</h2><ul>${entries.map(mirror => `<li><a href="${escapeHtml(mirror.url)}">${escapeHtml(mirror.url)}</a>${mirror.description ? `<p>${escapeHtml(mirror.description)}</p>` : ''}</li>`).join('')}</ul></section>`).join('')}</div>`
+  const content = `<header class="topbar"><a href="/">← CRAN home</a><a href="/mirror-howto.html">Host a CRAN mirror ${arrow()}</a></header><section class="catalog-hero"><p class="eyebrow">THE COMPREHENSIVE R ARCHIVE NETWORK</p><h1>CRAN mirrors</h1><p>Choose a mirror close to you. CRAN mirrors carry the R distribution, packages, and documentation.</p><p class="catalog-updated">Mirror locations are synchronized from the official CRAN mirror directory during site build.</p><p class="mirror-status"><a href="${CRAN_BASE}/mirmon_report.html">Mirror status</a><a href="${CRAN_BASE}/mirmon_report_release.html">Windows release status</a><a href="${CRAN_BASE}/mirmon_report_old_release.html">Older Windows release status</a></p></section><div class="mirror-groups">${[...groups].map(([country, entries]) => `<section class="mirror-group"><h2>${escapeHtml(country)}</h2><ul>${entries.map(mirror => `<li><a rel="external" href="${escapeHtml(mirror.url)}">${escapeHtml(mirror.url)}</a>${mirror.description ? `<p>${escapeHtml(mirror.description)}</p>` : ''}</li>`).join('')}</ul></section>`).join('')}</div>`
   return documentPage({ title: 'CRAN mirrors', description: 'Choose a CRAN mirror near you.', canonical: '/mirrors.html', body: shell(content) })
 }
 

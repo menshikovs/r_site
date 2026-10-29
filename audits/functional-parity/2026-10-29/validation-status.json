@@ -1,0 +1,18 @@
+﻿[
+    {
+        "command":  "npm test",
+        "exitCode":  0
+    },
+    {
+        "command":  "R export regression",
+        "exitCode":  0
+    },
+    {
+        "command":  "npm run build",
+        "exitCode":  0
+    },
+    {
+        "command":  "npm run check:site",
+        "exitCode":  0
+    }
+]

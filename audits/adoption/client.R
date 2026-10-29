@@ -1,0 +1,6 @@
+args <- commandArgs(trailingOnly=TRUE)
+Sys.unsetenv(c('HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','http_proxy','https_proxy','all_proxy'))
+options(timeout=15)
+a <- available.packages(contriburl=paste0(args[[1L]],'/src/contrib'),type='source',filters=list(),method='libcurl',ignore_repo_cache=TRUE)
+stopifnot('termr' %in% rownames(a))
+cat('packages=',nrow(a),'\ntermr=',a['termr','Version'],'\n',sep='')

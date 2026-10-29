@@ -1,0 +1,14 @@
+[
+  {
+    "name": "original-snapshot.tar.gz",
+    "files": 16,
+    "bytes": 859924,
+    "sha256": "bc3cf82d2350e0569a096234e682ea23004ba242e656954d3af6857bc6e9c543"
+  },
+  {
+    "name": "candidate-snapshot.tar.gz",
+    "files": 10,
+    "bytes": 630893,
+    "sha256": "bab492dd2d02c9089e2502b8b356c7f7d6e8f67289e6edf78f72672aceaa3b4a"
+  }
+]

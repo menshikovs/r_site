@@ -1,0 +1,118 @@
+{
+  "counts": {
+    "html": 33606,
+    "localReferences": 964670,
+    "externalReferences": 148747,
+    "fragmentReferences": 127909,
+    "canonical": 33606
+  },
+  "rootRelative": [],
+  "unquoted": [
+    {
+      "path": "bin/macosx/tools/index.html",
+      "value": "https://mac.R-project.org/tools/"
+    },
+    {
+      "path": "bin/macosx/tools/index.html",
+      "value": "https://mac.r-project.org/tools/gfortran-14.2-universal.pkg"
+    },
+    {
+      "path": "bin/macosx/tools/index.html",
+      "value": "https://github.com/R-macos/gcc-14-branch/releases"
+    },
+    {
+      "path": "bin/macosx/tools/index.html",
+      "value": "old.html"
+    },
+    {
+      "path": "bin/macosx/tools/index.html",
+      "value": "http://mac.R-project.org/src/"
+    }
+  ],
+  "brokenFragments": [
+    {
+      "path": "doc/manuals/r-devel/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-devel/R-exts.html",
+      "id": "Writing-R-documentation"
+    },
+    {
+      "path": "doc/manuals/r-patched/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-patched/R-exts.html",
+      "id": "Writing-R-documentation"
+    },
+    {
+      "path": "doc/manuals/r-release/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-release/R-exts.html",
+      "id": "Writing-R-documentation"
+    }
+  ],
+  "baselineFragments": [
+    {
+      "path": "doc/manuals/r-devel/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-devel/R-exts.html",
+      "id": "Writing-R-documentation",
+      "referenceAlreadyPresent": true,
+      "targetAlreadyAbsent": true
+    },
+    {
+      "path": "doc/manuals/r-patched/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-patched/R-exts.html",
+      "id": "Writing-R-documentation",
+      "referenceAlreadyPresent": true,
+      "targetAlreadyAbsent": true
+    },
+    {
+      "path": "doc/manuals/r-release/R-lang.html",
+      "value": "R-exts.html#Writing-R-documentation",
+      "target": "doc/manuals/r-release/R-exts.html",
+      "id": "Writing-R-documentation",
+      "referenceAlreadyPresent": true,
+      "targetAlreadyAbsent": true
+    }
+  ],
+  "distinctGeneratedTargets": 33608,
+  "distinctPreservedOfficialTargets": 5,
+  "notInLimitedCorpus": 76903,
+  "absentExamples": [
+    "bin/linux/ubuntu/fullREADME.html",
+    "bin/linux/ubuntu/olderreleasesREADME.html",
+    "bin/macosx/contrib/4.0/index.html",
+    "bin/macosx/contrib/4.1/index.html",
+    "bin/macosx/contrib/4.2/index.html",
+    "bin/macosx/dir.html",
+    "bin/macosx/tools/old.html",
+    "doc/FAQ/R-FAQ.html",
+    "bin/windows/base/R-4.6.1-win.exe",
+    "bin/windows/base/README.R-4.6.1",
+    "bin/windows/base/NEWS.R-4.6.1.html",
+    "bin/windows/base/md5sum.R-4.6.1.txt",
+    "bin/windows/base/rw-FAQ.R-4.6.1.html",
+    "bin/windows/base/rtest.html",
+    "bin/windows/base/rpatched.html",
+    "bin/windows/base/rdevel.html",
+    "bin/windows/base/old/index.html",
+    "bin/windows/base/release.html",
+    "doc/manuals/R-admin.html",
+    "doc/manuals/R-exts.html",
+    "bin/windows/contrib/4.5/ReadMe",
+    "bin/windows/contrib/4.2/index.html",
+    "bin/windows/contrib/4.3/index.html",
+    "bin/windows/contrib/4.4/index.html",
+    "bin/windows/contrib/4.5/index.html",
+    "bin/windows/contrib/4.6/index.html",
+    "bin/windows/contrib/4.7/index.html",
+    "bin/windows/contrib/ReadMe",
+    "bin/windows/contrib/ThirdPartySoftware.html",
+    "bin/windows/contrib/r-devel/index.html"
+  ],
+  "allGeneratedHashesMatch": true,
+  "originalsUnchanged": 30,
+  "nonownedOriginalsPreserved": 21,
+  "directories": 25620,
+  "scope": "Checks generated files plus 30-file official corpus; absent resources are not claimed to exist locally"
+}

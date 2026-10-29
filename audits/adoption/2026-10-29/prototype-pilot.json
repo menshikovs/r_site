@@ -1,0 +1,21 @@
+{
+  "scope": "Local limited official corpus; full generated overlays; no assertion about private CRAN configuration",
+  "results": [
+    {
+      "name": "R client on native baseline",
+      "stdout": "packages=25600\r\ntermr=1.0.1\r\n",
+      "stderr": "During startup - Warning messages:\r\n1: Setting LC_COLLATE=C.UTF-8 failed \r\n2: Setting LC_CTYPE=C.UTF-8 failed \r\n3: Setting LC_MONETARY=C.UTF-8 failed \r\n4: Setting LC_TIME=C.UTF-8 failed \r\n"
+    },
+    {
+      "name": "Directory index ownership",
+      "nativeListingShowsTarball": true,
+      "overlayListingShowsTarball": false,
+      "note": "Known discovery/ownership change; raw file is preserved"
+    },
+    {
+      "name": "Untouched original resources",
+      "checked": 21,
+      "hashesMatch": true
+    }
+  ]
+}

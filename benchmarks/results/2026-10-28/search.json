@@ -1,0 +1,602 @@
+[
+  {
+    "profile": "desktop",
+    "run": 0,
+    "cache": "first",
+    "ms": 182.10000000149012,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 0,
+    "cache": "repeat",
+    "ms": 5.100000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 1,
+    "cache": "first",
+    "ms": 184.10000000149012,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 1,
+    "cache": "repeat",
+    "ms": 4.300000004470348,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 2,
+    "cache": "first",
+    "ms": 172.70000000298023,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 2,
+    "cache": "repeat",
+    "ms": 4.100000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 3,
+    "cache": "first",
+    "ms": 181.10000000149012,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 3,
+    "cache": "repeat",
+    "ms": 5.199999995529652,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 4,
+    "cache": "first",
+    "ms": 174.79999999701977,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 4,
+    "cache": "repeat",
+    "ms": 4.799999997019768,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 5,
+    "cache": "first",
+    "ms": 177.20000000298023,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 5,
+    "cache": "repeat",
+    "ms": 4.5,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 6,
+    "cache": "first",
+    "ms": 181.19999999552965,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 6,
+    "cache": "repeat",
+    "ms": 4.800000004470348,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 7,
+    "cache": "first",
+    "ms": 177.19999999552965,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 7,
+    "cache": "repeat",
+    "ms": 5.5,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 8,
+    "cache": "first",
+    "ms": 179,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 8,
+    "cache": "repeat",
+    "ms": 4,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 9,
+    "cache": "first",
+    "ms": 176.60000000149012,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 9,
+    "cache": "repeat",
+    "ms": 4.600000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 0,
+    "cache": "first",
+    "ms": 755,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 0,
+    "cache": "repeat",
+    "ms": 11.600000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 1,
+    "cache": "first",
+    "ms": 746.1000000014901,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 1,
+    "cache": "repeat",
+    "ms": 9.399999998509884,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 2,
+    "cache": "first",
+    "ms": 757.1999999955297,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 2,
+    "cache": "repeat",
+    "ms": 10.100000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 3,
+    "cache": "first",
+    "ms": 753.8999999985099,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 3,
+    "cache": "repeat",
+    "ms": 10.399999998509884,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 4,
+    "cache": "first",
+    "ms": 800.7999999970198,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 4,
+    "cache": "repeat",
+    "ms": 9.700000002980232,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 5,
+    "cache": "first",
+    "ms": 761.1999999955297,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 5,
+    "cache": "repeat",
+    "ms": 9.200000002980232,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 6,
+    "cache": "first",
+    "ms": 756.8000000044703,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 6,
+    "cache": "repeat",
+    "ms": 11.800000004470348,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 7,
+    "cache": "first",
+    "ms": 766.7000000029802,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 7,
+    "cache": "repeat",
+    "ms": 10.600000001490116,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 8,
+    "cache": "first",
+    "ms": 768.6000000014901,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 8,
+    "cache": "repeat",
+    "ms": 10,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 9,
+    "cache": "first",
+    "ms": 769.3999999985099,
+    "requests": 1,
+    "encodedBytes": 580596,
+    "decodedBytes": 1675850,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 9,
+    "cache": "repeat",
+    "ms": 11.5,
+    "requests": 0,
+    "encodedBytes": 0,
+    "decodedBytes": 0,
+    "resultNames": [
+      "ggplot2",
+      "ggplot2.utils",
+      "ggplot2movies",
+      "RcmdrPlugin.KMggplot2"
+    ]
+  }
+]

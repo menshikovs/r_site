@@ -23,8 +23,8 @@ export function parseDcf(source) {
       if (field) record[field] += `\n${line.trim()}`
       continue
     }
-    const match = /^([A-Za-z][A-Za-z0-9./]*):[ \t]*(.*)$/.exec(line)
-    if (!match) continue
+    const match = /^([^\s:][^:]*):[ \t]*(.*)$/.exec(line)
+    if (!match) { field = ''; continue }
     field = match[1]
     record[field] = match[2]
   }
@@ -106,7 +106,55 @@ export function packagePath(name) {
   return `/web/packages/${name}/index.html`
 }
 
+const basePackages = new Set(['base', 'compiler', 'datasets', 'graphics', 'grDevices', 'grid', 'methods', 'parallel', 'splines', 'stats', 'stats4', 'tcltk', 'tools', 'utils'])
+
+export function linkifyDependencies(value = '', packageNames = new Set()) {
+  return String(value).split(',').map(part => {
+    const match = /^(\s*)([A-Za-z][A-Za-z0-9.]*)([\s\S]*)$/.exec(part)
+    if (!match) return escapeHtml(part)
+    const [, space, name, constraint] = match
+    const href = basePackages.has(name)
+      ? `${CRAN_BASE}/doc/manuals/r-patched/packages/${name}/refman/${name}.html`
+      : packageNames.has(name) ? packagePath(name) : null
+    return escapeHtml(space) + (href ? `<a href="${escapeHtml(href)}">${escapeHtml(name)}</a>` : escapeHtml(name)) + escapeHtml(constraint)
+  }).join(',')
+}
+
 export function buildPackageSearchIndex(records) { return records.map(record => [record.Package, String(record.Title || '')]) }
+
+export const REVERSE_CATEGORIES = Object.freeze([
+  { field: 'Reverse depends', id: 'depends', label: 'Reverse Depends' },
+  { field: 'Reverse imports', id: 'imports', label: 'Reverse Imports' },
+  { field: 'Reverse linking to', id: 'linking-to', label: 'Reverse LinkingTo' },
+  { field: 'Reverse suggests', id: 'suggests', label: 'Reverse Suggests' },
+  { field: 'Reverse enhances', id: 'enhances', label: 'Reverse Enhances' },
+])
+
+export function parseReverseDependencies(record) {
+  return Object.fromEntries(REVERSE_CATEGORIES.map(({ field, id }) => {
+    if (!Object.hasOwn(record, field) || typeof record[field] !== 'string') {
+      throw new Error(`Missing reverse metadata ${field} for ${record.Package}; an absent field is not an empty list.`)
+    }
+    const value = record[field].trim()
+    const names = value ? value.split(',').map(name => name.trim()) : []
+    const seen = new Set()
+    for (const name of names) {
+      if (!PACKAGE_NAME.test(name)) throw new Error(`Invalid reverse dependency name in ${field} for ${record.Package}: ${name}`)
+      if (seen.has(name)) throw new Error(`Duplicate reverse dependency ${name} in ${field} for ${record.Package}`)
+      seen.add(name)
+    }
+    // ASCII package names: stable ordering without locale/ICU-dependent collation.
+    names.sort((a, b) => {
+      const lowerA = a.toLowerCase(), lowerB = b.toLowerCase()
+      return lowerA < lowerB ? -1 : lowerA > lowerB ? 1 : a < b ? -1 : a > b ? 1 : 0
+    })
+    return [id, names]
+  }))
+}
+
+export function reverseDependenciesPath(name) {
+  return packagePath(name).replace(/index\.html$/, 'reverse-dependencies.html')
+}
 
 export function extractBodyHtml(source) {
   const match = /<body\b[^>]*>([\s\S]*?)<\/body\s*>/i.exec(source)

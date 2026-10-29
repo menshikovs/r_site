@@ -1,0 +1,9 @@
+﻿{
+    "reverseLogicalBytes":  37963786,
+    "logicalBytes":  218540292,
+    "files":  33611,
+    "reverseAllocatedBytes":  47857664,
+    "allocatedBytes":  283091504,
+    "reverseFiles":  7949,
+    "method":  "GetFileInformationByHandleEx / FILE_STANDARD_INFO.AllocationSize; excludes directory/MFT overhead"
+}
